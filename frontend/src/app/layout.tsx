@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Politix Dashboard",
-  description: "Social media monitoring for Swedish politicians",
+  title: "Is your MP on X (and Bluesky, Mastodon...)?",
+  description: "This little dashboard lists the Swedish member of parliaments and displays their accounts on X, Bluesky and Mastodon. When possible, it also fetches the date of the latest post to see if the account is active. The data might not be exhaustive as the social media account information is fetched from Wikidata (Wikipedia's database). If you find an error or a missing account, please click \"Edit on Wikidata\” to fix it.",
 };
 
 export default function RootLayout({
