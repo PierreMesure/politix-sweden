@@ -1,0 +1,3611 @@
+[
+  {
+    "id": "Q897282",
+    "name": "Kristina Axén Olin",
+    "party": "Moderaterna",
+    "social": {
+      "x": "kristinaaxol",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q9393603",
+    "name": "Åsa Eriksson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "asainorberg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18237754",
+    "name": "Sara-Lena Bjälkö",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "sdbjalko",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q63344500",
+    "name": "Niels Paarup-Petersen",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "nielspaarup",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q63741595",
+    "name": "Tony Haddou",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "TonyHaddou",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q63870850",
+    "name": "Camilla Brodin",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "CamillaBrodin",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q63975366",
+    "name": "Jessica Stegrud",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "jessicastegrud",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64404514",
+    "name": "Malin Danielsson",
+    "party": "Liberalerna",
+    "social": {
+      "x": "malindanielsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64684689",
+    "name": "Andreas Lennkvist Manriquez",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "andreaslm.bsky.social",
+        "last_post": "2025-06-26T13:04:25.139Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q65130310",
+    "name": "Helena Storckenfeldt",
+    "party": "Moderaterna",
+    "social": {
+      "x": "HelenaAntoni1",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q65499866",
+    "name": "Alexander Christiansson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "ARchristiansson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70407251",
+    "name": "Mikael Damsgaard",
+    "party": "Moderaterna",
+    "social": {
+      "x": "_damsgaard",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70407841",
+    "name": "Staffan Eklöf",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "StaffanEklof",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70529257",
+    "name": "Arin Karapet",
+    "party": "Moderaterna",
+    "social": {
+      "x": "KarapetArin",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70574439",
+    "name": "David Josefsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "david_josefsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70586981",
+    "name": "Marie-Louise Hänel Sandström",
+    "party": "Moderaterna",
+    "social": {
+      "x": "MarieLouise_HS",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70588456",
+    "name": "Mattias Karlsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "moderatkarlsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70589038",
+    "name": "Noria Manouchi",
+    "party": "Moderaterna",
+    "social": {
+      "x": "NoriaManouchi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70621742",
+    "name": "Alireza Akhondi",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "AlirezaAkhondi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70639708",
+    "name": "Kjell-Arne Ottosson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "KAO_KD",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70886056",
+    "name": "Clara Aranda",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "aranda_clara",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70899253",
+    "name": "Matheus Enholm",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "EnholmMatheus",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70906950",
+    "name": "Yasmine Eriksson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "yasmineeriksson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70912742",
+    "name": "Bo Broman",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "BosseBroman",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q70994131",
+    "name": "Mats Berglund",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "matber",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71055616",
+    "name": "Thomas Morell",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71059733",
+    "name": "Eric Westroth",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71062310",
+    "name": "Angelica Lundberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "AngelicaJkpg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71131299",
+    "name": "Ann-Sofie Lifvenhage",
+    "party": "Moderaterna",
+    "social": {
+      "x": "lifvenhage",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71131688",
+    "name": "Ludvig Aspling",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "AsplingLudvig",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71132178",
+    "name": "Martina Johansson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71132556",
+    "name": "Fredrik Lindahl",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "fredriklindahl2",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71133291",
+    "name": "Ann-Christine From",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "Anki_Utterstedt",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71137014",
+    "name": "Linda Lindberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "LindaLindbergs",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71137237",
+    "name": "Amanda Palmstierna",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71340705",
+    "name": "Ingemar Kihlström",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71455806",
+    "name": "Charlotte Quensel",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "cquensel",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71465386",
+    "name": "Denis Begic",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "dennisbegic",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71545861",
+    "name": "Jörgen Grubb",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "GrubbJorgen",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71546781",
+    "name": "Per Söderlund",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "PerSoderlund_SD",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q71577635",
+    "name": "Oliver Rosengren",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q72922068",
+    "name": "Markus Selin",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "selinmarkus",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q73918460",
+    "name": "Lars Andersson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q75461145",
+    "name": "Marie Nicholson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q96323621",
+    "name": "David Perez",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q96324321",
+    "name": "Inga-Lill Sjöblom",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q96678492",
+    "name": "Stina Larsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q97097437",
+    "name": "Linus Lakso",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q98271639",
+    "name": "Bengt Nording",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q98530561",
+    "name": "Johanna Rantsi",
+    "party": "Moderaterna",
+    "social": {
+      "x": "johannarantsi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q98538839",
+    "name": "Sven Nilsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q99527006",
+    "name": "Malin Höglund",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q99528690",
+    "name": "Fredrik Kärrholm",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "karrholm.bsky.social",
+        "last_post": "2023-11-24T23:21:45.750Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q99541757",
+    "name": "Anne-Li Sjölund",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q136646457",
+    "name": "Fredrik Lindstål",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q137212415",
+    "name": "Madeleine Atlas",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q137212471",
+    "name": "Caroline Täljeblad",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q104214592",
+    "name": "Emma Ahlström Köster",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q104215904",
+    "name": "Catarina Deremar",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q105675478",
+    "name": "Nima Gholam Ali Pour",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q105928301",
+    "name": "Markus Kallifatides",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "mkallifatides.bsky.social",
+        "last_post": "2026-01-26T06:29:18.753Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q106783058",
+    "name": "Lars Isacsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q106862214",
+    "name": "Lars Johnsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q106862781",
+    "name": "Jessica Rodén",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q108059200",
+    "name": "Jakob Olofsgård",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "jakobolofsgard.bsky.social",
+        "last_post": "2024-12-07T20:34:57.254Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q108525852",
+    "name": "Sofia Amloh",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q108525972",
+    "name": "Anna-Belle Strömberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q109352589",
+    "name": "Kristoffer Lindberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q110642599",
+    "name": "Markus Kauppinen",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q110793990",
+    "name": "Lili André",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q110793999",
+    "name": "Mattias Eriksson Falk",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q112075255",
+    "name": "Christofer Bergenblock",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q113847323",
+    "name": "Adrian Magnusson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q113864862",
+    "name": "Agneta Nilsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114029317",
+    "name": "Mirja Räihä",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114030385",
+    "name": "Daniel Vencu Velasquez Castro",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "danielvencu.bsky.social",
+        "last_post": "2024-12-07T20:52:56.060Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031212",
+    "name": "Anna Lasses",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031213",
+    "name": "Andrea Andersson-Tay",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "AnderssonTay",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031215",
+    "name": "Mats Arkhem",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031216",
+    "name": "Leonid Yurkovskiy",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "lyurkovskiy",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031218",
+    "name": "Jacob Risberg",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "jacobrisberg.bsky.social",
+        "last_post": "2025-02-14T16:47:22.249Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031222",
+    "name": "Niklas Sigvardsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031224",
+    "name": "Thomas Ragnarsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031225",
+    "name": "Lars Engsund",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031228",
+    "name": "Mona Olin",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031230",
+    "name": "Peter Ollén",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031231",
+    "name": "Louise Eklund",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031232",
+    "name": "Victoria Tiblom",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031233",
+    "name": "Torsten Elofsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031234",
+    "name": "Ewa Pihl Krabbe",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031236",
+    "name": "Cecilia Rönn",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031237",
+    "name": "Aida Birinxhiku",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031238",
+    "name": "Erik Hellsborn",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031240",
+    "name": "Carita Boulwén",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031241",
+    "name": "Amalia Rud Stenlöf",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031243",
+    "name": "Dženan Cišija",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "dzeno.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031244",
+    "name": "Björn Tidland",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031247",
+    "name": "Anders Ådahl",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031248",
+    "name": "Rashid Farivar",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "rashidfarivar",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031249",
+    "name": "Louise Thunström",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031250",
+    "name": "Anders Alftberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031254",
+    "name": "Sofia Skönnbrink",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031255",
+    "name": "Nadja Awad",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031256",
+    "name": "Caroline Högström",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031259",
+    "name": "Lena Johansson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031261",
+    "name": "Kajsa Fredholm",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "fredholmkajsa",
+      "bluesky": {
+        "handle": "kajsafredholm.bsky.social",
+        "last_post": "2025-05-03T15:25:56.982Z"
+      },
+      "mastodon": {
+        "handle": "kajsafredholm@mastodon.social",
+        "last_post": "2025-04-15T07:24:20.210Z"
+      }
+    }
+  },
+  {
+    "id": "Q114031262",
+    "name": "Anna-Lena Hedberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031263",
+    "name": "Sanna Backeskog",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031264",
+    "name": "Linnéa Wickman",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031265",
+    "name": "Samuel Gonzalez Westling",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "SamuelGonW",
+      "bluesky": {
+        "handle": "samuelgw.bsky.social",
+        "last_post": "2025-09-10T15:23:07.410Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031267",
+    "name": "Daniel Persson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031268",
+    "name": "Peter Hedberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031270",
+    "name": "Isabell Mixter",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031271",
+    "name": "Ulf Lindholm",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031273",
+    "name": "Sara Leghissa",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114031274",
+    "name": "Johnny Svedin",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114133361",
+    "name": "Karin Sundin",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "k_sundin",
+      "bluesky": {
+        "handle": "karinsundin.bsky.social",
+        "last_post": "2023-12-07T11:43:46.322Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114141183",
+    "name": "Mathias Bengtsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114198430",
+    "name": "Oskar Svärd",
+    "party": "Moderaterna",
+    "social": {
+      "x": "osvard",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114240008",
+    "name": "Rasmus Giertz",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114240056",
+    "name": "Susanne Nordström",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114659286",
+    "name": "Martin Westmont",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772305",
+    "name": "Crister Carlsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772325",
+    "name": "Dan Hovskär",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772424",
+    "name": "Elin Nilsson",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772436",
+    "name": "Carl Nordblom",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772470",
+    "name": "Magnus Resare",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772526",
+    "name": "Camilla Rinaldo Miller",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772539",
+    "name": "Anna af Sillèn",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114772553",
+    "name": "Katarina Tolgfors",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114867560",
+    "name": "Jennie Wernäng",
+    "party": "Moderaterna",
+    "social": {
+      "x": "jenniewer",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115170015",
+    "name": "Yusuf Aydin",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115564925",
+    "name": "Merit Frost Lindberg",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q116482970",
+    "name": "Joanna Lewerentz",
+    "party": "Moderaterna",
+    "social": {
+      "x": "joannalewerentz",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q116866668",
+    "name": "Anders Karlsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q117884595",
+    "name": "Malte Roos",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q121934765",
+    "name": "Jonathan Svensson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q124062059",
+    "name": "Mona Smedman",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q124302755",
+    "name": "Unni Björnerfors",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q124745556",
+    "name": "Patrik Karlson",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q125258917",
+    "name": "Kent Kumpula",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q127691637",
+    "name": "Arber Gashi",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q127691730",
+    "name": "Mats Hellhoff",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q129689061",
+    "name": "Christian Lindefjärd",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q129690000",
+    "name": "Ludvig Ceimertz",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q130297807",
+    "name": "Malin Östh",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q131376555",
+    "name": "Nils Seye Larsen",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q131732964",
+    "name": "Chris Dahlqvist",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q269859",
+    "name": "Åsa Westlund",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AsaWestlund",
+      "bluesky": {
+        "handle": "asawestlund.bsky.social",
+        "last_post": "2025-10-28T11:53:34.856Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1681740",
+    "name": "Jan Ericson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "Ericson_ubbhult",
+      "bluesky": {
+        "handle": "ericsoniubbhult.bsky.social",
+        "last_post": "2025-01-16T19:37:51.557Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q2396467",
+    "name": "Mauricio Rojas",
+    "party": "Liberalerna",
+    "social": {
+      "x": "MauricioRojasmr",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3358494",
+    "name": "Lars Mejern Larsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Mejern",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3370162",
+    "name": "Peter Hultqvist",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3372917",
+    "name": "Mikael Damberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "mikaeldamberg",
+      "bluesky": {
+        "handle": "mikaeldamberg.bsky.social",
+        "last_post": "2025-01-26T10:52:49.368Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3373058",
+    "name": "Matilda Ernkrans",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "ernkrans",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3373169",
+    "name": "Kenneth G. Forslund",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "KGFdirekt",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3373667",
+    "name": "Fredrik Olovsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "fredrikolovsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3374237",
+    "name": "Helén Pettersson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "hepe",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3374499",
+    "name": "Gunilla Carlsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "kulturgunilla",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3374751",
+    "name": "Caroline Helmersson Olsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Charoline",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3375050",
+    "name": "Anders Ygeman",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Ygeman",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3431836",
+    "name": "Lena Hallengren",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "lenahallengren",
+      "bluesky": {
+        "handle": "lenahallengren.bsky.social",
+        "last_post": "2023-12-07T17:21:50.168Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3544279",
+    "name": "Karin Enström",
+    "party": "Moderaterna",
+    "social": {
+      "x": "Karinenstrom",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3674337",
+    "name": "Gulan Avci",
+    "party": "Liberalerna",
+    "social": {
+      "x": "GulanAvci",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3675520",
+    "name": "Fredrik Malm",
+    "party": "Liberalerna",
+    "social": {
+      "x": "FredrikMalm",
+      "bluesky": {
+        "handle": "fredrikmalm.bsky.social",
+        "last_post": "2025-11-25T17:39:50.140Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4563096",
+    "name": "Jennie Nilsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "JennieNilsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4563305",
+    "name": "Johan Löfstrand",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4766168",
+    "name": "Ann-Charlotte Hammar Johnsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "ACHammar",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4787806",
+    "name": "Ardalan Shekarabi",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "shekarabi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4919772",
+    "name": "Björn Söder",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "bjornsoder",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q15963975",
+    "name": "Adam Marttinen",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "AdamMarttinen",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q16595953",
+    "name": "Lina Nordquist",
+    "party": "Liberalerna",
+    "social": {
+      "x": "LinaNordquist",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q16633140",
+    "name": "Niklas Karlsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "niklaska",
+      "bluesky": {
+        "handle": "straffspark.bsky.social",
+        "last_post": "2025-06-12T17:52:43.967Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q16633339",
+    "name": "Mattias Ottosson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "mattiasotto1",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202339",
+    "name": "Teresa Carvalho",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "TeresaCarvalho",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202340",
+    "name": "Monica Haider",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Monicahaider",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202365",
+    "name": "Ida Drougge",
+    "party": "Moderaterna",
+    "social": {
+      "x": "idadrougge",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202412",
+    "name": "Johanna Haraldsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "joharald",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202413",
+    "name": "Anna-Caren Sätherberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AnnaCarenS",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202414",
+    "name": "Anna Wallentheim",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "walleannas",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18202415",
+    "name": "Alexandra Völker",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Vlker",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18238235",
+    "name": "Nooshi Dadgostar",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "nooshiit",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18238432",
+    "name": "Dennis Dioukarev",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "DennisDioukarev",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18238692",
+    "name": "Janine Alm Ericson",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "almericson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18238731",
+    "name": "Mikael Eskilandersson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "Eskilandersson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18238847",
+    "name": "Runar Filper",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18239250",
+    "name": "Mats Green",
+    "party": "Moderaterna",
+    "social": {
+      "x": "matsgreenM",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18242588",
+    "name": "Annika Hirvonen",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "AnnikaHirvonen",
+      "bluesky": {
+        "handle": "annikahirvonen.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18243097",
+    "name": "Lotta Johnsson Fornarve",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "fornarve",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18243181",
+    "name": "Patrik Jönsson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18243244",
+    "name": "Maj Karlsson",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "karlsson_maj",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18243514",
+    "name": "Robert Stenkvist",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "robertstenkvist",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18243576",
+    "name": "Birger Lahti",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18244660",
+    "name": "Emma Nohrén",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "emmanohren",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18244900",
+    "name": "Magnus Oscarsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18245020",
+    "name": "Magnus Persson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "mangepersson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18245444",
+    "name": "Azadeh Rojhan",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AzadehRojhan",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18245556",
+    "name": "Karin Rågsjö",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "ragsjo",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18246207",
+    "name": "Jimmy Ståhl",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18246258",
+    "name": "Håkan Svenneling",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "hsvenneling",
+      "bluesky": {
+        "handle": "hsvenneling.bsky.social",
+        "last_post": "2026-01-21T19:42:09.633Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18274557",
+    "name": "Roger Hedlund",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "rogerhedlund",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18448703",
+    "name": "Sanne Lennström",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "SanneEriksson88",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18451082",
+    "name": "Ida Karkiainen",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "IdaKarkiainen",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18451520",
+    "name": "Lawen Redar",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "LawenRedar",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18452054",
+    "name": "Marianne Fundahn",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18617010",
+    "name": "Oscar Sjöstedt",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18649252",
+    "name": "Mikael Dahlqvist",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "DahlqvistMikael",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18923356",
+    "name": "Jesper Skalberg Karlsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "JesperSkalberg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q19976333",
+    "name": "Pontus Andersson Garpvall",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q19976974",
+    "name": "Katarina Luhr",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "gialuhr.bsky.social",
+        "last_post": "2026-01-25T09:56:12.948Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q19977055",
+    "name": "Ola Möller",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "socdemola",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q19977128",
+    "name": "Erik Ottoson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "ErikOttoson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q19977330",
+    "name": "Hanna Westerén",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20095387",
+    "name": "Johan Büser",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "johanbuser",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20156222",
+    "name": "Björn Wiechel",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Bjorg_Wiechek",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20652878",
+    "name": "Leif Nysmed",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "LeifNysmed",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q21531339",
+    "name": "Per-Arne Håkansson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "1Perarne1",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q21558211",
+    "name": "Erik Ezelius",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q21561347",
+    "name": "Patrik Lundqvist",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "insatspatrik",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q21578777",
+    "name": "Larry Söder",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "larrysoder",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q22923559",
+    "name": "Camilla Hansén",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q24018140",
+    "name": "Amanda Lind",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "amandalind_",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q24701062",
+    "name": "Mathias Tegnér",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "tegnr",
+      "bluesky": {
+        "handle": "mathiastegner.bsky.social",
+        "last_post": "2025-02-12T13:56:38.360Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q26211839",
+    "name": "Tobias Andersson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "SDTobbe",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q26305112",
+    "name": "Joar Forssell",
+    "party": "Liberalerna",
+    "social": {
+      "x": "JoarForssell",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q26710616",
+    "name": "Serkan Köse",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Serkankose76",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q27107494",
+    "name": "Anna Vikström",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AnnaVikstrom",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q27750419",
+    "name": "Christian Carlsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "christianckd",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29040655",
+    "name": "Ulrika Liljeberg",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "ulrikaliljeberg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29041937",
+    "name": "Peder Björk",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29059638",
+    "name": "Marie Olsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30000205",
+    "name": "Ulrika Heindorff",
+    "party": "Moderaterna",
+    "social": {
+      "x": "UlrikaHeindorff",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035676",
+    "name": "Linus Sköld",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "lskold",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035679",
+    "name": "Lars Püss",
+    "party": "Moderaterna",
+    "social": {
+      "x": "lassepuess",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035685",
+    "name": "Ida Ekeroth",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035697",
+    "name": "Alexandra Anstrell",
+    "party": "Moderaterna",
+    "social": {
+      "x": "aanstrell",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035702",
+    "name": "Eva Lindh",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "eva_lindh",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035705",
+    "name": "Gustaf Lantz",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q37013194",
+    "name": "Momodou Jallow",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "Jallow_M",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q40741721",
+    "name": "Adam Reuterskiöld",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q41615610",
+    "name": "Leif Gripestam",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q47506077",
+    "name": "Fredrik Ahlstedt",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q131732978",
+    "name": "Cecilia Gustafsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q131732982",
+    "name": "Annelie Sjöberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132718105",
+    "name": "Anders Ekegren",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132863296",
+    "name": "Pia Trollehjelm",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132863297",
+    "name": "Blåvitt Elofsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18245374",
+    "name": "Daniel Riazat",
+    "party": null,
+    "social": {
+      "x": "danielriazat",
+      "bluesky": {
+        "handle": "danielriazat.bsky.social",
+        "last_post": "2025-10-05T10:31:19.362Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30035682",
+    "name": "Jamal El-Haj",
+    "party": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168752",
+    "name": "Lorena Delgado Varas",
+    "party": null,
+    "social": {
+      "x": "lorena_dv",
+      "bluesky": {
+        "handle": "lorenadelgadovaras.bsky.social",
+        "last_post": "2025-02-06T08:36:52.549Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q98545439",
+    "name": "Elsa Widding",
+    "party": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q518776",
+    "name": "Jimmie Åkesson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "jimmieakesson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q520956",
+    "name": "Ulf Holm",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4935873",
+    "name": "Magdalena Andersson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AnderssonMagda",
+      "bluesky": {
+        "handle": "magdalenaandersson.socialdemokraterna.se",
+        "last_post": "2025-06-22T12:27:27.279Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4940303",
+    "name": "Helena Bouveng",
+    "party": "Moderaterna",
+    "social": {
+      "x": "helenabouveng",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4940950",
+    "name": "Gudrun Brunegård",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "gudrunbrunegard",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4940994",
+    "name": "Camilla Brunsberg",
+    "party": "Moderaterna",
+    "social": {
+      "x": "brunsberg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4941985",
+    "name": "Rose-Marie Carlsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4942378",
+    "name": "Margareta Cederfelt",
+    "party": "Moderaterna",
+    "social": {
+      "x": "MCederfelt",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4946795",
+    "name": "Cecilia Engström",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4949356",
+    "name": "Ida Gabrielsson",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "idagabrielsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4957570",
+    "name": "Ellen Juntti",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4959972",
+    "name": "Julia Kronlid",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "JuliaKronlid",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4962331",
+    "name": "Helena Lindahl",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "FrkLindahl",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4964100",
+    "name": "Kerstin Lundgren",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "KerstinLundgren",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4968944",
+    "name": "Laila Naraghi",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "lailanaraghi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4970153",
+    "name": "Charlotte Nordström",
+    "party": "Moderaterna",
+    "social": {
+      "x": "SkaraCharlotte",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4970595",
+    "name": "Ingela Nylund Watz",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "NylundWatz",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4970787",
+    "name": "Helene Odenjung",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4973765",
+    "name": "Saila Quicklund",
+    "party": "Moderaterna",
+    "social": {
+      "x": "SQuicklund",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4974920",
+    "name": "Elisabeth Thand Ringqvist",
+    "party": "Centerpartiet",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "elisabethtr.bsky.social",
+        "last_post": "2025-02-28T07:22:43.253Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4980571",
+    "name": "Maria Stockhaus",
+    "party": "Moderaterna",
+    "social": {
+      "x": "Mariastockhaus",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4980750",
+    "name": "Annika Strandhäll",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "strandhall",
+      "bluesky": {
+        "handle": "annikastrandhall.bsky.social",
+        "last_post": "2025-03-26T08:15:07.198Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4981700",
+    "name": "Ilona Szatmári Waldau",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "IlonaWaldau",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4983517",
+    "name": "Vasiliki Tsouplaki",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4987958",
+    "name": "Ulrika Heie",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "ulrikacarlsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4988619",
+    "name": "Jytte Guteland",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "JytteGuteland",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4990375",
+    "name": "Ulrika Westerlund",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4990984",
+    "name": "Boriana Åberg",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5554920",
+    "name": "Johan Andersson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "joh_and",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5572155",
+    "name": "Sten Bergheden",
+    "party": "Moderaterna",
+    "social": {
+      "x": "StenBergheden",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5574173",
+    "name": "Magnus Berntsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5577436",
+    "name": "Patrik Björck",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "patrikbjorck",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5596130",
+    "name": "Lars Beckman",
+    "party": "Moderaterna",
+    "social": {
+      "x": "beckmansasikter",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5620151",
+    "name": "Muharrem Demirok",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "muharremdemirok",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5620978",
+    "name": "Gustaf Göthberg",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "gustafgothberg.bsky.social",
+        "last_post": "2025-02-10T07:22:56.852Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5629994",
+    "name": "Hans Eklind",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "bandyprasten",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5707578",
+    "name": "Hans Ekström",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5740653",
+    "name": "Josef Fransson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "JosefFranssonSD",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5745541",
+    "name": "Isak From",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "fromisak",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5798982",
+    "name": "Daniel Helldén",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "DanielHellden",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5826586",
+    "name": "Magnus Jacobsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "magnusjacobsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5879681",
+    "name": "Kjell Jansson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5887149",
+    "name": "Mattias Bäckström Johansson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "mattiasbjo",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5887217",
+    "name": "Morgan Johansson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "johanssonmorgan",
+      "bluesky": {
+        "handle": "johanssonmorgan.bsky.social",
+        "last_post": "2024-12-03T08:48:19.152Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5890031",
+    "name": "Richard Jomshof",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "RichardJomshof",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5891398",
+    "name": "Anders W. Jonsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "anderswjonsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5891875",
+    "name": "Mattias Jonsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "riksdagsmattias",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5901848",
+    "name": "Mattias Karlsson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "sdkarlsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5910434",
+    "name": "Martin Kinnunen",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "Martin_Kinnunen",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5961351",
+    "name": "Lars-Ingvar Ljungman",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5966830",
+    "name": "Fredrik Lundh Sammeli",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "lundhsammeli",
+      "bluesky": {
+        "handle": "lundhsammeli.bsky.social",
+        "last_post": "2023-12-20T07:41:12.389Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5969317",
+    "name": "Petter Löberg",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "hjalmarbranting",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5974768",
+    "name": "Magnus Manhammar",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5983849",
+    "name": "Martin Melin",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6012202",
+    "name": "Ulrik Nilsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6015398",
+    "name": "Rickard Nordin",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "rickardnordin",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6024765",
+    "name": "Robert Olesen",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6027267",
+    "name": "Kalle Olsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6027959",
+    "name": "Stefan Olsson",
+    "party": "Moderaterna",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "spesam.bsky.social",
+        "last_post": "2025-10-15T08:30:50.722Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6030080",
+    "name": "Mikael Oscarsson",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "MikaelOscarsson",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6043377",
+    "name": "Mats Persson",
+    "party": "Liberalerna",
+    "social": {
+      "x": "matsperspektiv",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6068516",
+    "name": "Patrick Reslow",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "patrickreslow",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6071900",
+    "name": "Edward Riedl",
+    "party": "Moderaterna",
+    "social": {
+      "x": "EdwardRiedl",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6209093",
+    "name": "Olle Thorell",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "Olle_Thorell",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6220743",
+    "name": "Roland Utbult",
+    "party": "Kristdemokraterna",
+    "social": {
+      "x": "RolandUtbult",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6223773",
+    "name": "Mattias Vepsä",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "mattiasvepsa",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6240455",
+    "name": "Markus Wiechel",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "MarkusWiechel",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6254715",
+    "name": "Martin Ådahl",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "MartinAadahl",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q50353136",
+    "name": "John Widegren",
+    "party": "Moderaterna",
+    "social": {
+      "x": "JohnWidegren",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56164156",
+    "name": "Henrik Vinge",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "VingeHenrik",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56640168",
+    "name": "Leila Ali Elmi",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "LeilaAliElmi",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56660151",
+    "name": "John Weinerhall",
+    "party": "Moderaterna",
+    "social": {
+      "x": "JohnWeinerhall",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56706633",
+    "name": "Joakim Sandell",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56923131",
+    "name": "Kadir Kasirga",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "kasirga_kadir",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56925588",
+    "name": "Sara Gille",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168695",
+    "name": "Marléne Lund Kopparklint",
+    "party": "Moderaterna",
+    "social": {
+      "x": "FruKopparklint",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168699",
+    "name": "Rebecka Le Moine",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": "Rebeckalemoine",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168726",
+    "name": "Helena Vilhelmsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "centerHelena",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168729",
+    "name": "Helena Gellerman",
+    "party": "Liberalerna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168740",
+    "name": "Ciczie Weidby",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "ciczie",
+      "bluesky": {
+        "handle": "ciczie.bsky.social",
+        "last_post": "2025-08-29T14:13:11.003Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168756",
+    "name": "Hanna Gunnarsson",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "gunnarssonhanna",
+      "bluesky": {
+        "handle": "gunnarssonhanna.bsky.social",
+        "last_post": "2026-01-25T19:47:30.853Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168784",
+    "name": "Jessica Wetterling",
+    "party": "Vänsterpartiet",
+    "social": {
+      "x": "jes_wet",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168821",
+    "name": "Jörgen Berglund",
+    "party": "Moderaterna",
+    "social": {
+      "x": "jorgen_berglund",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168837",
+    "name": "Carina Ödebrink",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "carinaodebrink",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168842",
+    "name": "Heléne Björklund",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "helenebjorklund",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57168927",
+    "name": "Mats Wiking",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57297792",
+    "name": "Joakim Järrebring",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q58365776",
+    "name": "Jan Riise",
+    "party": "Miljöpartiet",
+    "social": {
+      "x": null,
+      "bluesky": {
+        "handle": "janriise.bsky.social",
+        "last_post": "2025-10-27T06:24:40.459Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q58769193",
+    "name": "Magdalena Thuresson",
+    "party": "Moderaterna",
+    "social": {
+      "x": "magganschroder",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q58837098",
+    "name": "Jonas Andersson",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "jonandsd",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q59269310",
+    "name": "Ann-Sofie Alm",
+    "party": "Moderaterna",
+    "social": {
+      "x": "annsofiealm",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60144183",
+    "name": "Eric Palmqvist",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60732958",
+    "name": "Viktor Wärnick",
+    "party": "Moderaterna",
+    "social": {
+      "x": "viktorwarnick",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60823079",
+    "name": "Malin Larsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60823082",
+    "name": "Åsa Karlsson",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "kimasa62",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60823132",
+    "name": "Mikael Larsson",
+    "party": "Centerpartiet",
+    "social": {
+      "x": "1989_mikael",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q61103104",
+    "name": "Katja Nyberg",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "Katja_Nyberg",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q61122062",
+    "name": "Aylin Nouri",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": "AylinFazelian",
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q62287119",
+    "name": "Tomas Kronståhl",
+    "party": "Socialdemokraterna",
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q62745971",
+    "name": "Michael Rubbestad",
+    "party": "Sverigedemokraterna",
+    "social": {
+      "x": "rubbestad",
+      "bluesky": null,
+      "mastodon": null
+    }
+  }
+]
