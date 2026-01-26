@@ -134,14 +134,6 @@ export default function Dashboard() {
 
   const parties = Object.keys(stats).sort();
 
-  if (loading) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="text-xl font-semibold text-gray-700 dark:text-gray-300">Loading data...</div>
-      </div>
-    );
-  }
-
   if (error) {
     return (
       <div className="flex min-h-screen items-center justify-center">
@@ -161,60 +153,66 @@ export default function Dashboard() {
 
       {/* Stats Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {parties.map(party => {
-          const s = stats[party];
-          const xPct = s.total ? ((s.x / s.total) * 100).toFixed(1) : "0.0";
-          const blueskyPct = s.total ? ((s.bluesky / s.total) * 100).toFixed(1) : "0.0";
-          const mastodonPct = s.total ? ((s.mastodon / s.total) * 100).toFixed(1) : "0.0";
+        {loading ? (
+          Array.from({ length: 9 }).map((_, i) => (
+            <div key={i} className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow border border-gray-200 dark:border-zinc-800 animate-pulse h-40"></div>
+          ))
+        ) : (
+          parties.map(party => {
+            const s = stats[party];
+            const xPct = s.total ? ((s.x / s.total) * 100).toFixed(1) : "0.0";
+            const blueskyPct = s.total ? ((s.bluesky / s.total) * 100).toFixed(1) : "0.0";
+            const mastodonPct = s.total ? ((s.mastodon / s.total) * 100).toFixed(1) : "0.0";
 
-          return (
-            <div key={party} className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow border border-gray-200 dark:border-zinc-800 cursor-pointer hover:border-blue-500 transition-colors"
-                 onClick={() => setSelectedParty(selectedParty === party ? null : party)}
-            >
-              <div className="flex justify-between items-center mb-2">
-                <div className="flex items-center gap-2">
-                  {PARTY_LOGOS[party] && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={PARTY_LOGOS[party]} alt={party} className="w-8 h-8 object-contain" />
-                  )}
-                  <h3 className={`font-semibold ${selectedParty === party ? 'text-blue-600 dark:text-blue-400' : 'text-gray-900 dark:text-gray-100'}`}>{party}</h3>
+            return (
+              <div key={party} className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow border border-gray-200 dark:border-zinc-800 cursor-pointer hover:border-blue-500 transition-colors"
+                   onClick={() => setSelectedParty(selectedParty === party ? null : party)}
+              >
+                <div className="flex justify-between items-center mb-2">
+                  <div className="flex items-center gap-2">
+                    {PARTY_LOGOS[party] && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={PARTY_LOGOS[party]} alt={party} className="w-8 h-8 object-contain" />
+                    )}
+                    <h3 className={`font-semibold ${selectedParty === party ? 'text-blue-600 dark:text-blue-400' : 'text-gray-900 dark:text-gray-100'}`}>{party}</h3>
+                  </div>
+                  <span className="text-xs bg-gray-100 dark:bg-zinc-800 px-1 py-1 rounded text-gray-600 dark:text-gray-300">{s.total} members</span>
                 </div>
-                <span className="text-xs bg-gray-100 dark:bg-zinc-800 px-1 py-1 rounded text-gray-600 dark:text-gray-300">{s.total} members</span>
+                <div className="space-y-3 text-sm">
+                  <div className="space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-gray-500 dark:text-gray-400 text-xs">X (Twitter)</span>
+                      <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.x} ({xPct}%)</span>
+                    </div>
+                    <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
+                      <div className="bg-gray-900 dark:bg-gray-100 h-1.5 rounded-full" style={{ width: `${xPct}%` }}></div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-gray-500 dark:text-gray-400 text-xs">Bluesky</span>
+                      <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.bluesky} ({blueskyPct}%)</span>
+                    </div>
+                    <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
+                      <div className="bg-blue-500 h-1.5 rounded-full" style={{ width: `${blueskyPct}%` }}></div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-gray-500 dark:text-gray-400 text-xs">Mastodon</span>
+                      <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.mastodon} ({mastodonPct}%)</span>
+                    </div>
+                    <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
+                      <div className="bg-purple-500 h-1.5 rounded-full" style={{ width: `${mastodonPct}%` }}></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="space-y-3 text-sm">
-                <div className="space-y-1">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500 dark:text-gray-400 text-xs">X (Twitter)</span>
-                    <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.x} ({xPct}%)</span>
-                  </div>
-                  <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
-                    <div className="bg-gray-900 dark:bg-gray-100 h-1.5 rounded-full" style={{ width: `${xPct}%` }}></div>
-                  </div>
-                </div>
-
-                <div className="space-y-1">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500 dark:text-gray-400 text-xs">Bluesky</span>
-                    <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.bluesky} ({blueskyPct}%)</span>
-                  </div>
-                  <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
-                    <div className="bg-blue-500 h-1.5 rounded-full" style={{ width: `${blueskyPct}%` }}></div>
-                  </div>
-                </div>
-
-                <div className="space-y-1">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500 dark:text-gray-400 text-xs">Mastodon</span>
-                    <span className="font-medium text-gray-900 dark:text-gray-200 text-xs">{s.mastodon} ({mastodonPct}%)</span>
-                  </div>
-                  <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5">
-                    <div className="bg-purple-500 h-1.5 rounded-full" style={{ width: `${mastodonPct}%` }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })
+        )}
       </section>
             {/* Controls */}
             <div className="flex flex-col lg:flex-row gap-6 lg:items-center justify-between bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm">
@@ -311,8 +309,20 @@ export default function Dashboard() {
               </tr>
             </thead>
             <tbody className="bg-white dark:bg-zinc-900 divide-y divide-gray-200 dark:divide-zinc-800">
-              {filteredPoliticians.map((p) => (
-                <tr key={p.id} className="hover:bg-gray-50 dark:hover:bg-zinc-800/50">
+              {loading ? (
+                Array.from({ length: 10 }).map((_, i) => (
+                  <tr key={i} className="animate-pulse">
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-4 bg-gray-200 dark:bg-zinc-800 rounded w-32"></div></td>
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-6 w-6 bg-gray-200 dark:bg-zinc-800 rounded-full"></div></td>
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-6 w-6 bg-gray-200 dark:bg-zinc-800 rounded-full mx-auto lg:mx-0"></div></td>
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-6 w-6 bg-gray-200 dark:bg-zinc-800 rounded-full mx-auto lg:mx-0"></div></td>
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-6 w-6 bg-gray-200 dark:bg-zinc-800 rounded-full mx-auto lg:mx-0"></div></td>
+                    <td className="px-1 py-4 whitespace-nowrap"><div className="h-6 w-24 bg-gray-200 dark:bg-zinc-800 rounded"></div></td>
+                  </tr>
+                ))
+              ) : (
+                filteredPoliticians.map((p) => (
+                  <tr key={p.id} className="hover:bg-gray-50 dark:hover:bg-zinc-800/50">
                   <td className="pl-2 pr-1 py-4 text-sm font-medium text-gray-900 dark:text-white w-1/3 min-w-[120px] whitespace-normal break-words">
                     {p.name}
                   </td>
@@ -441,12 +451,14 @@ export default function Dashboard() {
                                           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0010 3H4.75A2.75 2.75 0 002 5.75v9.5A2.75 2.75 0 004.75 18h9.5A2.75 2.75 0 0017 15.25V10a.75.75 0 00-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5z" />
                                         </svg>
                                       </a>
-                                    </td>                </tr>
-              ))}
+                                    </td>
+                                  </tr>
+                ))
+              )}
             </tbody>
           </table>
         </div>
-        {filteredPoliticians.length === 0 && (
+        {!loading && filteredPoliticians.length === 0 && (
           <div className="p-8 text-center text-gray-500 dark:text-gray-400">
             No politicians found matching your criteria.
           </div>
