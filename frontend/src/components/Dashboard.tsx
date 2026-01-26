@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
-import rawData from '../data.json';
+import { useState, useMemo, useEffect } from 'react';
 
 type SocialAccount = {
   handle: string;
@@ -19,8 +18,7 @@ type Politician = {
   };
 };
 
-const DATA = rawData as Politician[];
-
+const DATA_URL = "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data.json";
 const FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000;
 
 function isActive(lastPost: string | null) {
@@ -58,6 +56,9 @@ function getMastodonUrl(handle: string) {
 }
 
 export default function Dashboard() {
+  const [data, setData] = useState<Politician[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedParty, setSelectedParty] = useState<string | null>(null);
   const [filters, setFilters] = useState({
@@ -67,10 +68,27 @@ export default function Dashboard() {
     none: true
   });
 
+  useEffect(() => {
+    fetch(DATA_URL)
+      .then(res => {
+        if (!res.ok) throw new Error("Failed to fetch data");
+        return res.json();
+      })
+      .then(json => {
+        setData(json);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Error fetching data:", err);
+        setError("Failed to load data.");
+        setLoading(false);
+      });
+  }, []);
+
   const stats = useMemo(() => {
     const partyStats: Record<string, { total: number; x: number; bluesky: number; mastodon: number; activeBluesky: number; activeMastodon: number }> = {};
 
-    DATA.forEach(p => {
+    data.forEach(p => {
       const party = p.party || "Unknown";
       if (!partyStats[party]) {
         partyStats[party] = { total: 0, x: 0, bluesky: 0, mastodon: 0, activeBluesky: 0, activeMastodon: 0 };
@@ -90,10 +108,10 @@ export default function Dashboard() {
     });
 
     return partyStats;
-  }, []);
+  }, [data]);
 
   const filteredPoliticians = useMemo(() => {
-    return DATA.filter(p => {
+    return data.filter(p => {
       const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
       const normalizedParty = p.party || "Unknown";
       const matchesParty = selectedParty ? normalizedParty === selectedParty : true;
@@ -112,9 +130,25 @@ export default function Dashboard() {
 
       return matchesSearch && matchesParty && matchesFilters;
     });
-  }, [searchTerm, selectedParty, filters]);
+  }, [data, searchTerm, selectedParty, filters]);
 
   const parties = Object.keys(stats).sort();
+
+  if (loading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="text-xl font-semibold text-gray-700 dark:text-gray-300">Loading data...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="text-red-500">{error}</div>
+      </div>
+    );
+  }
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8">
@@ -129,9 +163,9 @@ export default function Dashboard() {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {parties.map(party => {
           const s = stats[party];
-          const xPct = ((s.x / s.total) * 100).toFixed(1);
-          const blueskyPct = ((s.bluesky / s.total) * 100).toFixed(1);
-          const mastodonPct = ((s.mastodon / s.total) * 100).toFixed(1);
+          const xPct = s.total ? ((s.x / s.total) * 100).toFixed(1) : "0.0";
+          const blueskyPct = s.total ? ((s.bluesky / s.total) * 100).toFixed(1) : "0.0";
+          const mastodonPct = s.total ? ((s.mastodon / s.total) * 100).toFixed(1) : "0.0";
 
           return (
             <div key={party} className="bg-white dark:bg-zinc-900 p-4 rounded-lg shadow border border-gray-200 dark:border-zinc-800 cursor-pointer hover:border-blue-500 transition-colors"
