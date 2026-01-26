@@ -1,0 +1,31 @@
+{
+  "title": "Is your MP on X (and Bluesky, Mastodon...)?",
+  "description": "This little dashboard lists the Swedish member of parliaments and displays their accounts on X, Bluesky and Mastodon. When possible, it also fetches the date of the latest post to see if the account is active. The data might not be exhaustive as the social media account information is fetched from Wikidata (Wikipedia's database). If you find an error or a missing account, please click \"Edit on Wikidata\" to fix it.",
+  "loading": "Loading data...",
+  "error": "Failed to load data.",
+  "searchPlaceholder": "Search politician...",
+  "never": "Never",
+  "filters": {
+    "x": "X",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "noAccounts": "No accounts",
+    "clearParty": "Clear Party Filter"
+  },
+  "stats": {
+    "members": "members"
+  },
+  "table": {
+    "name": "Name",
+    "party": "Party",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "x": "X (Twitter)",
+    "edit": "Edit",
+    "editOnWikidata": "Edit on Wikidata",
+    "unknownParty": "Unknown",
+    "noResults": "No politicians found matching your criteria.",
+    "active": "Active recently",
+    "inactive": "Inactive"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Finns din riksdagsledamot på X (och Bluesky, Mastodon...)?",
+  "description": "Denna lilla översikt listar Sveriges riksdagsledamöter och visar deras konton på X, Bluesky och Mastodon. När det är möjligt hämtas även datumet för det senaste inlägget för att se om kontot är aktivt. Uppgifterna kanske inte är fullständiga eftersom informationen om sociala medier hämtas från Wikidata (Wikipedias databas). Om du hittar ett fel eller ett saknat konto, klicka på \"Redigera på Wikidata\" för att åtgärda det.",
+  "loading": "Laddar data...",
+  "error": "Kunde inte ladda data.",
+  "searchPlaceholder": "Sök politiker...",
+  "never": "Aldrig",
+  "meta": {
+    "title": "Politix Översikt",
+    "description": "Övervakning av sociala medier för svenska politiker"
+  },
+  "filters": {
+    "x": "X",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "noAccounts": "Inga konton",
+    "clearParty": "Rensa partifilter"
+  },
+  "stats": {
+    "members": "ledamöter"
+  },
+  "table": {
+    "name": "Namn",
+    "party": "Parti",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "x": "X (Twitter)",
+    "edit": "Redigera",
+    "editOnWikidata": "Redigera på Wikidata",
+    "unknownParty": "Okänt",
+    "noResults": "Inga politiker hittades som matchar dina kriterier.",
+    "active": "Aktiv nyligen",
+    "inactive": "Inaktiv"
+  }
+}
