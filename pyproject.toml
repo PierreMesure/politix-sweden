@@ -1,7 +1,7 @@
 [project]
-name = "politix-new"
+name = "politix-sweden"
 version = "0.1.0"
-description = "Add your description here"
+description = "A small dashboard to see which Swedish politicians are on X, Bluesky and Mastodon"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
