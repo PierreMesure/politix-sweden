@@ -31,7 +31,7 @@ export default function DashboardFilters({
 
   return (
     <div className="flex flex-col md:flex-row gap-4 items-center justify-between bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm">
-      <div className="relative w-full md:max-w-md">
+      <div className="relative w-full md:max-w-4xl">
         <input
           type="text"
           placeholder={t('searchPlaceholder')}
@@ -46,7 +46,7 @@ export default function DashboardFilters({
           onClick={clearAll}
           className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 decoration-2 whitespace-nowrap"
         >
-          {selectedParty && !searchTerm && activePlatform === 'all' 
+          {selectedParty && !searchTerm && activePlatform === 'all'
             ? `${t('filters.clearParty')} (${selectedParty})`
             : t('filters.clearAll')
           }
