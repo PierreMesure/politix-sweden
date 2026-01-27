@@ -31,7 +31,7 @@ export default function ParliamentChart({ activeCount, inactiveCount, platform }
 
   // Dynamic styles for the fill colors
   const activeColor = PLATFORM_COLORS[platform];
-  const inactiveColor = "#d4d4d8"; // zinc-300
+  const inactiveColor = "#9c9c9f"; // zinc-300
 
   const chart = useMemo(() => {
     // Ensure counts are non-negative integers
