@@ -11,7 +11,7 @@ type ParliamentChartProps = {
 };
 
 const PLATFORM_COLORS: Record<Platform, string> = {
-  x: "#000000",
+  x: "currentColor",
   bluesky: "#0085ff",
   mastodon: "#6364ff",
   all: "#10b981", // Emerald 500
@@ -53,7 +53,7 @@ export default function ParliamentChart({ activeCount, inactiveCount, platform }
   
   // Dynamic styles for the fill colors
   const activeColor = PLATFORM_COLORS[platform];
-  const inactiveColor = "#d4d4d8"; // zinc-300 (visible gray)
+  const inactiveColor = "#d4d4d8"; // zinc-300
 
   const svgHtml = useMemo(() => {
     // Ensure counts are non-negative integers
@@ -85,23 +85,9 @@ export default function ParliamentChart({ activeCount, inactiveCount, platform }
   return (
     <div className="w-full flex justify-center">
       <div 
-        className="w-full max-w-lg aspect-[2/1] parliament-chart [&>svg]:w-full [&>svg]:h-full"
+        className="w-full max-w-lg aspect-[2/1] parliament-chart text-black dark:text-white [&>svg]:w-full [&>svg]:h-full [&_circle]:stroke-black/10 dark:[&_circle]:stroke-white/10 [&_circle]:stroke-[0.1px]"
         dangerouslySetInnerHTML={{ __html: svgHtml }}
       />
-      <style jsx global>{`
-        /* Add a thin border to all parliament circles */
-        .parliament-chart circle { 
-          stroke: #000000;
-          stroke-width: 0.1;
-          stroke-opacity: 0.2;
-        }
-        
-        /* White border in dark mode */
-        :global(.dark) .parliament-chart circle { 
-          stroke: #ffffff;
-          stroke-opacity: 0.4;
-        }
-      `}</style>
     </div>
   );
 }
