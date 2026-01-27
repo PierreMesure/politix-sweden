@@ -10,10 +10,12 @@
     "bluesky": "Bluesky",
     "mastodon": "Mastodon",
     "noAccounts": "No accounts",
-    "clearParty": "Clear Party Filter"
+    "clearParty": "Clear Party Filter",
+    "clearAll": "Clear all filters"
   },
   "stats": {
-    "members": "members"
+    "members": "members",
+    "activeMembers": "Members with social media"
   },
   "table": {
     "name": "Name",
@@ -21,6 +23,7 @@
     "bluesky": "Bluesky",
     "mastodon": "Mastodon",
     "x": "X (Twitter)",
+    "total": "Overview",
     "edit": "Edit",
     "editOnWikidata": "Edit on Wikidata",
     "unknownParty": "Unknown",

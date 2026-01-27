@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
-import { Politician } from '../types';
+import { Politician, Platform } from '../types';
 import { DATA_URL } from '../utils';
 import DashboardStats from './DashboardStats';
 import DashboardFilters from './DashboardFilters';
@@ -13,15 +13,11 @@ export default function Dashboard() {
   const [data, setData] = useState<Politician[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  
+  // Controls
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedParty, setSelectedParty] = useState<string | null>(null);
-  const [viewPlatform, setViewPlatform] = useState<'x' | 'bluesky' | 'mastodon'>('x');
-  const [filters, setFilters] = useState({
-    x: true,
-    bluesky: true,
-    mastodon: true,
-    none: true
-  });
+  const [activePlatform, setActivePlatform] = useState<Platform>('all');
 
   useEffect(() => {
     console.log("Fetching data from:", DATA_URL);
@@ -42,49 +38,60 @@ export default function Dashboard() {
       });
   }, []);
 
-  const stats = useMemo(() => {
-    const global = { total: 0, x: 0, bluesky: 0, mastodon: 0 };
-    
-    data.forEach(p => {
-      global.total++;
-      if (p.social.x) global.x++;
-      if (p.social.bluesky) global.bluesky++;
-      if (p.social.mastodon) global.mastodon++;
-    });
-
-    return global;
-  }, [data]);
-
-  const activeCount = stats[viewPlatform];
-  const inactiveCount = stats.total - activeCount;
-
   const parties = useMemo(() => {
     const s = new Set<string>();
-    data.forEach(p => s.add(p.party || t('table.unknownParty')));
-    return Array.from(s).sort();
+    const unknownLabel = t('table.unknownParty');
+    data.forEach(p => s.add(p.party || unknownLabel));
+    return Array.from(s).sort((a, b) => {
+      if (a === unknownLabel) return 1;
+      if (b === unknownLabel) return -1;
+      return a.localeCompare(b, 'sv');
+    });
   }, [data, t]);
 
-  const filteredPoliticians = useMemo(() => {
+  // 1. Filter by Party (Base for Stats & Chart)
+  const filteredByParty = useMemo(() => {
     return data.filter(p => {
-      const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
       const normalizedParty = p.party || t('table.unknownParty');
-      const matchesParty = selectedParty ? normalizedParty === selectedParty : true;
+      return selectedParty ? normalizedParty === selectedParty : true;
+    });
+  }, [data, selectedParty, t]);
 
-      const hasX = p.social.x !== null;
-      const hasBS = p.social.bluesky !== null;
-      const hasMastodon = p.social.mastodon !== null;
-      const hasNone = !hasX && !hasBS && !hasMastodon;
+  // 2. Calculate Stats based on Party Selection
+  const stats = useMemo(() => {
+    const result = { total: 0, x: 0, bluesky: 0, mastodon: 0, all: 0 };
+    
+    filteredByParty.forEach(p => {
+      result.total++;
+      let hasAny = false;
+      if (p.social.x) { result.x++; hasAny = true; }
+      if (p.social.bluesky) { result.bluesky++; hasAny = true; }
+      if (p.social.mastodon) { result.mastodon++; hasAny = true; }
+      if (hasAny) result.all++;
+    });
 
-      const matchesFilters = (
-        (hasX && filters.x) ||
-        (hasBS && filters.bluesky) ||
-        (hasMastodon && filters.mastodon) ||
-        (hasNone && filters.none)
-      );
+    return result;
+  }, [filteredByParty]);
 
-      return matchesSearch && matchesParty && matchesFilters;
+  const activeCount = stats[activePlatform];
+  const inactiveCount = stats.total - activeCount;
+
+  // 3. Filter for Table (Platform & Search)
+  const filteredPoliticians = useMemo(() => {
+    return filteredByParty.filter(p => {
+      // Search
+      const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      // Platform Filter
+      let matchesPlatform = true;
+      if (activePlatform === 'x') matchesPlatform = !!p.social.x;
+      else if (activePlatform === 'bluesky') matchesPlatform = !!p.social.bluesky;
+      else if (activePlatform === 'mastodon') matchesPlatform = !!p.social.mastodon;
+      // 'all' shows everyone (no filter), consistent with "Overview"
+      
+      return matchesSearch && matchesPlatform;
     }).sort((a, b) => a.name.localeCompare(b.name, 'sv'));
-  }, [data, searchTerm, selectedParty, filters, t]);
+  }, [filteredByParty, searchTerm, activePlatform]);
 
   if (error) {
     return (
@@ -107,8 +114,8 @@ export default function Dashboard() {
         loading={loading}
         activeCount={activeCount}
         inactiveCount={inactiveCount}
-        viewPlatform={viewPlatform}
-        setViewPlatform={setViewPlatform}
+        activePlatform={activePlatform}
+        setActivePlatform={setActivePlatform}
         stats={stats}
         parties={parties}
         selectedParty={selectedParty}
@@ -118,15 +125,16 @@ export default function Dashboard() {
       <DashboardFilters
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        filters={filters}
-        setFilters={setFilters}
         selectedParty={selectedParty}
         setSelectedParty={setSelectedParty}
+        activePlatform={activePlatform}
+        setActivePlatform={setActivePlatform}
       />
 
       <PoliticianTable 
         politicians={filteredPoliticians} 
-        loading={loading} 
+        loading={loading}
+        activePlatform={activePlatform}
       />
     </div>
   );

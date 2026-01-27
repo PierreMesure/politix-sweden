@@ -14,10 +14,12 @@
     "bluesky": "Bluesky",
     "mastodon": "Mastodon",
     "noAccounts": "Inga konton",
-    "clearParty": "Rensa partifilter"
+    "clearParty": "Rensa partifilter",
+    "clearAll": "Rensa alla filter"
   },
   "stats": {
-    "members": "ledamöter"
+    "members": "ledamöter",
+    "activeMembers": "Ledamöter med sociala medier"
   },
   "table": {
     "name": "Namn",
@@ -25,6 +27,7 @@
     "bluesky": "Bluesky",
     "mastodon": "Mastodon",
     "x": "X (Twitter)",
+    "total": "Översikt",
     "edit": "Redigera",
     "editOnWikidata": "Redigera på Wikidata",
     "unknownParty": "Okänt",

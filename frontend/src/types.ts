@@ -13,3 +13,5 @@ export type Politician = {
     mastodon: SocialAccount | null;
   };
 };
+
+export type Platform = 'all' | 'x' | 'bluesky' | 'mastodon';

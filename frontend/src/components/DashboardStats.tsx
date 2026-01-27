@@ -2,16 +2,15 @@ import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import ParliamentChart from './ParliamentChart';
 import { PARTY_LOGOS } from '../utils';
-
-type Platform = 'x' | 'bluesky' | 'mastodon';
+import { Platform } from '../types';
 
 interface DashboardStatsProps {
   loading: boolean;
   activeCount: number;
   inactiveCount: number;
-  viewPlatform: Platform;
-  setViewPlatform: (platform: Platform) => void;
-  stats: { total: number; x: number; bluesky: number; mastodon: number };
+  activePlatform: Platform;
+  setActivePlatform: (platform: Platform) => void;
+  stats: { total: number; x: number; bluesky: number; mastodon: number; all: number };
   parties: string[];
   selectedParty: string | null;
   setSelectedParty: (party: string | null) => void;
@@ -21,8 +20,8 @@ export default function DashboardStats({
   loading,
   activeCount,
   inactiveCount,
-  viewPlatform,
-  setViewPlatform,
+  activePlatform,
+  setActivePlatform,
   stats,
   parties,
   selectedParty,
@@ -30,28 +29,36 @@ export default function DashboardStats({
 }: DashboardStatsProps) {
   const { t } = useTranslation();
 
+  const platforms: Platform[] = ['all', 'x', 'bluesky', 'mastodon'];
+
+  const visibleProgressBars = activePlatform === 'all' 
+    ? ['x', 'bluesky', 'mastodon'] as const 
+    : [activePlatform] as const;
+
   return (
     <section className="space-y-8">
       <div className="flex flex-col items-center gap-6">
         {/* View Selector */}
         <div className="flex bg-gray-100 dark:bg-zinc-800 p-1 rounded-lg">
-          {(['x', 'bluesky', 'mastodon'] as const).map((p) => (
+          {platforms.map((p) => (
             <button
               key={p}
-              onClick={() => setViewPlatform(p)}
+              onClick={() => setActivePlatform(p)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
-                viewPlatform === p 
+                activePlatform === p 
                   ? 'bg-white dark:bg-black text-gray-900 dark:text-white shadow-sm' 
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
               }`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src={`/service_logos/${p === 'x' ? 'x-twitter' : p}.svg`} 
-                alt={p} 
-                className={`w-4 h-4 ${p === 'x' ? 'dark:invert opacity-80' : ''}`} 
-              />
-              {t(`table.${p}`)}
+              {p !== 'all' && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img 
+                  src={`/service_logos/${p}.svg`} 
+                  alt={p} 
+                  className="w-4 h-4 dark:invert opacity-80" 
+                />
+              )}
+              {p === 'all' ? t('table.total') : t(`table.${p}`)}
             </button>
           ))}
         </div>
@@ -64,7 +71,7 @@ export default function DashboardStats({
             <ParliamentChart 
               activeCount={activeCount} 
               inactiveCount={inactiveCount} 
-              platform={viewPlatform} 
+              platform={activePlatform} 
             />
           )}
           <div className="mt-4 text-center">
@@ -74,7 +81,10 @@ export default function DashboardStats({
                   {activeCount} <span className="text-lg font-normal text-gray-500 dark:text-gray-400">/ {stats.total}</span>
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  {t(`filters.${viewPlatform === 'x' ? 'x' : viewPlatform}`)} {t('stats.members')}
+                  {activePlatform === 'all' 
+                    ? t('stats.activeMembers')
+                    : `${t(`filters.${activePlatform === 'x' ? 'x' : activePlatform}`)} ${t('stats.members')}`
+                  }
                 </div>
               </>
             )}
@@ -83,14 +93,19 @@ export default function DashboardStats({
       </div>
 
       {/* Global Progress Bars */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div className={`grid gap-6 mx-auto transition-all ${
+        activePlatform === 'all' 
+          ? 'grid-cols-1 md:grid-cols-3 max-w-4xl' 
+          : 'grid-cols-1 max-w-md'
+      }`}>
         {loading ? (
-          Array.from({ length: 3 }).map((_, i) => (
+          Array.from({ length: activePlatform === 'all' ? 3 : 1 }).map((_, i) => (
             <div key={i} className="bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm animate-pulse h-20"></div>
           ))
         ) : (
-          (['x', 'bluesky', 'mastodon'] as const).map((p) => {
-            const count = stats[p];
+          visibleProgressBars.map((p) => {
+            // Safe access since we know p is one of the keys
+            const count = stats[p as 'x' | 'bluesky' | 'mastodon'];
             const pct = stats.total ? ((count / stats.total) * 100).toFixed(1) : "0.0";
             const color = p === 'x' ? 'bg-black dark:bg-white' : p === 'bluesky' ? 'bg-blue-500' : 'bg-purple-500';
             
@@ -100,9 +115,9 @@ export default function DashboardStats({
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img 
-                      src={`/service_logos/${p === 'x' ? 'x-twitter' : p}.svg`} 
+                      src={`/service_logos/${p}.svg`} 
                       alt={p} 
-                      className={`w-4 h-4 ${p === 'x' ? 'dark:invert opacity-80' : ''}`} 
+                      className="w-4 h-4 dark:invert opacity-80" 
                     />
                     {t(`table.${p}`)}
                   </span>
@@ -118,7 +133,7 @@ export default function DashboardStats({
       </div>
 
       {/* Party Filters */}
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
         {loading ? (
           Array.from({ length: 8 }).map((_, i) => (
             <div key={i} className="w-24 h-10 bg-gray-200 dark:bg-zinc-800 rounded-full animate-pulse"></div>

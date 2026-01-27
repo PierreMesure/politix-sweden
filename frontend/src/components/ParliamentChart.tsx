@@ -2,17 +2,19 @@
 
 import { useMemo } from 'react';
 import parliamentSvg from 'parliament-svg';
+import { Platform } from '../types';
 
 type ParliamentChartProps = {
   activeCount: number;
   inactiveCount: number;
-  platform: 'x' | 'bluesky' | 'mastodon';
+  platform: Platform;
 };
 
-const PLATFORM_COLORS = {
+const PLATFORM_COLORS: Record<Platform, string> = {
   x: "#000000",
   bluesky: "#0085ff",
   mastodon: "#6364ff",
+  all: "#10b981", // Emerald 500
 };
 
 // Simple VNode serializer since vdom-to-html is failing with version mismatches
