@@ -1,14 +1,14 @@
-import React from 'react';
-
 declare module 'parliament-svg' {
+  import { ReactNode } from 'react';
+
   interface Options {
     seatCount?: boolean;
-    hFunction?: (tagName: string, props: Record<string, unknown>, ...children: React.ReactNode[]) => React.ReactNode;
+    hFunction?: (tagName: string, props: Record<string, unknown>, ...children: ReactNode[]) => ReactNode;
   }
 
   const parliamentSvg: (
     parties: Record<string, { seats: number; colour: string }>,
     options?: boolean | Options
-  ) => React.ReactNode;
+  ) => ReactNode;
   export default parliamentSvg;
 }
