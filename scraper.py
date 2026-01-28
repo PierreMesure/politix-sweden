@@ -234,6 +234,103 @@ def get_politicians():
     return politicians
 
 
+def calculate_stats(politicians):
+    def empty_stats():
+        return {"active": 0, "inactive": 0, "closed": 0, "none": 0, "total": 0}
+
+    def get_platform_stats(subset):
+        res = {
+            "all": empty_stats(),
+            "x": empty_stats(),
+            "bluesky": empty_stats(),
+            "mastodon": empty_stats()
+        }
+        
+        from datetime import datetime, timezone
+        FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000
+        now = datetime.now(timezone.utc)
+
+        def is_active(last_post_iso):
+            if not last_post_iso or last_post_iso == "closed":
+                return False
+            try:
+                dt = datetime.fromisoformat(last_post_iso.replace('Z', '+00:00'))
+                return (now - dt).total_seconds() * 1000 < FOUR_WEEKS_MS
+            except Exception:
+                return False
+
+        for p in subset:
+            res["all"]["total"] += 1
+            res["x"]["total"] += 1
+            res["bluesky"]["total"] += 1
+            res["mastodon"]["total"] += 1
+
+            any_active = False
+            any_inactive = False
+            any_closed = False
+
+            # X
+            x = p["social"]["x"]
+            if not x:
+                res["x"]["none"] += 1
+            elif x["last_post"] == "closed":
+                res["x"]["closed"] += 1
+                any_closed = True
+            elif is_active(x["last_post"]):
+                res["x"]["active"] += 1
+                any_active = True
+            else:
+                res["x"]["inactive"] += 1
+                any_inactive = True
+
+            # Bluesky
+            bsky = p["social"]["bluesky"]
+            if not bsky:
+                res["bluesky"]["none"] += 1
+            elif bsky["last_post"] == "closed":
+                res["bluesky"]["closed"] += 1
+                any_closed = True
+            elif is_active(bsky["last_post"]):
+                res["bluesky"]["active"] += 1
+                any_active = True
+            else:
+                res["bluesky"]["inactive"] += 1
+                any_inactive = True
+
+            # Mastodon
+            mast = p["social"]["mastodon"]
+            if not mast:
+                res["mastodon"]["none"] += 1
+            elif mast["last_post"] == "closed":
+                res["mastodon"]["closed"] += 1
+                any_closed = True
+            elif is_active(mast["last_post"]):
+                res["mastodon"]["active"] += 1
+                any_active = True
+            else:
+                res["mastodon"]["inactive"] += 1
+                any_inactive = True
+
+            if any_active: res["all"]["active"] += 1
+            elif any_inactive: res["all"]["inactive"] += 1
+            elif any_closed: res["all"]["closed"] += 1
+            else: res["all"]["none"] += 1
+
+        return res
+
+    stats = {
+        "global": get_platform_stats(politicians),
+        "parties": {}
+    }
+    
+    parties = set(p["party"] for p in politicians if p["party"])
+    for party in parties:
+        party_politicians = [p for p in politicians if p["party"] == party]
+        stats["parties"][party] = get_platform_stats(party_politicians)
+    
+    return stats
+
+
 async def main():
     print("Fetching politicians from Wikidata...")
     politicians = get_politicians()
@@ -276,6 +373,11 @@ async def main():
         if updated:
             with open("data.json", "w") as f:
                 json.dump(politicians, f, indent=2, ensure_ascii=False)
+            
+            # Update stats incrementally as well
+            stats = calculate_stats(politicians)
+            with open("stats.json", "w") as f:
+                json.dump(stats, f, indent=2, ensure_ascii=False)
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])
@@ -283,6 +385,12 @@ async def main():
     print("Saving to data.json...")
     with open("data.json", "w") as f:
         json.dump(politicians, f, indent=2, ensure_ascii=False)
+    
+    print("Saving final stats...")
+    stats = calculate_stats(politicians)
+    with open("stats.json", "w") as f:
+        json.dump(stats, f, indent=2, ensure_ascii=False)
+    
     print("Done!")
 
 

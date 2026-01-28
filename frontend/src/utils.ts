@@ -1,6 +1,11 @@
-export const DATA_URL = process.env.NODE_ENV === 'development'
-  ? "data.json"
+export const DATA_URL = process.env.NODE_ENV === 'development' 
+  ? "/data.json"
   : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data.json";
+
+export const STATS_URL = process.env.NODE_ENV === 'development'
+  ? "/stats.json"
+  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/stats.json";
+
 export const FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000;
 
 export const PARTY_LOGOS: Record<string, string> = {

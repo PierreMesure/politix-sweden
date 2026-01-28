@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
-import { Politician, Platform, DashboardStatsData, StatusStats } from '../types';
-import { DATA_URL, isActive } from '../utils';
+import { Politician, Platform, DashboardStatsData, StatusStats, StatsData } from '../types';
+import { DATA_URL, STATS_URL, isActive } from '../utils';
 import DashboardStats from './DashboardStats';
 import DashboardFilters from './DashboardFilters';
 import PoliticianTable from './PoliticianTable';
@@ -11,6 +11,7 @@ import PoliticianTable from './PoliticianTable';
 export default function Dashboard() {
   const { t } = useTranslation();
   const [data, setData] = useState<Politician[]>([]);
+  const [precomputedStats, setPrecomputedStats] = useState<StatsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -19,23 +20,38 @@ export default function Dashboard() {
   const [selectedParty, setSelectedParty] = useState<string | null>(null);
   const [activePlatform, setActivePlatform] = useState<Platform>('all');
 
+  // Deferred values for smoother filtering
+  const deferredSearchTerm = useDeferredValue(searchTerm);
+  const deferredActivePlatform = useDeferredValue(activePlatform);
+
   useEffect(() => {
-    console.log("Fetching data from:", DATA_URL);
-    fetch(DATA_URL)
-      .then(res => {
-        if (!res.ok) throw new Error("Failed to fetch data");
-        return res.json();
-      })
-      .then(json => {
-        console.log("Data loaded, count:", json.length);
-        setData(json);
+    const fetchData = async () => {
+      try {
+        const [dataRes, statsRes] = await Promise.all([
+          fetch(DATA_URL),
+          fetch(STATS_URL).catch(() => null) // Stats might not exist yet
+        ]);
+
+        if (!dataRes.ok) throw new Error("Failed to fetch data");
+        
+        const jsonData = await dataRes.json();
+        // Pre-sort by name once to avoid sorting in every memo
+        jsonData.sort((a: Politician, b: Politician) => a.name.localeCompare(b.name, 'sv'));
+        setData(jsonData);
+
+        if (statsRes && statsRes.ok) {
+          setPrecomputedStats(await statsRes.json());
+        }
+        
         setLoading(false);
-      })
-      .catch(err => {
+      } catch (err) {
         console.error("Error fetching data:", err);
         setError("Failed to load data.");
         setLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, []);
 
   const parties = useMemo(() => {
@@ -57,8 +73,15 @@ export default function Dashboard() {
     });
   }, [data, selectedParty, t]);
 
-  // 2. Calculate Stats based on Party Selection
+  // 2. Calculate Stats based on Party Selection & Search
   const stats = useMemo((): DashboardStatsData => {
+    // If we have a search term, we MUST recalculate locally
+    // Otherwise, if we have precomputed stats, use them!
+    if (!searchTerm && precomputedStats) {
+      if (!selectedParty) return precomputedStats.global;
+      if (precomputedStats.parties[selectedParty]) return precomputedStats.parties[selectedParty];
+    }
+
     const empty = (): StatusStats => ({ active: 0, inactive: 0, closed: 0, none: 0, total: 0 });
     const res: DashboardStatsData = {
       all: empty(),
@@ -67,7 +90,9 @@ export default function Dashboard() {
       mastodon: empty(),
     };
 
-    filteredByParty.forEach(p => {
+    const targetData = searchTerm ? filteredByParty.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase())) : filteredByParty;
+
+    targetData.forEach(p => {
       res.all.total++;
       res.x.total++;
       res.bluesky.total++;
@@ -76,60 +101,25 @@ export default function Dashboard() {
       let anyActive = false;
       let anyInactive = false;
       let anyClosed = false;
-      let anyAccount = false;
 
-      // Platform: X
-      if (!p.social.x) {
-        res.x.none++;
-      } else if (p.social.x.last_post === 'closed') {
-        res.x.closed++;
-        anyClosed = true;
-        anyAccount = true;
-      } else if (isActive(p.social.x.last_post)) {
-        res.x.active++;
-        anyActive = true;
-        anyAccount = true;
-      } else {
-        res.x.inactive++;
-        anyInactive = true;
-        anyAccount = true;
-      }
+      // X
+      if (!p.social.x) { res.x.none++; }
+      else if (p.social.x.last_post === 'closed') { res.x.closed++; anyClosed = true; }
+      else if (isActive(p.social.x.last_post)) { res.x.active++; anyActive = true; }
+      else { res.x.inactive++; anyInactive = true; }
 
-      // Platform: Bluesky
-      if (!p.social.bluesky) {
-        res.bluesky.none++;
-      } else if (p.social.bluesky.last_post === 'closed') {
-        res.bluesky.closed++;
-        anyClosed = true;
-        anyAccount = true;
-      } else if (isActive(p.social.bluesky.last_post)) {
-        res.bluesky.active++;
-        anyActive = true;
-        anyAccount = true;
-      } else {
-        res.bluesky.inactive++;
-        anyInactive = true;
-        anyAccount = true;
-      }
+      // Bluesky
+      if (!p.social.bluesky) { res.bluesky.none++; }
+      else if (p.social.bluesky.last_post === 'closed') { res.bluesky.closed++; anyClosed = true; }
+      else if (isActive(p.social.bluesky.last_post)) { res.bluesky.active++; anyActive = true; }
+      else { res.bluesky.inactive++; anyInactive = true; }
 
-      // Platform: Mastodon
-      if (!p.social.mastodon) {
-        res.mastodon.none++;
-      } else if (p.social.mastodon.last_post === 'closed') {
-        res.mastodon.closed++;
-        anyClosed = true;
-        anyAccount = true;
-      } else if (isActive(p.social.mastodon.last_post)) {
-        res.mastodon.active++;
-        anyActive = true;
-        anyAccount = true;
-      } else {
-        res.mastodon.inactive++;
-        anyInactive = true;
-        anyAccount = true;
-      }
+      // Mastodon
+      if (!p.social.mastodon) { res.mastodon.none++; }
+      else if (p.social.mastodon.last_post === 'closed') { res.mastodon.closed++; anyClosed = true; }
+      else if (isActive(p.social.mastodon.last_post)) { res.mastodon.active++; anyActive = true; }
+      else { res.mastodon.inactive++; anyInactive = true; }
 
-      // Aggregate "All"
       if (anyActive) res.all.active++;
       else if (anyInactive) res.all.inactive++;
       else if (anyClosed) res.all.closed++;
@@ -137,26 +127,27 @@ export default function Dashboard() {
     });
 
     return res;
-  }, [filteredByParty]);
+  }, [filteredByParty, searchTerm, precomputedStats, selectedParty]);
 
   const currentStats = stats[activePlatform];
 
   // 3. Filter for Table (Platform & Search)
+  // Use deferred values for filtering the table so the rest of the UI stays responsive
   const filteredPoliticians = useMemo(() => {
     return filteredByParty.filter(p => {
       // Search
-      const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesSearch = p.name.toLowerCase().includes(deferredSearchTerm.toLowerCase());
 
       // Platform Filter
       let matchesPlatform = true;
-      if (activePlatform === 'x') matchesPlatform = !!p.social.x;
-      else if (activePlatform === 'bluesky') matchesPlatform = !!p.social.bluesky;
-      else if (activePlatform === 'mastodon') matchesPlatform = !!p.social.mastodon;
-      // 'all' shows everyone (no filter), consistent with "Overview"
-
+      if (deferredActivePlatform === 'x') matchesPlatform = !!p.social.x;
+      else if (deferredActivePlatform === 'bluesky') matchesPlatform = !!p.social.bluesky;
+      else if (deferredActivePlatform === 'mastodon') matchesPlatform = !!p.social.mastodon;
+      
       return matchesSearch && matchesPlatform;
-    }).sort((a, b) => a.name.localeCompare(b.name, 'sv'));
-  }, [filteredByParty, searchTerm, activePlatform]);
+    });
+    // Sorting removed here because data is pre-sorted in useEffect
+  }, [filteredByParty, deferredSearchTerm, deferredActivePlatform]);
 
   if (error) {
     return (

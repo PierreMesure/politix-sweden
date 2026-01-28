@@ -25,3 +25,8 @@ export type StatusStats = {
 };
 
 export type DashboardStatsData = Record<Platform, StatusStats>;
+
+export type StatsData = {
+  global: DashboardStatsData;
+  parties: Record<string, DashboardStatsData>;
+};
