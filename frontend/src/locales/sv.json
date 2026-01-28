@@ -4,7 +4,6 @@
   "loading": "Laddar data...",
   "error": "Kunde inte ladda data.",
   "searchPlaceholder": "Sök politiker...",
-  "never": "Aldrig",
   "meta": {
     "title": "Politix Översikt",
     "description": "Övervakning av sociala medier för svenska politiker"
@@ -33,6 +32,8 @@
     "unknownParty": "Okänt",
     "noResults": "Inga politiker hittades som matchar dina kriterier.",
     "active": "Aktiv nyligen",
-    "inactive": "Inaktiv"
+    "inactive": "Inaktiv",
+    "closed": "Kontot stängt",
+    "never": "Aldrig"
   }
 }

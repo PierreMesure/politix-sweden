@@ -8,7 +8,7 @@ export type Politician = {
   name: string;
   party: string | null;
   social: {
-    x: string | null;
+    x: SocialAccount | null;
     bluesky: SocialAccount | null;
     mastodon: SocialAccount | null;
   };

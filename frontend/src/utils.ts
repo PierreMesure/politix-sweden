@@ -1,4 +1,6 @@
-export const DATA_URL = "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data.json";
+export const DATA_URL = process.env.NODE_ENV === 'development'
+  ? "data.json"
+  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data.json";
 export const FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000;
 
 export const PARTY_LOGOS: Record<string, string> = {
@@ -13,7 +15,7 @@ export const PARTY_LOGOS: Record<string, string> = {
 };
 
 export function isActive(lastPost: string | null) {
-  if (!lastPost) return false;
+  if (!lastPost || lastPost === 'closed') return false;
   const date = new Date(lastPost);
   const now = new Date();
   return (now.getTime() - date.getTime()) < FOUR_WEEKS_MS;

@@ -1,8 +1,107 @@
 import json
 import requests
 import time
+import asyncio
+import os
+from dotenv import load_dotenv
+from twikit import Client
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+load_dotenv()
+
+X_USERNAME = os.getenv("X_USERNAME")
+X_EMAIL = os.getenv("X_EMAIL")
+X_PASSWORD = os.getenv("X_PASSWORD")
+
+async def get_x_client():
+    if os.getenv("GITHUB_ACTIONS") == "true":
+        print("Running in GitHub Actions, skipping X client initialization to avoid blocks.")
+        return None
+
+    if not X_USERNAME or not X_EMAIL or not X_PASSWORD:
+        print("X credentials missing in .env")
+        return None
+    
+    client = Client('en-US')
+    cookies_path = 'cookies.json'
+    
+    try:
+        if os.path.exists(cookies_path):
+            with open(cookies_path, 'r') as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                cookies = {c['name']: c['value'] for c in data}
+                with open(cookies_path, 'w') as f:
+                    json.dump(cookies, f)
+            client.load_cookies(cookies_path)
+        else:
+            await client.login(
+                auth_info_1=X_USERNAME,
+                auth_info_2=X_EMAIL,
+                password=X_PASSWORD
+            )
+            client.save_cookies(cookies_path)
+        return client
+    except Exception as e:
+        print(f"Error authenticating with X: {e}")
+        return None
+
+async def get_x_last_post(client, handle):
+    if not client:
+        return None
+    try:
+        # Get user by screen name
+        try:
+            user = await client.get_user_by_screen_name(handle)
+        except Exception as e:
+            err_msg = str(e).lower()
+            if '404' in err_msg or 'not found' in err_msg or 'does not exist' in err_msg:
+                return "closed"
+            raise e
+
+        if not user:
+            return "closed"
+        
+        # Get latest tweets and replies to find the absolute latest activity
+        # 'Tweets' include original tweets and retweets
+        # 'Replies' include replies
+        tasks = [
+            client.get_user_tweets(user.id, 'Tweets', count=5),
+            client.get_user_tweets(user.id, 'Replies', count=5)
+        ]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        all_tweets = []
+        for res in results:
+            if res and not isinstance(res, Exception):
+                all_tweets.extend(list(res))
+        
+        if all_tweets:
+            # Twikit Tweet.created_at format: 'Tue Jan 27 11:22:00 +0000 2026'
+            from datetime import datetime, timezone
+            
+            # Helper to parse twikit date
+            def parse_date(date_str):
+                try:
+                    return datetime.strptime(date_str, '%a %b %d %H:%M:%S %z %Y')
+                except Exception:
+                    return None
+
+            # Sort all fetched tweets by date descending
+            # We use a very old date with UTC timezone as fallback
+            epoch_start = datetime(1970, 1, 1, tzinfo=timezone.utc)
+            all_tweets.sort(key=lambda t: parse_date(t.created_at) or epoch_start, reverse=True)
+            
+            latest_tweet = all_tweets[0]
+            dt = parse_date(latest_tweet.created_at)
+            if dt:
+                return dt.isoformat()
+            return latest_tweet.created_at
+    except Exception as e:
+        print(f"Error fetching X for {handle}: {e}")
+        if '404' in str(e):
+            return "closed"
+    return None
 
 def get_bluesky_last_post(handle):
     try:
@@ -120,7 +219,9 @@ def get_politicians():
             "name": result["mpLabel"]["value"],
             "party": result["partyLabel"]["value"] if "partyLabel" in result else None,
             "social": {
-                "x": result["x"]["value"] if "x" in result else None,
+                "x": {"handle": result["x"]["value"], "last_post": None}
+                if "x" in result
+                else None,
                 "bluesky": {"handle": result["bluesky"]["value"], "last_post": None}
                 if "bluesky" in result
                 else None,
@@ -133,18 +234,34 @@ def get_politicians():
     return politicians
 
 
-def main():
+async def main():
     print("Fetching politicians from Wikidata...")
     politicians = get_politicians()
     print(f"Found {len(politicians)} politicians.")
 
+    x_client = await get_x_client()
+    if not x_client:
+        print("Warning: Could not initialize X client. X data will not be updated.")
+
     for i, p in enumerate(politicians):
         name = p["name"]
+        updated = False
+        
+        if p["social"]["x"] and x_client:
+            handle = p["social"]["x"]["handle"]
+            print(f"[{i + 1}/{len(politicians)}] Fetching X for {name} (@{handle})...")
+            last_post = await get_x_last_post(x_client, handle)
+            print(f"   -> X Result: {last_post}")
+            p["social"]["x"]["last_post"] = last_post
+            updated = True
+            await asyncio.sleep(1)  # Be extra nice to X
+
         if p["social"]["bluesky"]:
             print(f"[{i + 1}/{len(politicians)}] Fetching Bluesky for {name}...")
             p["social"]["bluesky"]["last_post"] = get_bluesky_last_post(
                 p["social"]["bluesky"]["handle"]
             )
+            updated = True
             time.sleep(0.1)  # Be nice
 
         if p["social"]["mastodon"]:
@@ -152,7 +269,13 @@ def main():
             p["social"]["mastodon"]["last_post"] = get_mastodon_last_post(
                 p["social"]["mastodon"]["handle"]
             )
+            updated = True
             time.sleep(0.1)  # Be nice
+
+        # Incremental save to keep progress
+        if updated:
+            with open("data.json", "w") as f:
+                json.dump(politicians, f, indent=2, ensure_ascii=False)
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])
@@ -164,4 +287,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

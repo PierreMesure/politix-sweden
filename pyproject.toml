@@ -5,6 +5,8 @@ description = "A small dashboard to see which Swedish politicians are on X, Blue
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "python-dotenv>=1.2.1",
     "requests>=2.32.5",
     "sparqlwrapper>=2.0.0",
+    "twikit>=2.3.3",
 ]

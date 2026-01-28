@@ -13,7 +13,7 @@ export default function Dashboard() {
   const [data, setData] = useState<Politician[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   // Controls
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedParty, setSelectedParty] = useState<string | null>(null);
@@ -60,14 +60,15 @@ export default function Dashboard() {
   // 2. Calculate Stats based on Party Selection
   const stats = useMemo(() => {
     const result = { total: 0, x: 0, bluesky: 0, mastodon: 0, all: 0 };
-    
+
     filteredByParty.forEach(p => {
       result.total++;
       let hasAny = false;
-      if (p.social.x) { result.x++; hasAny = true; }
       if (p.social.bluesky) { result.bluesky++; hasAny = true; }
       if (p.social.mastodon) { result.mastodon++; hasAny = true; }
+      if (p.social.x) { result.x++; hasAny = true; }
       if (hasAny) result.all++;
+
     });
 
     return result;
@@ -81,14 +82,14 @@ export default function Dashboard() {
     return filteredByParty.filter(p => {
       // Search
       const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
-      
+
       // Platform Filter
       let matchesPlatform = true;
       if (activePlatform === 'x') matchesPlatform = !!p.social.x;
       else if (activePlatform === 'bluesky') matchesPlatform = !!p.social.bluesky;
       else if (activePlatform === 'mastodon') matchesPlatform = !!p.social.mastodon;
       // 'all' shows everyone (no filter), consistent with "Overview"
-      
+
       return matchesSearch && matchesPlatform;
     }).sort((a, b) => a.name.localeCompare(b.name, 'sv'));
   }, [filteredByParty, searchTerm, activePlatform]);
@@ -131,8 +132,8 @@ export default function Dashboard() {
         setActivePlatform={setActivePlatform}
       />
 
-      <PoliticianTable 
-        politicians={filteredPoliticians} 
+      <PoliticianTable
+        politicians={filteredPoliticians}
         loading={loading}
         activePlatform={activePlatform}
       />

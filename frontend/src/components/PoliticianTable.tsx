@@ -13,7 +13,8 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
   const { t } = useTranslation();
 
   function formatDate(dateStr: string | null) {
-    if (!dateStr) return t('never');
+    if (!dateStr) return t('table.never');
+    if (dateStr === 'closed') return t('table.closed');
     return new Date(dateStr).toLocaleDateString();
   }
 
@@ -29,7 +30,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
             <tr>
               <th className="pl-2 pr-1 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('table.name')}</th>
               <th className="px-1 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('table.party')}</th>
-              
+
               {showBluesky && (
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.bluesky')}</span>
@@ -39,7 +40,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                   </div>
                 </th>
               )}
-              
+
               {showMastodon && (
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.mastodon')}</span>
@@ -49,7 +50,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                   </div>
                 </th>
               )}
-              
+
               {showX && (
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.x')}</span>
@@ -94,7 +95,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                       <span title={p.party || t('table.unknownParty')}>{p.party || t('table.unknownParty')}</span>
                     )}
                   </td>
-                  
+
                   {showBluesky && (
                     <td className="px-1 py-4 whitespace-nowrap text-sm">
                       {p.social.bluesky ? (
@@ -129,7 +130,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                       )}
                     </td>
                   )}
-                  
+
                   {showMastodon && (
                     <td className="px-1 py-4 whitespace-nowrap text-sm">
                       {p.social.mastodon ? (
@@ -170,31 +171,35 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                       )}
                     </td>
                   )}
-                  
+
                   {showX && (
                     <td className="px-1 py-4 whitespace-nowrap text-sm">
                       {p.social.x ? (
-                        <div className="flex justify-center lg:justify-start">
+                        <div className="flex flex-col items-center lg:items-start">
                           {/* Mobile: Icon */}
                           <a
-                            href={`https://x.com/${p.social.x}`}
+                            href={`https://x.com/${p.social.x.handle}`}
                             target="_blank"
                             rel="noreferrer"
                             className="lg:hidden hover:opacity-80 transition-opacity"
-                            title={`@${p.social.x}`}
+                            title={`@${p.social.x.handle}`}
                           >
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="/service_logos/x.svg" alt="X (Twitter)" className="w-6 h-6 dark:invert" />
                           </a>
                           {/* Desktop: Handle */}
                           <a
-                            href={`https://x.com/${p.social.x}`}
+                            href={`https://x.com/${p.social.x.handle}`}
                             target="_blank"
                             rel="noreferrer"
                             className="hidden lg:block text-blue-600 dark:text-blue-400 hover:underline"
                           >
-                            @{p.social.x}
+                            @{p.social.x.handle}
                           </a>
+                          <div className="flex items-center gap-1.5 mt-1">
+                            <span className={`w-2 h-2 rounded-full ${isActive(p.social.x.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.x.last_post) ? t('table.active') : t('table.inactive')}></span>
+                            <span className="hidden lg:inline text-xs text-gray-500 dark:text-gray-500">{formatDate(p.social.x.last_post)}</span>
+                          </div>
                         </div>
                       ) : (
                         <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
