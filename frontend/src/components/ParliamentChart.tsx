@@ -24,11 +24,15 @@ const STATUS_COLORS = {
 };
 
 // React adapter for parliament-svg's hFunction
-function renderToReact(tagName: string, props: Record<string, unknown>, ...children: React.ReactNode[]): React.ReactNode {
+function renderToReact(tagName: string, props: Record<string, any>, ...children: React.ReactNode[]): React.ReactNode {
   const { class: className, ...rest } = props || {};
+  
+  // Generate a stable key for circles (seats) using their coordinates
+  const key = rest.key || (tagName === 'circle' ? `${rest.cx}-${rest.cy}` : undefined);
 
   return createElement(tagName, {
     ...rest,
+    key,
     className: typeof className === 'string' ? className : undefined
   }, ...children);
 }

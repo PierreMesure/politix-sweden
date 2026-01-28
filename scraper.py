@@ -21,10 +21,10 @@ async def get_x_client():
     if not X_USERNAME or not X_EMAIL or not X_PASSWORD:
         print("X credentials missing in .env")
         return None
-    
+
     client = Client('en-US')
     cookies_path = 'cookies.json'
-    
+
     try:
         if os.path.exists(cookies_path):
             with open(cookies_path, 'r') as f:
@@ -61,7 +61,7 @@ async def get_x_last_post(client, handle):
 
         if not user:
             return "closed"
-        
+
         # Get latest tweets and replies to find the absolute latest activity
         # 'Tweets' include original tweets and retweets
         # 'Replies' include replies
@@ -70,16 +70,16 @@ async def get_x_last_post(client, handle):
             client.get_user_tweets(user.id, 'Replies', count=5)
         ]
         results = await asyncio.gather(*tasks, return_exceptions=True)
-        
+
         all_tweets = []
         for res in results:
             if res and not isinstance(res, Exception):
                 all_tweets.extend(list(res))
-        
+
         if all_tweets:
             # Twikit Tweet.created_at format: 'Tue Jan 27 11:22:00 +0000 2026'
             from datetime import datetime, timezone
-            
+
             # Helper to parse twikit date
             def parse_date(date_str):
                 try:
@@ -91,7 +91,7 @@ async def get_x_last_post(client, handle):
             # We use a very old date with UTC timezone as fallback
             epoch_start = datetime(1970, 1, 1, tzinfo=timezone.utc)
             all_tweets.sort(key=lambda t: parse_date(t.created_at) or epoch_start, reverse=True)
-            
+
             latest_tweet = all_tweets[0]
             dt = parse_date(latest_tweet.created_at)
             if dt:
@@ -156,7 +156,7 @@ def get_politicians():
         agent="Politix/0.1 (https://github.com/PierreMesure/politix-new)",
     )
     query = """
-    SELECT ?mp ?mpLabel ?partyLabel ?x ?ig ?bluesky ?mastodon ?truth WHERE {
+    SELECT ?mp ?mpLabel ?partyLabel ?x ?xEnd ?ig ?igEnd ?bluesky ?bskyEnd ?mastodon ?mastEnd ?truth ?truthEnd WHERE {
         SERVICE wikibase:label { bd:serviceParam wikibase:language "sv,en". }
 
         ?mp wdt:P31 wd:Q5;
@@ -173,31 +173,31 @@ def get_politicians():
         OPTIONAL {
             ?mp p:P2002 ?xStmt.
             ?xStmt ps:P2002 ?x.
-            FILTER NOT EXISTS { ?xStmt pq:P582 ?xEnd. }
+            OPTIONAL { ?xStmt pq:P582 ?xEnd. }
         }
 
         OPTIONAL {
             ?mp p:P12361 ?bskyStmt.
             ?bskyStmt ps:P12361 ?bluesky.
-            FILTER NOT EXISTS { ?bskyStmt pq:P582 ?bskyEnd. }
+            OPTIONAL { ?bskyStmt pq:P582 ?bskyEnd. }
         }
 
         OPTIONAL {
             ?mp p:P2003 ?igStmt.
             ?igStmt ps:P2003 ?ig.
-            FILTER NOT EXISTS { ?igStmt pq:P582 ?igEnd. }
+            OPTIONAL { ?igStmt pq:P582 ?igEnd. }
         }
 
         OPTIONAL {
             ?mp p:P4033 ?mastStmt.
             ?mastStmt ps:P4033 ?mastodon.
-            FILTER NOT EXISTS { ?mastStmt pq:P582 ?mastEnd. }
+            OPTIONAL { ?mastStmt pq:P582 ?mastEnd. }
         }
 
         OPTIONAL {
             ?mp p:P10858 ?truthStmt.
             ?truthStmt ps:P10858 ?truth.
-            FILTER NOT EXISTS { ?truthStmt pq:P582 ?truthEnd. }
+            OPTIONAL { ?truthStmt pq:P582 ?truthEnd. }
         }
     }
     """
@@ -219,13 +219,22 @@ def get_politicians():
             "name": result["mpLabel"]["value"],
             "party": result["partyLabel"]["value"] if "partyLabel" in result else None,
             "social": {
-                "x": {"handle": result["x"]["value"], "last_post": None}
+                "x": {
+                    "handle": result["x"]["value"],
+                    "last_post": "closed" if "xEnd" in result else None
+                }
                 if "x" in result
                 else None,
-                "bluesky": {"handle": result["bluesky"]["value"], "last_post": None}
+                "bluesky": {
+                    "handle": result["bluesky"]["value"],
+                    "last_post": "closed" if "bskyEnd" in result else None
+                }
                 if "bluesky" in result
                 else None,
-                "mastodon": {"handle": result["mastodon"]["value"], "last_post": None}
+                "mastodon": {
+                    "handle": result["mastodon"]["value"],
+                    "last_post": "closed" if "mastEnd" in result else None
+                }
                 if "mastodon" in result
                 else None,
             },
@@ -245,7 +254,7 @@ def calculate_stats(politicians):
             "bluesky": empty_stats(),
             "mastodon": empty_stats()
         }
-        
+
         from datetime import datetime, timezone
         FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000
         now = datetime.now(timezone.utc)
@@ -311,10 +320,14 @@ def calculate_stats(politicians):
                 res["mastodon"]["inactive"] += 1
                 any_inactive = True
 
-            if any_active: res["all"]["active"] += 1
-            elif any_inactive: res["all"]["inactive"] += 1
-            elif any_closed: res["all"]["closed"] += 1
-            else: res["all"]["none"] += 1
+            if any_active:
+                res["all"]["active"] += 1
+            elif any_inactive:
+                res["all"]["inactive"] += 1
+            elif any_closed:
+                res["all"]["closed"] += 1
+            else:
+                res["all"]["none"] += 1
 
         return res
 
@@ -322,12 +335,12 @@ def calculate_stats(politicians):
         "global": get_platform_stats(politicians),
         "parties": {}
     }
-    
+
     parties = set(p["party"] for p in politicians if p["party"])
     for party in parties:
         party_politicians = [p for p in politicians if p["party"] == party]
         stats["parties"][party] = get_platform_stats(party_politicians)
-    
+
     return stats
 
 
@@ -336,6 +349,27 @@ async def main():
     politicians = get_politicians()
     print(f"Found {len(politicians)} politicians.")
 
+    # Load existing data to preserve 'closed' status
+    old_statuses = {}
+    if os.path.exists("data.json"):
+        try:
+            with open("data.json", "r") as f:
+                for p in json.load(f):
+                    old_statuses[p["id"]] = p["social"]
+        except Exception as e:
+            print(f"Could not load existing data.json: {e}")
+
+    # Merge closed statuses from previous runs
+    for p in politicians:
+        if p["id"] in old_statuses:
+            old_social = old_statuses[p["id"]]
+            for platform in ["x", "bluesky", "mastodon"]:
+                if p["social"][platform] and old_social.get(platform):
+                    # If handle is the same and it was marked closed, keep it closed
+                    if p["social"][platform]["handle"] == old_social[platform]["handle"]:
+                        if old_social[platform].get("last_post") == "closed":
+                            p["social"][platform]["last_post"] = "closed"
+
     x_client = await get_x_client()
     if not x_client:
         print("Warning: Could not initialize X client. X data will not be updated.")
@@ -343,8 +377,8 @@ async def main():
     for i, p in enumerate(politicians):
         name = p["name"]
         updated = False
-        
-        if p["social"]["x"] and x_client:
+
+        if p["social"]["x"] and x_client and p["social"]["x"]["last_post"] != "closed":
             handle = p["social"]["x"]["handle"]
             print(f"[{i + 1}/{len(politicians)}] Fetching X for {name} (@{handle})...")
             last_post = await get_x_last_post(x_client, handle)
@@ -353,7 +387,7 @@ async def main():
             updated = True
             await asyncio.sleep(1)  # Be extra nice to X
 
-        if p["social"]["bluesky"]:
+        if p["social"]["bluesky"] and p["social"]["bluesky"]["last_post"] != "closed":
             print(f"[{i + 1}/{len(politicians)}] Fetching Bluesky for {name}...")
             p["social"]["bluesky"]["last_post"] = get_bluesky_last_post(
                 p["social"]["bluesky"]["handle"]
@@ -361,7 +395,7 @@ async def main():
             updated = True
             time.sleep(0.1)  # Be nice
 
-        if p["social"]["mastodon"]:
+        if p["social"]["mastodon"] and p["social"]["mastodon"]["last_post"] != "closed":
             print(f"[{i + 1}/{len(politicians)}] Fetching Mastodon for {name}...")
             p["social"]["mastodon"]["last_post"] = get_mastodon_last_post(
                 p["social"]["mastodon"]["handle"]
@@ -373,7 +407,7 @@ async def main():
         if updated:
             with open("data.json", "w") as f:
                 json.dump(politicians, f, indent=2, ensure_ascii=False)
-            
+
             # Update stats incrementally as well
             stats = calculate_stats(politicians)
             with open("stats.json", "w") as f:
@@ -385,12 +419,12 @@ async def main():
     print("Saving to data.json...")
     with open("data.json", "w") as f:
         json.dump(politicians, f, indent=2, ensure_ascii=False)
-    
+
     print("Saving final stats...")
     stats = calculate_stats(politicians)
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
-    
+
     print("Done!")
 
 

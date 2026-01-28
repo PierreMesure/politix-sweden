@@ -34,6 +34,11 @@ export default function DashboardStats({
 }: DashboardStatsProps) {
   const { t } = useTranslation();
 
+  const getPercentage = (value: number) => {
+    if (!currentStats || currentStats.total === 0) return "0.0";
+    return ((value / currentStats.total) * 100).toFixed(1);
+  };
+
   const platforms: Platform[] = ['all', 'x', 'bluesky', 'mastodon'];
 
   const visibleProgressBars = activePlatform === 'all' 
@@ -129,22 +134,22 @@ export default function DashboardStats({
             <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-4 overflow-hidden flex">
               <div 
                 className={`${STATUS_COLORS.active} h-full transition-all duration-500`} 
-                style={{ width: `${(currentStats.active / currentStats.total) * 100}%` }}
+                style={{ width: `${getPercentage(currentStats.active)}%` }}
                 title={`${t('table.active')}: ${currentStats.active}`}
               ></div>
               <div 
                 className={`${STATUS_COLORS.inactive} h-full transition-all duration-500`} 
-                style={{ width: `${(currentStats.inactive / currentStats.total) * 100}%` }}
+                style={{ width: `${getPercentage(currentStats.inactive)}%` }}
                 title={`${t('table.inactive')}: ${currentStats.inactive}`}
               ></div>
               <div 
                 className={`${STATUS_COLORS.closed} h-full transition-all duration-500`} 
-                style={{ width: `${(currentStats.closed / currentStats.total) * 100}%` }}
+                style={{ width: `${getPercentage(currentStats.closed)}%` }}
                 title={`${t('table.closed')}: ${currentStats.closed}`}
               ></div>
               <div 
                 className={`${STATUS_COLORS.none} h-full transition-all duration-500`} 
-                style={{ width: `${(currentStats.none / currentStats.total) * 100}%` }}
+                style={{ width: `${getPercentage(currentStats.none)}%` }}
                 title={`${t('filters.noAccounts')}: ${currentStats.none}`}
               ></div>
             </div>
@@ -152,25 +157,25 @@ export default function DashboardStats({
             <div className="grid grid-cols-4 gap-2 text-center">
               <div>
                 <div className="text-sm font-bold text-gray-900 dark:text-white">
-                  {((currentStats.active / currentStats.total) * 100).toFixed(1)}%
+                  {getPercentage(currentStats.active)}%
                 </div>
                 <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.active')}</div>
               </div>
               <div>
                 <div className="text-sm font-bold text-gray-900 dark:text-white">
-                  {((currentStats.inactive / currentStats.total) * 100).toFixed(1)}%
+                  {getPercentage(currentStats.inactive)}%
                 </div>
                 <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.inactive')}</div>
               </div>
               <div>
                 <div className="text-sm font-bold text-gray-900 dark:text-white">
-                  {((currentStats.closed / currentStats.total) * 100).toFixed(1)}%
+                  {getPercentage(currentStats.closed)}%
                 </div>
                 <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.closed')}</div>
               </div>
               <div>
                 <div className="text-sm font-bold text-gray-900 dark:text-white">
-                  {((currentStats.none / currentStats.total) * 100).toFixed(1)}%
+                  {getPercentage(currentStats.none)}%
                 </div>
                 <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('filters.noAccounts')}</div>
               </div>

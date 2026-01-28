@@ -6,7 +6,7 @@
     "social": {
       "x": {
         "handle": "AdamMarttinen",
-        "last_post": "2026-01-28T12:11:56+00:00"
+        "last_post": "2026-01-28T18:15:02+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -57,7 +57,10 @@
     "name": "Alexander Christiansson",
     "party": "Sverigedemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ARchristiansson",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -308,7 +311,7 @@
     "social": {
       "x": {
         "handle": "AnnaVikstrom",
-        "last_post": "2026-01-28T14:25:30+00:00"
+        "last_post": "2026-01-28T17:53:50+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -413,7 +416,7 @@
     "social": {
       "x": {
         "handle": "strandhall",
-        "last_post": "2026-01-28T11:52:09+00:00"
+        "last_post": "2026-01-28T18:11:02+00:00"
       },
       "bluesky": {
         "handle": "annikastrandhall.bsky.social",
@@ -439,7 +442,7 @@
     "social": {
       "x": {
         "handle": "shekarabi",
-        "last_post": "2026-01-28T15:45:13+00:00"
+        "last_post": "2026-01-28T19:01:15+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -450,7 +453,10 @@
     "name": "Arin Karapet",
     "party": "Moderaterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KarapetArin",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -460,7 +466,10 @@
     "name": "Aylin Nouri",
     "party": "Socialdemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AylinFazelian",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -470,7 +479,10 @@
     "name": "Azadeh Rojhan",
     "party": "Socialdemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AzadehRojhan",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -502,7 +514,7 @@
     "social": {
       "x": {
         "handle": "bjornsoder",
-        "last_post": "2026-01-27T20:48:56+00:00"
+        "last_post": "2026-01-28T17:32:34+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -523,7 +535,10 @@
     "name": "Björn Wiechel",
     "party": "Socialdemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Bjorg_Wiechek",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -859,7 +874,10 @@
     "name": "Daniel Riazat",
     "party": null,
     "social": {
-      "x": null,
+      "x": {
+        "handle": "danielriazat",
+        "last_post": "closed"
+      },
       "bluesky": {
         "handle": "danielriazat.bsky.social",
         "last_post": "2025-10-05T10:31:19.362Z"
@@ -908,7 +926,10 @@
     "name": "Denis Begic",
     "party": "Socialdemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "dennisbegic",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1122,7 +1143,10 @@
     "name": "Fredrik Lindahl",
     "party": "Sverigedemokraterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "fredriklindahl_",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1636,7 +1660,7 @@
     "social": {
       "x": {
         "handle": "jenniewer",
-        "last_post": "2025-04-09T12:46:27+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -1741,7 +1765,7 @@
     "social": {
       "x": {
         "handle": "joannalewerentz",
-        "last_post": "2019-05-26T23:56:58+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -1827,7 +1851,10 @@
     "name": "John Weinerhall",
     "party": "Moderaterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "JohnWeinerhall",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1966,7 +1993,7 @@
     "social": {
       "x": {
         "handle": "fredholmkajsa",
-        "last_post": "2026-01-09T08:42:28+00:00"
+        "last_post": null
       },
       "bluesky": {
         "handle": "kajsafredholm.bsky.social",
@@ -2191,7 +2218,7 @@
     "social": {
       "x": {
         "handle": "beckmansasikter",
-        "last_post": "2026-01-28T16:54:24+00:00"
+        "last_post": "2026-01-28T18:33:07+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2345,7 +2372,7 @@
     "social": {
       "x": {
         "handle": "lyurkovskiy",
-        "last_post": "2025-12-18T21:23:16+00:00"
+        "last_post": "2026-01-28T17:21:32+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2615,7 +2642,10 @@
     "name": "Malin Danielsson",
     "party": "Liberalerna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "malindanielsson",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2772,7 +2802,7 @@
     "social": {
       "x": {
         "handle": "MarkusWiechel",
-        "last_post": "2026-01-28T13:37:27+00:00"
+        "last_post": "2026-01-28T16:50:23+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3345,7 +3375,10 @@
     "name": "Noria Manouchi",
     "party": "Moderaterna",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "NoriaManouchi",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3403,7 +3436,7 @@
     "social": {
       "x": {
         "handle": "osvard",
-        "last_post": "2022-01-20T13:31:52+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -3574,7 +3607,7 @@
     "social": {
       "x": {
         "handle": "rashidfarivar",
-        "last_post": "2026-01-27T20:34:44+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -3946,7 +3979,10 @@
     "name": "Tony Haddou",
     "party": "Vänsterpartiet",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "TonyHaddou",
+        "last_post": "closed"
+      },
       "bluesky": null,
       "mastodon": null
     }
