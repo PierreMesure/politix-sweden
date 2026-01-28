@@ -15,3 +15,13 @@ export type Politician = {
 };
 
 export type Platform = 'all' | 'x' | 'bluesky' | 'mastodon';
+
+export type StatusStats = {
+  active: number;
+  inactive: number;
+  closed: number;
+  none: number;
+  total: number;
+};
+
+export type DashboardStatsData = Record<Platform, StatusStats>;

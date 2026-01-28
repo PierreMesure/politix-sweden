@@ -2,24 +2,29 @@ import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import ParliamentChart from './ParliamentChart';
 import { PARTY_LOGOS } from '../utils';
-import { Platform } from '../types';
+import { Platform, StatusStats, DashboardStatsData } from '../types';
 
 interface DashboardStatsProps {
   loading: boolean;
-  activeCount: number;
-  inactiveCount: number;
+  currentStats: StatusStats;
   activePlatform: Platform;
   setActivePlatform: (platform: Platform) => void;
-  stats: { total: number; x: number; bluesky: number; mastodon: number; all: number };
+  stats: DashboardStatsData;
   parties: string[];
   selectedParty: string | null;
   setSelectedParty: (party: string | null) => void;
 }
 
+const STATUS_COLORS = {
+  active: "bg-[#10b981]",   // Green
+  inactive: "bg-[#f59e0b]", // Orange
+  closed: "bg-[#ef4444]",   // Red
+  none: "bg-[#9ca3af]",     // Gray
+};
+
 export default function DashboardStats({
   loading,
-  activeCount,
-  inactiveCount,
+  currentStats,
   activePlatform,
   setActivePlatform,
   stats,
@@ -32,7 +37,7 @@ export default function DashboardStats({
   const platforms: Platform[] = ['all', 'x', 'bluesky', 'mastodon'];
 
   const visibleProgressBars = activePlatform === 'all' 
-    ? ['x', 'bluesky', 'mastodon'] as const 
+    ? ['all'] as const 
     : [activePlatform] as const;
 
   return (
@@ -69,8 +74,7 @@ export default function DashboardStats({
             <div className="w-full aspect-[2/1] bg-gray-100 dark:bg-zinc-800 rounded-lg animate-pulse"></div>
           ) : (
             <ParliamentChart 
-              activeCount={activeCount} 
-              inactiveCount={inactiveCount} 
+              stats={currentStats} 
               platform={activePlatform} 
             />
           )}
@@ -78,12 +82,12 @@ export default function DashboardStats({
             {!loading && (
               <>
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">
-                  {activeCount} <span className="text-lg font-normal text-gray-500 dark:text-gray-400">/ {stats.total}</span>
+                  {currentStats.active} <span className="text-lg font-normal text-gray-500 dark:text-gray-400">/ {currentStats.total}</span>
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
                   {activePlatform === 'all' 
                     ? t('stats.activeMembers')
-                    : `${t(`filters.${activePlatform === 'x' ? 'x' : activePlatform}`)} ${t('stats.members')}`
+                    : `${t(`table.${activePlatform}`)} ${t('stats.members')}`
                   }
                 </div>
               </>
@@ -92,43 +96,86 @@ export default function DashboardStats({
         </div>
       </div>
 
-      {/* Global Progress Bars */}
-      <div className={`grid gap-6 mx-auto transition-all ${
-        activePlatform === 'all' 
-          ? 'grid-cols-1 md:grid-cols-3 max-w-4xl' 
-          : 'grid-cols-1 max-w-md'
-      }`}>
+      {/* Status Breakdown Progress Bar */}
+      <div className="max-w-xl mx-auto w-full">
         {loading ? (
-          Array.from({ length: activePlatform === 'all' ? 3 : 1 }).map((_, i) => (
-            <div key={i} className="bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm animate-pulse h-20"></div>
-          ))
+          <div className="bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm animate-pulse h-24"></div>
         ) : (
-          visibleProgressBars.map((p) => {
-            // Safe access since we know p is one of the keys
-            const count = stats[p as 'x' | 'bluesky' | 'mastodon'];
-            const pct = stats.total ? ((count / stats.total) * 100).toFixed(1) : "0.0";
-            const color = p === 'x' ? 'bg-black dark:bg-white' : p === 'bluesky' ? 'bg-blue-500' : 'bg-purple-500';
-            
-            return (
-              <div key={p} className="bg-white dark:bg-zinc-900 p-4 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm">
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img 
-                      src={`/service_logos/${p}.svg`} 
-                      alt={p} 
-                      className="w-4 h-4 dark:invert opacity-80" 
-                    />
-                    {t(`table.${p}`)}
-                  </span>
-                  <span className="text-sm font-bold text-gray-900 dark:text-white">{pct}%</span>
-                </div>
-                <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-2">
-                  <div className={`${color} h-2 rounded-full transition-all duration-500`} style={{ width: `${pct}%` }}></div>
-                </div>
+          <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm space-y-4">
+            <div className="flex justify-between items-end">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+                {activePlatform === 'all' ? t('table.total') : t(`table.${activePlatform}`)}
+              </h3>
+              <div className="text-xs text-gray-500 dark:text-gray-400 flex gap-4">
+                <span className="flex items-center gap-1">
+                  <span className={`w-2 h-2 rounded-full ${STATUS_COLORS.active}`}></span>
+                  {t('table.active')}
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className={`w-2 h-2 rounded-full ${STATUS_COLORS.inactive}`}></span>
+                  {t('table.inactive')}
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className={`w-2 h-2 rounded-full ${STATUS_COLORS.closed}`}></span>
+                  {t('table.closed')}
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className={`w-2 h-2 rounded-full ${STATUS_COLORS.none}`}></span>
+                  {t('filters.noAccounts')}
+                </span>
               </div>
-            );
-          })
+            </div>
+
+            <div className="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-4 overflow-hidden flex">
+              <div 
+                className={`${STATUS_COLORS.active} h-full transition-all duration-500`} 
+                style={{ width: `${(currentStats.active / currentStats.total) * 100}%` }}
+                title={`${t('table.active')}: ${currentStats.active}`}
+              ></div>
+              <div 
+                className={`${STATUS_COLORS.inactive} h-full transition-all duration-500`} 
+                style={{ width: `${(currentStats.inactive / currentStats.total) * 100}%` }}
+                title={`${t('table.inactive')}: ${currentStats.inactive}`}
+              ></div>
+              <div 
+                className={`${STATUS_COLORS.closed} h-full transition-all duration-500`} 
+                style={{ width: `${(currentStats.closed / currentStats.total) * 100}%` }}
+                title={`${t('table.closed')}: ${currentStats.closed}`}
+              ></div>
+              <div 
+                className={`${STATUS_COLORS.none} h-full transition-all duration-500`} 
+                style={{ width: `${(currentStats.none / currentStats.total) * 100}%` }}
+                title={`${t('filters.noAccounts')}: ${currentStats.none}`}
+              ></div>
+            </div>
+
+            <div className="grid grid-cols-4 gap-2 text-center">
+              <div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">
+                  {((currentStats.active / currentStats.total) * 100).toFixed(1)}%
+                </div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.active')}</div>
+              </div>
+              <div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">
+                  {((currentStats.inactive / currentStats.total) * 100).toFixed(1)}%
+                </div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.inactive')}</div>
+              </div>
+              <div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">
+                  {((currentStats.closed / currentStats.total) * 100).toFixed(1)}%
+                </div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('table.closed')}</div>
+              </div>
+              <div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">
+                  {((currentStats.none / currentStats.total) * 100).toFixed(1)}%
+                </div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider">{t('filters.noAccounts')}</div>
+              </div>
+            </div>
+          </div>
         )}
       </div>
 

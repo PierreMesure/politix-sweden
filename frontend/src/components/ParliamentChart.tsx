@@ -2,11 +2,10 @@
 
 import { useMemo, createElement } from 'react';
 import parliamentSvg from 'parliament-svg';
-import { Platform } from '../types';
+import { Platform, StatusStats } from '../types';
 
 type ParliamentChartProps = {
-  activeCount: number;
-  inactiveCount: number;
+  stats: StatusStats;
   platform: Platform;
 };
 
@@ -15,6 +14,13 @@ const PLATFORM_COLORS: Record<Platform, string> = {
   bluesky: "#0085ff",
   mastodon: "#6364ff",
   all: "#10b981", // Emerald 500
+};
+
+const STATUS_COLORS = {
+  active: "#10b981",   // Green
+  inactive: "#f59e0b", // Orange
+  closed: "#ef4444",   // Red
+  none: "#9ca3af",     // Gray
 };
 
 // React adapter for parliament-svg's hFunction
@@ -27,28 +33,28 @@ function renderToReact(tagName: string, props: Record<string, unknown>, ...child
   }, ...children);
 }
 
-export default function ParliamentChart({ activeCount, inactiveCount, platform }: ParliamentChartProps) {
-
-  // Dynamic styles for the fill colors
-  const activeColor = PLATFORM_COLORS[platform];
-  const inactiveColor = "#9c9c9f"; // zinc-300
+export default function ParliamentChart({ stats, platform }: ParliamentChartProps) {
 
   const chart = useMemo(() => {
-    // Ensure counts are non-negative integers
-    const active = Math.max(0, Math.floor(activeCount));
-    const inactive = Math.max(0, Math.floor(inactiveCount));
-
-    if (active + inactive === 0) return null;
+    if (stats.total === 0) return null;
 
     // Create the grouping object. Keys become CSS classes.
     const parties = {
       "active": {
-        seats: active,
-        colour: activeColor
+        seats: stats.active,
+        colour: STATUS_COLORS.active
       },
       "inactive": {
-        seats: inactive,
-        colour: inactiveColor
+        seats: stats.inactive,
+        colour: STATUS_COLORS.inactive
+      },
+      "closed": {
+        seats: stats.closed,
+        colour: STATUS_COLORS.closed
+      },
+      "none": {
+        seats: stats.none,
+        colour: STATUS_COLORS.none
       },
     };
 
@@ -57,7 +63,7 @@ export default function ParliamentChart({ activeCount, inactiveCount, platform }
       seatCount: false,
       hFunction: renderToReact
     });
-  }, [activeCount, inactiveCount, activeColor, inactiveColor]);
+  }, [stats]);
 
   if (!chart) return null;
 

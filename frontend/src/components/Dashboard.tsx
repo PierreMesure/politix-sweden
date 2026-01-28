@@ -2,8 +2,8 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
-import { Politician, Platform } from '../types';
-import { DATA_URL } from '../utils';
+import { Politician, Platform, DashboardStatsData, StatusStats } from '../types';
+import { DATA_URL, isActive } from '../utils';
 import DashboardStats from './DashboardStats';
 import DashboardFilters from './DashboardFilters';
 import PoliticianTable from './PoliticianTable';
@@ -58,24 +58,88 @@ export default function Dashboard() {
   }, [data, selectedParty, t]);
 
   // 2. Calculate Stats based on Party Selection
-  const stats = useMemo(() => {
-    const result = { total: 0, x: 0, bluesky: 0, mastodon: 0, all: 0 };
+  const stats = useMemo((): DashboardStatsData => {
+    const empty = (): StatusStats => ({ active: 0, inactive: 0, closed: 0, none: 0, total: 0 });
+    const res: DashboardStatsData = {
+      all: empty(),
+      x: empty(),
+      bluesky: empty(),
+      mastodon: empty(),
+    };
 
     filteredByParty.forEach(p => {
-      result.total++;
-      let hasAny = false;
-      if (p.social.bluesky) { result.bluesky++; hasAny = true; }
-      if (p.social.mastodon) { result.mastodon++; hasAny = true; }
-      if (p.social.x) { result.x++; hasAny = true; }
-      if (hasAny) result.all++;
+      res.all.total++;
+      res.x.total++;
+      res.bluesky.total++;
+      res.mastodon.total++;
 
+      let anyActive = false;
+      let anyInactive = false;
+      let anyClosed = false;
+      let anyAccount = false;
+
+      // Platform: X
+      if (!p.social.x) {
+        res.x.none++;
+      } else if (p.social.x.last_post === 'closed') {
+        res.x.closed++;
+        anyClosed = true;
+        anyAccount = true;
+      } else if (isActive(p.social.x.last_post)) {
+        res.x.active++;
+        anyActive = true;
+        anyAccount = true;
+      } else {
+        res.x.inactive++;
+        anyInactive = true;
+        anyAccount = true;
+      }
+
+      // Platform: Bluesky
+      if (!p.social.bluesky) {
+        res.bluesky.none++;
+      } else if (p.social.bluesky.last_post === 'closed') {
+        res.bluesky.closed++;
+        anyClosed = true;
+        anyAccount = true;
+      } else if (isActive(p.social.bluesky.last_post)) {
+        res.bluesky.active++;
+        anyActive = true;
+        anyAccount = true;
+      } else {
+        res.bluesky.inactive++;
+        anyInactive = true;
+        anyAccount = true;
+      }
+
+      // Platform: Mastodon
+      if (!p.social.mastodon) {
+        res.mastodon.none++;
+      } else if (p.social.mastodon.last_post === 'closed') {
+        res.mastodon.closed++;
+        anyClosed = true;
+        anyAccount = true;
+      } else if (isActive(p.social.mastodon.last_post)) {
+        res.mastodon.active++;
+        anyActive = true;
+        anyAccount = true;
+      } else {
+        res.mastodon.inactive++;
+        anyInactive = true;
+        anyAccount = true;
+      }
+
+      // Aggregate "All"
+      if (anyActive) res.all.active++;
+      else if (anyInactive) res.all.inactive++;
+      else if (anyClosed) res.all.closed++;
+      else res.all.none++;
     });
 
-    return result;
+    return res;
   }, [filteredByParty]);
 
-  const activeCount = stats[activePlatform];
-  const inactiveCount = stats.total - activeCount;
+  const currentStats = stats[activePlatform];
 
   // 3. Filter for Table (Platform & Search)
   const filteredPoliticians = useMemo(() => {
@@ -113,8 +177,7 @@ export default function Dashboard() {
 
       <DashboardStats
         loading={loading}
-        activeCount={activeCount}
-        inactiveCount={inactiveCount}
+        currentStats={currentStats}
         activePlatform={activePlatform}
         setActivePlatform={setActivePlatform}
         stats={stats}
