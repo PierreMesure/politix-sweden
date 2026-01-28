@@ -82,7 +82,7 @@ export default function DashboardStats({
             {!loading && (
               <>
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">
-                  {currentStats.active} <span className="text-lg font-normal text-gray-500 dark:text-gray-400">/ {currentStats.total}</span>
+                  {currentStats.active + currentStats.inactive} <span className="text-lg font-normal text-gray-500 dark:text-gray-400">/ {currentStats.total}</span>
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
                   {activePlatform === 'all' 
