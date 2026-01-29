@@ -12,7 +12,8 @@ export default function Dashboard() {
   const { t } = useTranslation();
   const [data, setData] = useState<Politician[]>([]);
   const [precomputedStats, setPrecomputedStats] = useState<StatsData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [dataLoading, setDataLoading] = useState(true);
+  const [statsLoading, setStatsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   // Controls
@@ -25,45 +26,53 @@ export default function Dashboard() {
   const deferredActivePlatform = useDeferredValue(activePlatform);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [dataRes, statsRes] = await Promise.all([
-          fetch(DATA_URL),
-          fetch(STATS_URL).catch(() => null) // Stats might not exist yet
-        ]);
+    // Fetch Stats
+    fetch(STATS_URL)
+      .then(res => res.ok ? res.json() : null)
+      .then(stats => {
+        if (stats) setPrecomputedStats(stats);
+        setStatsLoading(false);
+      })
+      .catch(err => {
+        console.error("Error fetching stats:", err);
+        setStatsLoading(false);
+      });
 
-        if (!dataRes.ok) throw new Error("Failed to fetch data");
-        
-        const jsonData = await dataRes.json();
+    // Fetch Data
+    fetch(DATA_URL)
+      .then(async res => {
+        if (!res.ok) throw new Error("Failed to fetch data");
+        const jsonData = await res.json();
         // Pre-sort by name once to avoid sorting in every memo
         jsonData.sort((a: Politician, b: Politician) => a.name.localeCompare(b.name, 'sv'));
         setData(jsonData);
-
-        if (statsRes && statsRes.ok) {
-          setPrecomputedStats(await statsRes.json());
-        }
-        
-        setLoading(false);
-      } catch (err) {
+        setDataLoading(false);
+      })
+      .catch(err => {
         console.error("Error fetching data:", err);
         setError("Failed to load data.");
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+        setDataLoading(false);
+      });
   }, []);
 
   const parties = useMemo(() => {
     const s = new Set<string>();
     const unknownLabel = t('table.unknownParty');
-    data.forEach(p => s.add(p.party || unknownLabel));
+    
+    // If we have data, use it as primary source
+    if (data.length > 0) {
+      data.forEach(p => s.add(p.party || unknownLabel));
+    } else if (precomputedStats) {
+      // Fallback to stats if data isn't here yet
+      Object.keys(precomputedStats.parties).forEach(p => s.add(p));
+    }
+
     return Array.from(s).sort((a, b) => {
       if (a === unknownLabel) return 1;
       if (b === unknownLabel) return -1;
       return a.localeCompare(b, 'sv');
     });
-  }, [data, t]);
+  }, [data, precomputedStats, t]);
 
   // 1. Filter by Party (Base for Stats & Chart)
   const filteredByParty = useMemo(() => {
@@ -167,7 +176,7 @@ export default function Dashboard() {
       </header>
 
       <DashboardStats
-        loading={loading}
+        loading={statsLoading}
         currentStats={currentStats}
         activePlatform={activePlatform}
         setActivePlatform={setActivePlatform}
@@ -188,7 +197,7 @@ export default function Dashboard() {
 
       <PoliticianTable
         politicians={filteredPoliticians}
-        loading={loading}
+        loading={dataLoading}
         activePlatform={activePlatform}
       />
     </div>
