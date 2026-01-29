@@ -10,9 +10,9 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 load_dotenv()
 
-X_USERNAME = os.getenv("X_USERNAME")
-X_EMAIL = os.getenv("X_EMAIL")
-X_PASSWORD = os.getenv("X_PASSWORD")
+X_USERNAME = os.getenv("X1_USERNAME")
+X_EMAIL = os.getenv("X1_EMAIL")
+X_PASSWORD = os.getenv("X1_PASSWORD")
 
 async def get_x_client():
     if os.getenv("GITHUB_ACTIONS") == "true":
@@ -317,7 +317,7 @@ async def update_politician_social(p, i, total, x_client):
         p["social"]["mastodon"]["last_post"] = get_mastodon_last_post(p["social"]["mastodon"]["handle"])
         updated = True
         time.sleep(0.1)
-    
+
     return updated
 
 async def main():
