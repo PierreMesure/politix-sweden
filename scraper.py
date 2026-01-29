@@ -10,42 +10,66 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 load_dotenv()
 
-X_USERNAME = os.getenv("X1_USERNAME")
-X_EMAIL = os.getenv("X1_EMAIL")
-X_PASSWORD = os.getenv("X1_PASSWORD")
+def get_x_credentials():
+    accounts = []
+    i = 1
+    while True:
+        user = os.getenv(f"X{i}_USERNAME")
+        if not user:
+            break
+        accounts.append({
+            "username": user,
+            "email": os.getenv(f"X{i}_EMAIL"),
+            "password": os.getenv(f"X{i}_PASSWORD")
+        })
+        i += 1
+    return accounts
 
-async def get_x_client():
+async def get_x_clients():
     if os.getenv("GITHUB_ACTIONS") == "true":
-        print("Running in GitHub Actions, skipping X client initialization to avoid blocks.")
-        return None
+        print("Running in GitHub Actions, skipping X client initialization.")
+        return []
 
-    if not X_USERNAME or not X_EMAIL or not X_PASSWORD:
-        print("X credentials missing in .env")
-        return None
+    credentials = get_x_credentials()
+    if not credentials:
+        print("No X credentials found in .env (expected X1_USERNAME, X2_USERNAME...)")
+        return []
 
-    client = Client('en-US')
-    cookies_path = 'cookies.json'
+    clients = []
+    for idx, acc in enumerate(credentials):
+        username = acc["username"]
+        client = Client('en-US')
+        cookies_path = f'cookies_{username}.json'
+        
+        # Compatibility: if old cookies.json exists and matches the first account, rename it
+        if idx == 0 and os.path.exists('cookies.json') and not os.path.exists(cookies_path):
+             os.rename('cookies.json', cookies_path)
 
-    try:
-        if os.path.exists(cookies_path):
-            with open(cookies_path, 'r') as f:
-                data = json.load(f)
-            if isinstance(data, list):
-                cookies = {c['name']: c['value'] for c in data}
-                with open(cookies_path, 'w') as f:
-                    json.dump(cookies, f)
-            client.load_cookies(cookies_path)
-        else:
-            await client.login(
-                auth_info_1=X_USERNAME,
-                auth_info_2=X_EMAIL,
-                password=X_PASSWORD
-            )
-            client.save_cookies(cookies_path)
-        return client
-    except Exception as e:
-        print(f"Error authenticating with X: {e}")
-        return None
+        try:
+            if os.path.exists(cookies_path):
+                with open(cookies_path, 'r') as f:
+                    cookies = json.load(f)
+                # Handle old list format if necessary
+                if isinstance(cookies, list):
+                    cookies = {c['name']: c['value'] for c in cookies}
+                    with open(cookies_path, 'w') as f:
+                        json.dump(cookies, f)
+                client.load_cookies(cookies_path)
+                print(f"Loaded cookies for X account: {username}")
+            else:
+                print(f"Logging in to X account: {username}")
+                await client.login(
+                    auth_info_1=username,
+                    auth_info_2=acc["email"],
+                    password=acc["password"]
+                )
+                client.save_cookies(cookies_path)
+            clients.append(client)
+        except Exception as e:
+            print(f"Error authenticating with X account {username}: {e}")
+    
+    return clients
+
 
 async def get_x_last_post(client, handle):
     if not client:
@@ -61,6 +85,11 @@ async def get_x_last_post(client, handle):
 
         if not user:
             return "closed"
+        
+        if getattr(user, 'protected', False):
+            return "protected"
+
+        # Get latest tweets and replies to find the absolute latest activity
 
         tasks = [
             client.get_user_tweets(user.id, 'Tweets', count=5),
@@ -146,37 +175,44 @@ def get_politicians():
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
 
-    politicians = []
-    seen_ids = set()
+    politicians_map = {}
 
     for result in results["results"]["bindings"]:
         p_id = result["mp"]["value"].split("/")[-1]
-        if p_id in seen_ids:
-            continue
-        seen_ids.add(p_id)
+        
+        if p_id not in politicians_map:
+            politicians_map[p_id] = {
+                "id": p_id,
+                "name": result["mpLabel"]["value"],
+                "party": result["partyLabel"]["value"] if "partyLabel" in result else None,
+                "last_check": None,
+                "social": {
+                    "x": None,
+                    "bluesky": None,
+                    "mastodon": None
+                },
+            }
+        
+        p = politicians_map[p_id]
 
-        politician = {
-            "id": p_id,
-            "name": result["mpLabel"]["value"],
-            "party": result["partyLabel"]["value"] if "partyLabel" in result else None,
-            "last_check": None,
-            "social": {
-                "x": {
-                    "handle": result["x"]["value"],
-                    "last_post": "closed" if "xEnd" in result else None
-                } if "x" in result else None,
-                "bluesky": {
-                    "handle": result["bluesky"]["value"],
-                    "last_post": "closed" if "bskyEnd" in result else None
-                } if "bluesky" in result else None,
-                "mastodon": {
-                    "handle": result["mastodon"]["value"],
-                    "last_post": "closed" if "mastEnd" in result else None
-                } if "mastodon" in result else None,
-            },
-        }
-        politicians.append(politician)
-    return politicians
+        def update_platform(platform, handle_key, end_key):
+            if handle_key in result:
+                handle = result[handle_key]["value"]
+                is_closed = end_key in result
+                
+                existing = p["social"][platform]
+                # If we don't have a handle yet, or if the current one is active while existing is closed, update.
+                if not existing or (not is_closed and existing["last_post"] == "closed"):
+                    p["social"][platform] = {
+                        "handle": handle,
+                        "last_post": "closed" if is_closed else None
+                    }
+
+        update_platform("x", "x", "xEnd")
+        update_platform("bluesky", "bluesky", "bskyEnd")
+        update_platform("mastodon", "mastodon", "mastEnd")
+
+    return list(politicians_map.values())
 
 def calculate_stats(politicians):
     def empty_stats():
@@ -285,23 +321,28 @@ def should_skip(p, now):
                 if (now - lp_dt).days <= 365:
                     is_stale = False
                     break
-            return has_social and is_stale
+            if has_social and is_stale:
+                print(f"[{p['name']}] Stale account (last post > 1 year ago) and checked recently (< 30 days ago). Skipping.")
+                return True
+        return False
     except Exception as e:
         print(f"Error checking skip condition for {p['name']}: {e}")
     return False
 
-async def update_politician_social(p, i, total, x_client):
+async def update_politician_social(p, i, total, x_clients, x_client_index):
     name = p["name"]
     updated = False
 
     # X
-    if p["social"]["x"] and x_client and p["social"]["x"]["last_post"] != "closed":
+    if p["social"]["x"] and x_clients and p["social"]["x"]["last_post"] != "closed":
+        client = x_clients[x_client_index % len(x_clients)]
         handle = p["social"]["x"]["handle"]
-        print(f"[{i + 1}/{total}] Fetching X for {name} (@{handle})...")
-        last_post = await get_x_last_post(x_client, handle)
+        print(f"[{i + 1}/{total}] Fetching X for {name} (@{handle}) using account {x_client_index % len(x_clients) + 1}...")
+        last_post = await get_x_last_post(client, handle)
         print(f"   -> X Result: {last_post}")
         p["social"]["x"]["last_post"] = last_post
         updated = True
+        # Increment index for the next call outside
         await asyncio.sleep(1)
 
     # Bluesky
@@ -337,19 +378,25 @@ async def main():
                     if p["social"][platform]["handle"] == old_plat["handle"]:
                         p["social"][platform]["last_post"] = old_plat.get("last_post")
 
-    x_client = await get_x_client()
-    if not x_client:
-        print("Warning: Could not initialize X client. X data will not be updated.")
+    x_clients = await get_x_clients()
+    if not x_clients:
+        print("Warning: No X clients available. X data will not be updated.")
 
     now = datetime.now(timezone.utc)
+    x_client_index = 0
     for i, p in enumerate(politicians):
         if should_skip(p, now):
             print(f"[{i + 1}/{len(politicians)}] Skipping {p['name']} (stale and checked recently)")
             continue
 
-        if await update_politician_social(p, i, len(politicians), x_client):
+        was_x_updated = p["social"]["x"] and x_clients and p["social"]["x"]["last_post"] != "closed"
+        
+        if await update_politician_social(p, i, len(politicians), x_clients, x_client_index):
             p["last_check"] = now.isoformat()
             save_data(politicians, calculate_stats(politicians))
+            
+            if was_x_updated:
+                x_client_index += 1
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])

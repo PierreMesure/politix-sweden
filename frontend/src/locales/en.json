@@ -30,6 +30,7 @@
     "active": "Active recently",
     "inactive": "Inactive",
     "closed": "Account closed",
+    "protected": "Protected account",
     "never": "Never"
   }
 }

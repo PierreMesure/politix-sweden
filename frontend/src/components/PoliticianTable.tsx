@@ -15,6 +15,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
   function formatDate(dateStr: string | null) {
     if (!dateStr) return t('table.never');
     if (dateStr === 'closed') return t('table.closed');
+    if (dateStr === 'protected') return t('table.protected');
     return new Date(dateStr).toLocaleDateString();
   }
 
@@ -209,7 +210,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
 
                   <td className="pl-1 pr-2 py-4 whitespace-nowrap text-sm">
                     <a
-                      href={`https://www.wikidata.org/wiki/${p.id}`}
+                      href={`https://www.wikidata.org/wiki/${p.id}#P2002`}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center px-3 py-1 border border-gray-300 dark:border-zinc-700 text-xs font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-zinc-800 hover:bg-gray-50 dark:hover:bg-zinc-700 transition-colors"

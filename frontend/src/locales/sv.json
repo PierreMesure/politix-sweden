@@ -31,9 +31,10 @@
     "editOnWikidata": "Redigera på Wikidata",
     "unknownParty": "Okänt",
     "noResults": "Inga politiker hittades som matchar dina kriterier.",
+    "never": "Aldrig",
+    "closed": "Stängt konto",
+    "protected": "Skyddat konto",
     "active": "Aktiv nyligen",
-    "inactive": "Inaktiv",
-    "closed": "Kontot stängt",
-    "never": "Aldrig"
+    "inactive": "Inaktiv"
   }
 }
