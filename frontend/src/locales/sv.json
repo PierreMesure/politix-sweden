@@ -7,10 +7,6 @@
   "loading": "Laddar data...",
   "error": "Kunde inte ladda data.",
   "searchPlaceholder": "Sök politiker...",
-  "meta": {
-    "title": "Politix Översikt",
-    "description": "Övervakning av sociala medier för svenska politiker"
-  },
   "filters": {
     "x": "X",
     "bluesky": "Bluesky",

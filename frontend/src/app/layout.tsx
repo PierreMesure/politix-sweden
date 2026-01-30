@@ -14,9 +14,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const description = sv.description.replace('{carl}', 'Carl Heath');
+
 export const metadata: Metadata = {
-  title: sv.title,
-  description: sv.description,
+  title: "politiX",
+  description: description,
+  openGraph: {
+    title: "politiX",
+    description: "Finns din riksdagsledamot på X?",
+    url: "https://politix.mesu.re",
+    siteName: "politix",
+    locale: "sv_SE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "politiX",
+    description: "Finns din riksdagsledamot på X?",
+  },
 };
 
 export default function RootLayout({

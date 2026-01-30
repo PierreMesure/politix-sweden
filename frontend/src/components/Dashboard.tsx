@@ -61,7 +61,7 @@ export default function Dashboard() {
   const parties = useMemo(() => {
     const s = new Set<string>();
     const unknownLabel = t('table.unknownParty');
-    
+
     // If we have data, use it as primary source
     if (data.length > 0) {
       data.forEach(p => s.add(p.party || unknownLabel));
@@ -157,7 +157,7 @@ export default function Dashboard() {
       if (deferredActivePlatform === 'x') matchesPlatform = !!p.social.x;
       else if (deferredActivePlatform === 'bluesky') matchesPlatform = !!p.social.bluesky;
       else if (deferredActivePlatform === 'mastodon') matchesPlatform = !!p.social.mastodon;
-      
+
       return matchesSearch && matchesPlatform;
     });
     // Sorting removed here because data is pre-sorted in useEffect
@@ -180,7 +180,7 @@ export default function Dashboard() {
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
             </div>
             <h1 className="text-4xl font-black tracking-tighter text-gray-900 dark:text-white">
-              politix
+              politiX
             </h1>
           </div>
           <div className="space-y-1">
@@ -190,9 +190,9 @@ export default function Dashboard() {
                 <span key={i}>
                   {part}
                   {i < arr.length - 1 && (
-                    <a 
-                      href="https://carlheath.se/tag/social-media/" 
-                      target="_blank" 
+                    <a
+                      href="https://carlheath.se/tag/social-media/"
+                      target="_blank"
                       rel="noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                     >
