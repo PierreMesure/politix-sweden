@@ -1,22 +1,24 @@
 import asyncio
-from scraper import get_x_client, get_x_last_post
+from scraper import get_x_clients, get_x_last_post
 
 async def test_handles():
-    handles = ["Vlker", "aanstrell", "AdamMarttinen"]
+    handles = ["Vlker", "aanstrell", "AdamMarttinen", "jorgen_berglund", "kasirga_kadir"]
     
-    print("Initializing X client...")
-    client = await get_x_client()
+    print("Initializing X clients...")
+    clients = await get_x_clients()
     
-    if not client:
-        print("Error: Could not initialize X client. Check your .env file and cookies.json.")
+    if not clients:
+        print("Error: No X clients available. Check your .env file.")
         return
 
+    print(f"Found {len(clients)} accounts.")
     print(f"Testing {len(handles)} handles...\n")
     
-    for handle in handles:
-        print(f"Fetching last post for @{handle}...")
+    for i, handle in enumerate(handles):
+        client_idx = i % len(clients)
+        print(f"Fetching last post for @{handle} using account {client_idx + 1}...")
         try:
-            last_post = await get_x_last_post(client, handle)
+            last_post = await get_x_last_post(clients[client_idx], handle)
             print(f"  -> Result: {last_post}")
         except Exception as e:
             print(f"  -> Failed: {e}")

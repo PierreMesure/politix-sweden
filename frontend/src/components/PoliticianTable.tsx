@@ -9,8 +9,15 @@ interface PoliticianTableProps {
   activePlatform: Platform;
 }
 
+const OSINT = false;
+
 export default function PoliticianTable({ politicians, loading, activePlatform }: PoliticianTableProps) {
   const { t } = useTranslation();
+
+  function getOsintLink(platform: string, name: string, party: string | null) {
+    const query = encodeURIComponent(`${platform} ${name} ${party || ''}`.trim());
+    return `https://www.google.com/search?q=${query}`;
+  }
 
   function formatDate(dateStr: string | null) {
     if (!dateStr) return t('table.never');
@@ -127,7 +134,18 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                           </div>
                         </div>
                       ) : (
-                        <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('Bluesky', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
                       )}
                     </td>
                   )}
@@ -168,7 +186,18 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                           </div>
                         </div>
                       ) : (
-                        <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('Mastodon', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
                       )}
                     </td>
                   )}
@@ -203,7 +232,18 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                           </div>
                         </div>
                       ) : (
-                        <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('X Twitter', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
                       )}
                     </td>
                   )}
