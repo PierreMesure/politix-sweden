@@ -3,7 +3,7 @@
     "id": "Q15963975",
     "name": "Adam Marttinen",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AdamMarttinen",
@@ -17,7 +17,7 @@
     "id": "Q40741721",
     "name": "Adam Reuterskiöld",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AdamDidrik",
@@ -31,11 +31,11 @@
     "id": "Q113847323",
     "name": "Adrian Magnusson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "adrianmagnussn",
-        "last_post": "2026-01-03T12:58:52+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -56,7 +56,7 @@
     "id": "Q114031237",
     "name": "Aida Birinxhiku",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AidaBirinxhiku",
@@ -70,11 +70,11 @@
     "id": "Q65499866",
     "name": "Alexander Christiansson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AOchristiansson",
-        "last_post": "2024-04-17T14:47:07+00:00"
+        "last_post": "2025-12-27T01:37:59+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -84,11 +84,11 @@
     "id": "Q30035697",
     "name": "Alexandra Anstrell",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
-        "handle": "aanstrell",
-        "last_post": "closed"
+        "handle": "alexandraanstr1",
+        "last_post": "2023-08-29T04:48:03+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -98,7 +98,7 @@
     "id": "Q18202415",
     "name": "Alexandra Völker",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Vlker",
@@ -112,7 +112,7 @@
     "id": "Q70621742",
     "name": "Alireza Akhondi",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AlirezaAkhondi",
@@ -137,7 +137,7 @@
     "id": "Q24018140",
     "name": "Amanda Lind",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "amandalind_",
@@ -162,9 +162,12 @@
     "id": "Q114031250",
     "name": "Anders Alftberg",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AAlftberg",
+        "last_post": "2021-09-20T12:22:21+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -173,9 +176,12 @@
     "id": "Q132718105",
     "name": "Anders Ekegren",
     "party": "Liberalerna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "EkegrenSolna",
+        "last_post": "2026-01-18T13:05:41+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -195,7 +201,7 @@
     "id": "Q5891398",
     "name": "Anders W. Jonsson",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "anderswjonsson",
@@ -209,11 +215,11 @@
     "id": "Q3375050",
     "name": "Anders Ygeman",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Ygeman",
-        "last_post": "2026-01-29T17:51:37+00:00"
+        "last_post": "2026-01-29T19:37:28+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -223,9 +229,12 @@
     "id": "Q114031247",
     "name": "Anders Ådahl",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AdahlAnders",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -234,7 +243,7 @@
     "id": "Q114031213",
     "name": "Andrea Andersson-Tay",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "AnderssonTay",
@@ -248,9 +257,12 @@
     "id": "Q64684689",
     "name": "Andreas Lennkvist Manriquez",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "A_Lennkvist",
+        "last_post": "2025-11-04T14:23:05+00:00"
+      },
       "bluesky": {
         "handle": "andreaslm.bsky.social",
         "last_post": "2025-06-26T13:04:25.139Z"
@@ -262,11 +274,11 @@
     "id": "Q71062310",
     "name": "Angelica Lundberg",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AngelicaJkpg",
-        "last_post": "2026-01-28T21:48:01+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -276,7 +288,7 @@
     "id": "Q4766168",
     "name": "Ann-Charlotte Hammar Johnsson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ACHammar",
@@ -290,7 +302,7 @@
     "id": "Q71133291",
     "name": "Ann-Christine From",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Anki_Utterstedt",
@@ -304,11 +316,11 @@
     "id": "Q59269310",
     "name": "Ann-Sofie Alm",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "annsofiealm",
-        "last_post": "2026-01-29T06:23:05+00:00"
+        "last_post": "2026-01-29T20:22:21+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -318,7 +330,7 @@
     "id": "Q71131299",
     "name": "Ann-Sofie Lifvenhage",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lifvenhage",
@@ -332,9 +344,12 @@
     "id": "Q114031212",
     "name": "Anna Lasses",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "annalasses",
+        "last_post": "2025-10-27T15:12:11+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -343,21 +358,24 @@
     "id": "Q27107494",
     "name": "Anna Vikström",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AnnaVikstrom",
         "last_post": "2026-01-29T14:41:46+00:00"
       },
       "bluesky": null,
-      "mastodon": null
+      "mastodon": {
+        "handle": "annavikstrom@mastodon.nu",
+        "last_post": "2023-03-01T06:00:03.535Z"
+      }
     }
   },
   {
     "id": "Q18202414",
     "name": "Anna Wallentheim",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "walleannas",
@@ -371,9 +389,12 @@
     "id": "Q114772539",
     "name": "Anna af Sillèn",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "annaafsillen",
+        "last_post": "2023-06-30T07:58:56+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -393,11 +414,11 @@
     "id": "Q18202413",
     "name": "Anna-Caren Sätherberg",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AnnaCarenS",
-        "last_post": "2026-01-29T12:53:03+00:00"
+        "last_post": "2026-01-29T20:20:41+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -418,9 +439,12 @@
     "id": "Q99541757",
     "name": "Anne-Li Sjölund",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "sjolund_li",
+        "last_post": "2025-04-25T10:09:56+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -429,9 +453,12 @@
     "id": "Q131732982",
     "name": "Annelie Sjöberg",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AesgSjberg",
+        "last_post": "2026-01-26T00:16:52+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -440,7 +467,7 @@
     "id": "Q18242588",
     "name": "Annika Hirvonen",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AnnikaHirvonen",
@@ -457,11 +484,11 @@
     "id": "Q4980750",
     "name": "Annika Strandhäll",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "strandhall",
-        "last_post": "2026-01-29T17:38:44+00:00"
+        "last_post": "2026-01-30T01:22:57+00:00"
       },
       "bluesky": {
         "handle": "annikastrandhall.bsky.social",
@@ -485,11 +512,11 @@
     "id": "Q4787806",
     "name": "Ardalan Shekarabi",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "shekarabi",
-        "last_post": "2026-01-29T10:25:38+00:00"
+        "last_post": "2026-01-29T20:32:22+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -516,7 +543,7 @@
     "last_check": null,
     "social": {
       "x": {
-        "handle": "AylinFazelian",
+        "handle": "aylin_nouri",
         "last_post": "closed"
       },
       "bluesky": null,
@@ -563,11 +590,11 @@
     "id": "Q4919772",
     "name": "Björn Söder",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "bjornsoder",
-        "last_post": "2026-01-28T17:32:34+00:00"
+        "last_post": "2026-01-29T19:44:32+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -588,11 +615,11 @@
     "id": "Q20156222",
     "name": "Björn Wiechel",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
-        "handle": "Bjorg_Wiechek",
-        "last_post": "closed"
+        "handle": "Bjorn_Wiechel",
+        "last_post": "2026-01-30T00:02:10+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -613,11 +640,11 @@
     "id": "Q70912742",
     "name": "Bo Broman",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "BosseBroman",
-        "last_post": "2024-10-23T06:25:03+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -638,11 +665,11 @@
     "id": "Q63870850",
     "name": "Camilla Brodin",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "CamillaBrodin",
-        "last_post": "2026-01-24T22:56:08+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -652,7 +679,7 @@
     "id": "Q4940994",
     "name": "Camilla Brunsberg",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "brunsberg",
@@ -688,7 +715,7 @@
     "id": "Q57168837",
     "name": "Carina Ödebrink",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "carinaodebrink",
@@ -702,9 +729,12 @@
     "id": "Q114031240",
     "name": "Carita Boulwén",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "CBoulwen",
+        "last_post": "2023-01-01T23:32:10+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -724,7 +754,7 @@
     "id": "Q3374751",
     "name": "Caroline Helmersson Olsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Charoline",
@@ -738,9 +768,12 @@
     "id": "Q114031256",
     "name": "Caroline Högström",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "CHogstrom",
+        "last_post": "2026-01-20T17:32:34+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -749,9 +782,12 @@
     "id": "Q137212471",
     "name": "Caroline Täljeblad",
     "party": "Vänsterpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ctaljeblad",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -793,9 +829,12 @@
     "id": "Q114031236",
     "name": "Cecilia Rönn",
     "party": "Liberalerna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ceciliaronn",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -804,7 +843,7 @@
     "id": "Q4970153",
     "name": "Charlotte Nordström",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "SkaraCharlotte",
@@ -818,7 +857,7 @@
     "id": "Q71455806",
     "name": "Charlotte Quensel",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "cquensel",
@@ -843,11 +882,11 @@
     "id": "Q27750419",
     "name": "Christian Carlsson",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "christianckd",
-        "last_post": "2026-01-29T09:06:35+00:00"
+        "last_post": "2026-01-29T22:54:44+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -868,9 +907,12 @@
     "id": "Q112075255",
     "name": "Christofer Bergenblock",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "c_bergenblock",
+        "last_post": "2025-09-28T12:24:21+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -879,7 +921,7 @@
     "id": "Q57168740",
     "name": "Ciczie Weidby",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ciczie",
@@ -896,11 +938,11 @@
     "id": "Q70886056",
     "name": "Clara Aranda",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "aranda_clara",
-        "last_post": "2015-07-23T14:36:41+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -910,9 +952,12 @@
     "id": "Q114772305",
     "name": "Crister Carlsson",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ChristerCa23712",
+        "last_post": "2026-01-28T08:37:07+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -921,9 +966,12 @@
     "id": "Q114772325",
     "name": "Dan Hovskär",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "DanHovskar",
+        "last_post": "2024-06-08T19:54:10+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -932,14 +980,20 @@
     "id": "Q5798982",
     "name": "Daniel Helldén",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "DanielHellden",
         "last_post": "2026-01-25T21:26:28+00:00"
       },
-      "bluesky": null,
-      "mastodon": null
+      "bluesky": {
+        "handle": "helldendaniel.bsky.social",
+        "last_post": "2026-01-25T21:27:15.255Z"
+      },
+      "mastodon": {
+        "handle": "danielhellden@mastodon.nu",
+        "last_post": "2022-11-22T08:10:33.167Z"
+      }
     }
   },
   {
@@ -957,7 +1011,7 @@
     "id": "Q18245374",
     "name": "Daniel Riazat",
     "party": null,
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "danielriazat",
@@ -974,9 +1028,12 @@
     "id": "Q114030385",
     "name": "Daniel Vencu Velasquez Castro",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "VencuVelasquez",
+        "last_post": "2026-01-29T17:15:32+00:00"
+      },
       "bluesky": {
         "handle": "danielvencu.bsky.social",
         "last_post": "2024-12-07T20:52:56.060Z"
@@ -988,7 +1045,7 @@
     "id": "Q70574439",
     "name": "David Josefsson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "david_josefsson",
@@ -1027,7 +1084,7 @@
     "id": "Q18238432",
     "name": "Dennis Dioukarev",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "DennisDioukarev",
@@ -1041,7 +1098,7 @@
     "id": "Q114031243",
     "name": "Dženan Cišija",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": null,
       "bluesky": {
@@ -1055,7 +1112,7 @@
     "id": "Q6071900",
     "name": "Edward Riedl",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "EdwardRiedl",
@@ -1069,9 +1126,12 @@
     "id": "Q114772424",
     "name": "Elin Nilsson",
     "party": "Liberalerna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "nilsson_elin_",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1080,9 +1140,12 @@
     "id": "Q4974920",
     "name": "Elisabeth Thand Ringqvist",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "elisabethtr",
+        "last_post": "2026-01-26T16:48:07+00:00"
+      },
       "bluesky": {
         "handle": "elisabethtr.bsky.social",
         "last_post": "2025-02-28T07:22:43.253Z"
@@ -1094,9 +1157,12 @@
     "id": "Q4957570",
     "name": "Ellen Juntti",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "EllenJuntti",
+        "last_post": "2026-01-22T14:28:52+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1105,9 +1171,12 @@
     "id": "Q98545439",
     "name": "Elsa Widding",
     "party": null,
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ElsaWidding",
+        "last_post": "2026-01-23T12:53:11+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1116,9 +1185,12 @@
     "id": "Q104214592",
     "name": "Emma Ahlström Köster",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Emmaakoster",
+        "last_post": "2026-01-16T16:16:18+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1127,7 +1199,7 @@
     "id": "Q18244660",
     "name": "Emma Nohrén",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "emmanohren",
@@ -1174,9 +1246,12 @@
     "id": "Q114031238",
     "name": "Erik Hellsborn",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "EHellsborn",
+        "last_post": "2026-01-29T13:56:03+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1185,7 +1260,7 @@
     "id": "Q19977128",
     "name": "Erik Ottoson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ErikOttoson",
@@ -1199,11 +1274,11 @@
     "id": "Q30035702",
     "name": "Eva Lindh",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "eva_lindh",
-        "last_post": "2026-01-29T10:33:05+00:00"
+        "last_post": "2026-01-29T19:52:27+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1224,9 +1299,12 @@
     "id": "Q47506077",
     "name": "Fredrik Ahlstedt",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "FredrikAhlstedt",
+        "last_post": "2026-01-29T10:19:22+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1235,9 +1313,12 @@
     "id": "Q99528690",
     "name": "Fredrik Kärrholm",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "FredrikKarrholm",
+        "last_post": null
+      },
       "bluesky": {
         "handle": "karrholm.bsky.social",
         "last_post": "2023-11-24T23:21:45.750Z"
@@ -1249,11 +1330,11 @@
     "id": "Q71132556",
     "name": "Fredrik Lindahl",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "fredriklindahl_",
-        "last_post": "2024-06-08T14:07:10+00:00"
+        "last_post": "2024-06-08T21:07:40+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1274,7 +1355,7 @@
     "id": "Q5966830",
     "name": "Fredrik Lundh Sammeli",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lundhsammeli",
@@ -1291,7 +1372,7 @@
     "id": "Q3675520",
     "name": "Fredrik Malm",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "FredrikMalm",
@@ -1308,7 +1389,7 @@
     "id": "Q3373667",
     "name": "Fredrik Olovsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "fredrikolovsson",
@@ -1322,7 +1403,7 @@
     "id": "Q4940950",
     "name": "Gudrun Brunegård",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "gudrunbrunegard",
@@ -1336,7 +1417,7 @@
     "id": "Q3674337",
     "name": "Gulan Avci",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "GulanAvci",
@@ -1350,13 +1431,16 @@
     "id": "Q3374499",
     "name": "Gunilla Carlsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "kulturgunilla",
         "last_post": "2023-12-07T09:33:47+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "CarlssonSwe@respublicae.eu",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -1364,9 +1448,12 @@
     "id": "Q5620978",
     "name": "Gustaf Göthberg",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "gustafgothberg",
+        "last_post": "2026-01-29T22:16:17+00:00"
+      },
       "bluesky": {
         "handle": "gustafgothberg.bsky.social",
         "last_post": "2025-02-10T07:22:56.852Z"
@@ -1389,11 +1476,11 @@
     "id": "Q57168756",
     "name": "Hanna Gunnarsson",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "gunnarssonhanna",
-        "last_post": "2026-01-28T20:39:16+00:00"
+        "last_post": "2026-01-29T15:41:00+00:00"
       },
       "bluesky": {
         "handle": "gunnarssonhanna.bsky.social",
@@ -1417,10 +1504,10 @@
     "id": "Q5629994",
     "name": "Hans Eklind",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
-        "handle": "bandyprasten",
+        "handle": "HansEklind",
         "last_post": "closed"
       },
       "bluesky": null,
@@ -1442,7 +1529,7 @@
     "id": "Q4940303",
     "name": "Helena Bouveng",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "helenabouveng",
@@ -1467,7 +1554,7 @@
     "id": "Q4962331",
     "name": "Helena Lindahl",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "FrkLindahl",
@@ -1481,7 +1568,7 @@
     "id": "Q65130310",
     "name": "Helena Storckenfeldt",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "HelenaAntoni1",
@@ -1495,7 +1582,7 @@
     "id": "Q57168726",
     "name": "Helena Vilhelmsson",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "centerHelena",
@@ -1520,11 +1607,11 @@
     "id": "Q3374237",
     "name": "Helén Pettersson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "hepe",
-        "last_post": "2026-01-25T19:23:07+00:00"
+        "last_post": "2026-01-29T20:08:48+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1534,7 +1621,7 @@
     "id": "Q57168842",
     "name": "Heléne Björklund",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "helenebjorklund",
@@ -1548,7 +1635,7 @@
     "id": "Q56164156",
     "name": "Henrik Vinge",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "VingeHenrik",
@@ -1562,7 +1649,7 @@
     "id": "Q18246258",
     "name": "Håkan Svenneling",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "hsvenneling",
@@ -1579,7 +1666,7 @@
     "id": "Q18202365",
     "name": "Ida Drougge",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "idadrougge",
@@ -1593,9 +1680,12 @@
     "id": "Q30035685",
     "name": "Ida Ekeroth",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "idaekeroth",
+        "last_post": "2026-01-19T06:15:21+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1604,11 +1694,11 @@
     "id": "Q4949356",
     "name": "Ida Gabrielsson",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "idagabrielsson",
-        "last_post": "2026-01-27T14:27:12+00:00"
+        "last_post": "2026-01-27T14:46:31+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1618,7 +1708,7 @@
     "id": "Q18451082",
     "name": "Ida Karkiainen",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "IdaKarkiainen",
@@ -1632,7 +1722,7 @@
     "id": "Q4981700",
     "name": "Ilona Szatmári Waldau",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "IlonaWaldau",
@@ -1657,7 +1747,7 @@
     "id": "Q4970595",
     "name": "Ingela Nylund Watz",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "NylundWatz",
@@ -1671,9 +1761,12 @@
     "id": "Q71340705",
     "name": "Ingemar Kihlström",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ingemarkihlstro",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1682,9 +1775,12 @@
     "id": "Q114031270",
     "name": "Isabell Mixter",
     "party": "Vänsterpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "isabellmixter",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1693,11 +1789,11 @@
     "id": "Q5745541",
     "name": "Isak From",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "fromisak",
-        "last_post": "2026-01-29T17:15:28+00:00"
+        "last_post": "2026-01-29T20:04:19+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1707,9 +1803,12 @@
     "id": "Q114031218",
     "name": "Jacob Risberg",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KlimatJacob",
+        "last_post": null
+      },
       "bluesky": {
         "handle": "jacobrisberg.bsky.social",
         "last_post": "2025-02-14T16:47:22.249Z"
@@ -1721,9 +1820,12 @@
     "id": "Q108059200",
     "name": "Jakob Olofsgård",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "jakobolofsgard",
+        "last_post": "closed"
+      },
       "bluesky": {
         "handle": "jakobolofsgard.bsky.social",
         "last_post": "2024-12-07T20:34:57.254Z"
@@ -1746,11 +1848,11 @@
     "id": "Q1681740",
     "name": "Jan Ericson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Ericson_ubbhult",
-        "last_post": "2026-01-29T15:46:48+00:00"
+        "last_post": "2026-01-29T19:51:26+00:00"
       },
       "bluesky": {
         "handle": "ericsoniubbhult.bsky.social",
@@ -1763,9 +1865,12 @@
     "id": "Q58365776",
     "name": "Jan Riise",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "RiiseJan",
+        "last_post": "2025-10-29T07:21:10+00:00"
+      },
       "bluesky": {
         "handle": "janriise.bsky.social",
         "last_post": "2025-10-27T06:24:40.459Z"
@@ -1777,7 +1882,7 @@
     "id": "Q18238692",
     "name": "Janine Alm Ericson",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "almericson",
@@ -1791,7 +1896,7 @@
     "id": "Q4563096",
     "name": "Jennie Nilsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JennieNilsson",
@@ -1805,11 +1910,11 @@
     "id": "Q114867560",
     "name": "Jennie Wernäng",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "jenniewer",
-        "last_post": "2025-04-09T12:46:27+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -1819,7 +1924,7 @@
     "id": "Q18923356",
     "name": "Jesper Skalberg Karlsson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JesperSkalberg",
@@ -1844,7 +1949,7 @@
     "id": "Q63975366",
     "name": "Jessica Stegrud",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "jessicastegrud",
@@ -1858,11 +1963,11 @@
     "id": "Q57168784",
     "name": "Jessica Wetterling",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
-        "handle": "jes_wet",
-        "last_post": "closed"
+        "handle": "JesWetterling",
+        "last_post": "2025-03-28T22:46:32+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1872,7 +1977,7 @@
     "id": "Q518776",
     "name": "Jimmie Åkesson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "jimmieakesson",
@@ -1897,9 +2002,12 @@
     "id": "Q57297792",
     "name": "Joakim Järrebring",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "jarrebring58096",
+        "last_post": "2026-01-29T19:28:33+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -1919,7 +2027,7 @@
     "id": "Q116482970",
     "name": "Joanna Lewerentz",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "joannalewerentz",
@@ -1933,11 +2041,11 @@
     "id": "Q26305112",
     "name": "Joar Forssell",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JoarForssell",
-        "last_post": "2026-01-29T16:12:08+00:00"
+        "last_post": "2026-01-29T20:52:09+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -1947,7 +2055,7 @@
     "id": "Q5554920",
     "name": "Johan Andersson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "joh_and",
@@ -1961,7 +2069,7 @@
     "id": "Q20095387",
     "name": "Johan Büser",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "johanbuser",
@@ -1986,7 +2094,7 @@
     "id": "Q18202412",
     "name": "Johanna Haraldsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "joharald",
@@ -2000,7 +2108,7 @@
     "id": "Q98530561",
     "name": "Johanna Rantsi",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "johannarantsi",
@@ -2028,7 +2136,7 @@
     "id": "Q50353136",
     "name": "John Widegren",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JohnWidegren",
@@ -2053,7 +2161,7 @@
     "id": "Q58837098",
     "name": "Jonas Andersson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "jonandsd",
@@ -2067,9 +2175,12 @@
     "id": "Q121934765",
     "name": "Jonathan Svensson",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "TantanSvensson",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2078,11 +2189,11 @@
     "id": "Q5740653",
     "name": "Josef Fransson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "FranssonJosef",
-        "last_post": "2026-01-28T15:19:04+00:00"
+        "last_post": "closed"
       },
       "bluesky": null,
       "mastodon": null
@@ -2092,11 +2203,11 @@
     "id": "Q4959972",
     "name": "Julia Kronlid",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JuliaKronlid",
-        "last_post": "2024-02-14T21:55:00+00:00"
+        "last_post": "2023-09-07T12:32:40+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2106,7 +2217,7 @@
     "id": "Q4988619",
     "name": "Jytte Guteland",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "JytteGuteland",
@@ -2123,11 +2234,11 @@
     "id": "Q57168821",
     "name": "Jörgen Berglund",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "jorgen_berglund",
-        "last_post": "2024-04-29T13:37:38.594000+00:00"
+        "last_post": "2024-04-29T13:37:38+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2137,11 +2248,11 @@
     "id": "Q71545861",
     "name": "Jörgen Grubb",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "GrubbJorgen",
-        "last_post": "2025-07-27T15:17:34+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -2151,7 +2262,7 @@
     "id": "Q56923131",
     "name": "Kadir Kasirga",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "kasirga_kadir",
@@ -2165,11 +2276,11 @@
     "id": "Q114031261",
     "name": "Kajsa Fredholm",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "fredholmkajsa",
-        "last_post": "2026-01-09T08:42:28+00:00"
+        "last_post": "2026-01-29T20:35:01+00:00"
       },
       "bluesky": {
         "handle": "kajsafredholm.bsky.social",
@@ -2196,7 +2307,7 @@
     "id": "Q3544279",
     "name": "Karin Enström",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Karinenstrom",
@@ -2210,7 +2321,7 @@
     "id": "Q18245556",
     "name": "Karin Rågsjö",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ragsjo",
@@ -2224,7 +2335,7 @@
     "id": "Q114133361",
     "name": "Karin Sundin",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "k_sundin",
@@ -2241,9 +2352,12 @@
     "id": "Q19976974",
     "name": "Katarina Luhr",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "gialuhr",
+        "last_post": "2025-12-26T14:29:34+00:00"
+      },
       "bluesky": {
         "handle": "gialuhr.bsky.social",
         "last_post": "2026-01-29T07:54:30.350Z"
@@ -2255,9 +2369,12 @@
     "id": "Q114772553",
     "name": "Katarina Tolgfors",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KattisTolgfors",
+        "last_post": "2026-01-29T22:06:34+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2266,7 +2383,7 @@
     "id": "Q61103104",
     "name": "Katja Nyberg",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Katja_Nyberg",
@@ -2280,13 +2397,16 @@
     "id": "Q3373169",
     "name": "Kenneth G. Forslund",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "KGFdirekt",
         "last_post": "2026-01-10T08:28:28+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "kgfdirekt.bsky.social",
+        "last_post": "2026-01-10T08:31:00.231Z"
+      },
       "mastodon": null
     }
   },
@@ -2305,7 +2425,7 @@
     "id": "Q4964100",
     "name": "Kerstin Lundgren",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "KerstinLundgren",
@@ -2319,9 +2439,12 @@
     "id": "Q5879681",
     "name": "Kjell Jansson",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KjellJansson4",
+        "last_post": "2020-02-06T11:58:16+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2330,11 +2453,11 @@
     "id": "Q70639708",
     "name": "Kjell-Arne Ottosson",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "KAO_KD",
-        "last_post": "2026-01-29T11:13:28+00:00"
+        "last_post": "2026-01-29T21:26:43+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2344,7 +2467,7 @@
     "id": "Q897282",
     "name": "Kristina Axén Olin",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "kristinaaxol",
@@ -2369,7 +2492,7 @@
     "id": "Q4968944",
     "name": "Laila Naraghi",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lailanaraghi",
@@ -2383,11 +2506,11 @@
     "id": "Q21578777",
     "name": "Larry Söder",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "larrysoder",
-        "last_post": "2026-01-29T10:03:40+00:00"
+        "last_post": "2026-01-29T21:19:49+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2408,11 +2531,11 @@
     "id": "Q5596130",
     "name": "Lars Beckman",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "beckmansasikter",
-        "last_post": "2026-01-29T17:26:21+00:00"
+        "last_post": "2026-01-29T22:13:06+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2433,9 +2556,12 @@
     "id": "Q106783058",
     "name": "Lars Isacsson",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "IsacssonLars",
+        "last_post": "2026-01-25T07:07:54+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2455,7 +2581,7 @@
     "id": "Q3358494",
     "name": "Lars Mejern Larsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Mejern",
@@ -2469,7 +2595,7 @@
     "id": "Q30035679",
     "name": "Lars Püss",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "lassepuess",
@@ -2494,7 +2620,7 @@
     "id": "Q18451520",
     "name": "Lawen Redar",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "LawenRedar",
@@ -2508,9 +2634,12 @@
     "id": "Q41615610",
     "name": "Leif Gripestam",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Leif_Gripestam",
+        "last_post": "2026-01-28T13:44:40+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2519,7 +2648,7 @@
     "id": "Q20652878",
     "name": "Leif Nysmed",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "LeifNysmed",
@@ -2533,11 +2662,11 @@
     "id": "Q56640168",
     "name": "Leila Ali Elmi",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "LeilaAliElmi",
-        "last_post": "2018-09-17T07:51:37+00:00"
+        "last_post": "2018-06-19T17:11:57+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2547,7 +2676,7 @@
     "id": "Q3431836",
     "name": "Lena Hallengren",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lenahallengren",
@@ -2575,7 +2704,7 @@
     "id": "Q114031216",
     "name": "Leonid Yurkovskiy",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lyurkovskiy",
@@ -2589,9 +2718,12 @@
     "id": "Q110793990",
     "name": "Lili André",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "liliandre",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2600,7 +2732,7 @@
     "id": "Q16595953",
     "name": "Lina Nordquist",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "LinaNordquist",
@@ -2614,11 +2746,11 @@
     "id": "Q71137014",
     "name": "Linda Lindberg",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "LindaLindbergs",
-        "last_post": "2025-10-06T11:58:58+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -2628,9 +2760,12 @@
     "id": "Q114031264",
     "name": "Linnéa Wickman",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "linneawickman",
+        "last_post": "2023-06-02T09:42:48+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2639,18 +2774,24 @@
     "id": "Q97097437",
     "name": "Linus Lakso",
     "party": "Miljöpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "LinusLakso",
+        "last_post": "closed"
+      },
       "bluesky": null,
-      "mastodon": null
+      "mastodon": {
+        "handle": "linuslakso@mastodon.nu",
+        "last_post": "2024-12-21T14:03:06.507Z"
+      }
     }
   },
   {
     "id": "Q30035676",
     "name": "Linus Sköld",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lskold",
@@ -2664,7 +2805,7 @@
     "id": "Q57168752",
     "name": "Lorena Delgado Varas",
     "party": null,
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "lorena_dv",
@@ -2681,7 +2822,7 @@
     "id": "Q18243097",
     "name": "Lotta Johnsson Fornarve",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "fornarve",
@@ -2695,9 +2836,12 @@
     "id": "Q114031231",
     "name": "Louise Eklund",
     "party": "Liberalerna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "LouEklund",
+        "last_post": "2024-06-24T14:09:51+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2717,7 +2861,7 @@
     "id": "Q71131688",
     "name": "Ludvig Aspling",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AsplingLudvig",
@@ -2731,9 +2875,12 @@
     "id": "Q129690000",
     "name": "Ludvig Ceimertz",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "LCeimertz",
+        "last_post": "2026-01-20T07:06:23+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2753,11 +2900,11 @@
     "id": "Q4935873",
     "name": "Magdalena Andersson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "magdandersson",
-        "last_post": "2026-01-27T08:50:51+00:00"
+        "last_post": "2026-01-29T18:33:31+00:00"
       },
       "bluesky": {
         "handle": "magdalenaandersson.socialdemokraterna.se",
@@ -2770,11 +2917,11 @@
     "id": "Q58769193",
     "name": "Magdalena Thuresson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "magganschroder",
-        "last_post": "2018-08-14T10:18:44+00:00"
+        "last_post": "2018-08-14T17:23:24+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -2784,9 +2931,12 @@
     "id": "Q5574173",
     "name": "Magnus Berntsson",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "MagnusBerntsson",
+        "last_post": "2026-01-29T16:47:54+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2795,7 +2945,7 @@
     "id": "Q5826586",
     "name": "Magnus Jacobsson",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "magnusjacobsson",
@@ -2831,7 +2981,7 @@
     "id": "Q18245020",
     "name": "Magnus Persson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "mangepersson",
@@ -2856,7 +3006,7 @@
     "id": "Q18243244",
     "name": "Maj Karlsson",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "karlsson_maj",
@@ -2884,9 +3034,12 @@
     "id": "Q99527006",
     "name": "Malin Höglund",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Moderatmalin",
+        "last_post": "2025-11-14T10:54:20+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2928,7 +3081,7 @@
     "id": "Q4942378",
     "name": "Margareta Cederfelt",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MCederfelt",
@@ -2942,7 +3095,7 @@
     "id": "Q4980571",
     "name": "Maria Stockhaus",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Mariastockhaus",
@@ -2989,7 +3142,7 @@
     "id": "Q70586981",
     "name": "Marie-Louise Hänel Sandström",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MarieLouise_HS",
@@ -3003,14 +3156,17 @@
     "id": "Q105928301",
     "name": "Markus Kallifatides",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": null,
       "bluesky": {
         "handle": "mkallifatides.bsky.social",
         "last_post": "2026-01-28T06:31:42.452Z"
       },
-      "mastodon": null
+      "mastodon": {
+        "handle": "MarkusKallifatides@mastodon.nu",
+        "last_post": "2026-01-28T19:22:26.449Z"
+      }
     }
   },
   {
@@ -3028,11 +3184,11 @@
     "id": "Q72922068",
     "name": "Markus Selin",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "selinmarkus",
-        "last_post": "2026-01-21T11:09:41+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -3042,7 +3198,7 @@
     "id": "Q6240455",
     "name": "Markus Wiechel",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MarkusWiechel",
@@ -3056,7 +3212,7 @@
     "id": "Q57168695",
     "name": "Marléne Lund Kopparklint",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "FruKopparklint",
@@ -3070,7 +3226,7 @@
     "id": "Q5910434",
     "name": "Martin Kinnunen",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Martin_Kinnunen",
@@ -3084,9 +3240,12 @@
     "id": "Q5983849",
     "name": "Martin Melin",
     "party": "Liberalerna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Martin_Melin",
+        "last_post": "2018-08-31T06:36:57+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3095,9 +3254,12 @@
     "id": "Q114659286",
     "name": "Martin Westmont",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "MartinWestmont",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3106,7 +3268,7 @@
     "id": "Q6254715",
     "name": "Martin Ådahl",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MartinAadahl",
@@ -3120,9 +3282,12 @@
     "id": "Q71132178",
     "name": "Martina Johansson",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "MartinaJ1975",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3131,7 +3296,7 @@
     "id": "Q70899253",
     "name": "Matheus Enholm",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "EnholmMatheus",
@@ -3145,9 +3310,12 @@
     "id": "Q114141183",
     "name": "Mathias Bengtsson",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "bangtsson",
+        "last_post": "2026-01-27T14:03:49+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3156,7 +3324,7 @@
     "id": "Q24701062",
     "name": "Mathias Tegnér",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "tegnr",
@@ -3173,11 +3341,11 @@
     "id": "Q3373058",
     "name": "Matilda Ernkrans",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ernkrans",
-        "last_post": "2026-01-29T17:44:24+00:00"
+        "last_post": "2026-01-29T20:01:06+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3198,13 +3366,16 @@
     "id": "Q70994131",
     "name": "Mats Berglund",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "matber",
         "last_post": "2025-10-28T13:19:53+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "berglundmats.bsky.social",
+        "last_post": "2025-04-25T20:47:27.879Z"
+      },
       "mastodon": null
     }
   },
@@ -3212,7 +3383,7 @@
     "id": "Q18239250",
     "name": "Mats Green",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "matsgreenM",
@@ -3237,7 +3408,7 @@
     "id": "Q6043377",
     "name": "Mats Persson",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "matsperspektiv",
@@ -3262,7 +3433,7 @@
     "id": "Q5887149",
     "name": "Mattias Bäckström Johansson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "mattiasbjo",
@@ -3276,9 +3447,12 @@
     "id": "Q110793999",
     "name": "Mattias Eriksson Falk",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "SDMattias",
+        "last_post": "2025-10-27T09:34:59+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3287,7 +3461,7 @@
     "id": "Q5891875",
     "name": "Mattias Jonsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "riksdagsmattias",
@@ -3301,11 +3475,11 @@
     "id": "Q5901848",
     "name": "Mattias Karlsson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "sdkarlsson",
-        "last_post": "2026-01-29T15:23:41+00:00"
+        "last_post": "2026-01-30T00:54:06+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3315,11 +3489,11 @@
     "id": "Q70588456",
     "name": "Mattias Karlsson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "moderatkarlsson",
-        "last_post": "2026-01-26T20:48:13+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -3329,11 +3503,11 @@
     "id": "Q16633339",
     "name": "Mattias Ottosson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "mattiasotto1",
-        "last_post": "2022-11-23T17:21:59+00:00"
+        "last_post": "2022-04-27T18:26:48+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3343,7 +3517,7 @@
     "id": "Q6223773",
     "name": "Mattias Vepsä",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "mattiasvepsa",
@@ -3357,7 +3531,7 @@
     "id": "Q2396467",
     "name": "Mauricio Rojas",
     "party": "Liberalerna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MauricioRojasmr",
@@ -3382,7 +3556,7 @@
     "id": "Q62745971",
     "name": "Michael Rubbestad",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "rubbestad",
@@ -3396,7 +3570,7 @@
     "id": "Q18649252",
     "name": "Mikael Dahlqvist",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "DahlqvistMikael",
@@ -3410,11 +3584,11 @@
     "id": "Q3372917",
     "name": "Mikael Damberg",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "mikaeldamberg",
-        "last_post": "2026-01-29T14:47:37+00:00"
+        "last_post": "2026-01-29T19:30:43+00:00"
       },
       "bluesky": {
         "handle": "mikaeldamberg.bsky.social",
@@ -3427,7 +3601,7 @@
     "id": "Q70407251",
     "name": "Mikael Damsgaard",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "_damsgaard",
@@ -3441,7 +3615,7 @@
     "id": "Q18238731",
     "name": "Mikael Eskilandersson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Eskilandersson",
@@ -3455,7 +3629,7 @@
     "id": "Q60823132",
     "name": "Mikael Larsson",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "1989_mikael",
@@ -3469,7 +3643,7 @@
     "id": "Q6030080",
     "name": "Mikael Oscarsson",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "MikaelOscarsson",
@@ -3494,7 +3668,7 @@
     "id": "Q37013194",
     "name": "Momodou Jallow",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Jallow_M",
@@ -3519,9 +3693,12 @@
     "id": "Q124062059",
     "name": "Mona Smedman",
     "party": "Centerpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "centermona",
+        "last_post": "2018-09-09T22:47:43+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3530,7 +3707,7 @@
     "id": "Q18202340",
     "name": "Monica Haider",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Monicahaider",
@@ -3544,11 +3721,11 @@
     "id": "Q5887217",
     "name": "Morgan Johansson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "johanssonmorgan",
-        "last_post": "2026-01-29T16:35:32+00:00"
+        "last_post": "2026-01-29T22:59:23+00:00"
       },
       "bluesky": {
         "handle": "johanssonmorgan.bsky.social",
@@ -3561,7 +3738,7 @@
     "id": "Q5620151",
     "name": "Muharrem Demirok",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "muharremdemirok",
@@ -3575,9 +3752,12 @@
     "id": "Q114031255",
     "name": "Nadja Awad",
     "party": "Vänsterpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "AwadNadja",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3586,11 +3766,11 @@
     "id": "Q63344500",
     "name": "Niels Paarup-Petersen",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "nielspaarup",
-        "last_post": "2026-01-27T06:26:50+00:00"
+        "last_post": "2026-01-29T05:42:45+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3600,7 +3780,7 @@
     "id": "Q16633140",
     "name": "Niklas Karlsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "niklaska",
@@ -3617,9 +3797,12 @@
     "id": "Q114031222",
     "name": "Niklas Sigvardsson",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Niklas1991",
+        "last_post": "2026-01-29T21:06:45+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3628,9 +3811,12 @@
     "id": "Q131376555",
     "name": "Nils Seye Larsen",
     "party": "Miljöpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "nilsseye",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3639,9 +3825,12 @@
     "id": "Q105675478",
     "name": "Nima Gholam Ali Pour",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "nimagap",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3650,7 +3839,7 @@
     "id": "Q18238235",
     "name": "Nooshi Dadgostar",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "dadgostarnooshi",
@@ -3678,7 +3867,7 @@
     "id": "Q19977055",
     "name": "Ola Möller",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "socdemola",
@@ -3692,9 +3881,12 @@
     "id": "Q71577635",
     "name": "Oliver Rosengren",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "OliverRosengren",
+        "last_post": "2026-01-29T15:50:31+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3703,11 +3895,11 @@
     "id": "Q6209093",
     "name": "Olle Thorell",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Olle_Thorell",
-        "last_post": "2026-01-26T09:23:12+00:00"
+        "last_post": "2026-01-29T19:29:51+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3717,9 +3909,12 @@
     "id": "Q18617010",
     "name": "Oscar Sjöstedt",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "OscarSjostedt",
+        "last_post": "2022-10-14T22:03:09+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3728,7 +3923,7 @@
     "id": "Q114198430",
     "name": "Oskar Svärd",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "osvard",
@@ -3742,7 +3937,7 @@
     "id": "Q6068516",
     "name": "Patrick Reslow",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "patrickreslow",
@@ -3756,11 +3951,11 @@
     "id": "Q5577436",
     "name": "Patrik Björck",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "patrikbjorck",
-        "last_post": "2026-01-19T20:54:02+00:00"
+        "last_post": "2026-01-20T00:55:26+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3792,7 +3987,7 @@
     "id": "Q21561347",
     "name": "Patrik Lundqvist",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "insatspatrik",
@@ -3817,7 +4012,7 @@
     "id": "Q71546781",
     "name": "Per Söderlund",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "PerSoderlund_SD",
@@ -3831,7 +4026,7 @@
     "id": "Q21531339",
     "name": "Per-Arne Håkansson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "1Perarne1",
@@ -3867,9 +4062,12 @@
     "id": "Q114031230",
     "name": "Peter Ollén",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "OllenPeter",
+        "last_post": "2022-07-09T09:29:04+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3878,7 +4076,7 @@
     "id": "Q5969317",
     "name": "Petter Löberg",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "hjalmarbranting",
@@ -3903,9 +4101,12 @@
     "id": "Q19976333",
     "name": "Pontus Andersson Garpvall",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "SdPontus",
+        "last_post": "2026-01-28T13:31:40+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3914,11 +4115,11 @@
     "id": "Q114031248",
     "name": "Rashid Farivar",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "rashidfarivar",
-        "last_post": "2026-01-29T10:38:24+00:00"
+        "last_post": "2026-01-29T19:44:03+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3939,11 +4140,11 @@
     "id": "Q57168699",
     "name": "Rebecka Le Moine",
     "party": "Miljöpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "Rebeckalemoine",
-        "last_post": "2025-12-02T06:11:12+00:00"
+        "last_post": "2025-12-02T16:29:12+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -3953,7 +4154,7 @@
     "id": "Q5890031",
     "name": "Richard Jomshof",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "RichardJomshof",
@@ -3967,7 +4168,7 @@
     "id": "Q6015398",
     "name": "Rickard Nordin",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "rickardnordin",
@@ -3981,9 +4182,12 @@
     "id": "Q6024765",
     "name": "Robert Olesen",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ROlesen",
+        "last_post": "2026-01-26T09:15:39+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3992,7 +4196,7 @@
     "id": "Q18243514",
     "name": "Robert Stenkvist",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "robertstenkvist",
@@ -4006,7 +4210,7 @@
     "id": "Q18274557",
     "name": "Roger Hedlund",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "rogerhedlund",
@@ -4020,7 +4224,7 @@
     "id": "Q6220743",
     "name": "Roland Utbult",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "RolandUtbult",
@@ -4056,7 +4260,7 @@
     "id": "Q4973765",
     "name": "Saila Quicklund",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "SQuicklund",
@@ -4070,7 +4274,7 @@
     "id": "Q114031265",
     "name": "Samuel Gonzalez Westling",
     "party": "Vänsterpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "SamuelGonW",
@@ -4087,9 +4291,12 @@
     "id": "Q114031263",
     "name": "Sanna Backeskog",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "SannaBackeskog",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4098,7 +4305,7 @@
     "id": "Q18448703",
     "name": "Sanne Lennström",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "SanneEriksson88",
@@ -4112,9 +4319,12 @@
     "id": "Q56925588",
     "name": "Sara Gille",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "SaraGille1",
+        "last_post": "2022-09-25T12:29:02+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4134,7 +4344,7 @@
     "id": "Q18237754",
     "name": "Sara-Lena Bjälkö",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "sdbjalko",
@@ -4148,7 +4358,7 @@
     "id": "Q26710616",
     "name": "Serkan Köse",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "Serkankose76",
@@ -4162,9 +4372,12 @@
     "id": "Q108525852",
     "name": "Sofia Amloh",
     "party": "Socialdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "FlNFlA",
+        "last_post": "2009-07-26T18:10:49+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4184,11 +4397,11 @@
     "id": "Q70407841",
     "name": "Staffan Eklöf",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "StaffanEklof",
-        "last_post": "2015-05-29T22:05:27+00:00"
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -4198,7 +4411,7 @@
     "id": "Q6027959",
     "name": "Stefan Olsson",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": null,
       "bluesky": {
@@ -4212,7 +4425,7 @@
     "id": "Q5572155",
     "name": "Sten Bergheden",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "StenBergheden",
@@ -4259,11 +4472,11 @@
     "id": "Q18202339",
     "name": "Teresa Carvalho",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "TeresaCarvalho",
-        "last_post": "2026-01-29T16:24:59+00:00"
+        "last_post": "2026-01-29T23:23:50+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -4273,9 +4486,12 @@
     "id": "Q71055616",
     "name": "Thomas Morell",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ThomasMorell12",
+        "last_post": "2021-01-25T19:04:32+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4284,9 +4500,12 @@
     "id": "Q114031224",
     "name": "Thomas Ragnarsson",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ljungbythomas",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4295,7 +4514,7 @@
     "id": "Q26211839",
     "name": "Tobias Andersson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "SDTobbe",
@@ -4334,9 +4553,12 @@
     "id": "Q114031233",
     "name": "Torsten Elofsson",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "TorstenElofsson",
+        "last_post": "2026-01-16T18:56:25+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4367,9 +4589,12 @@
     "id": "Q6012202",
     "name": "Ulrik Nilsson",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "ulriknilsson",
+        "last_post": "2023-05-11T11:36:03+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4378,7 +4603,7 @@
     "id": "Q4987958",
     "name": "Ulrika Heie",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ulrikacarlsson",
@@ -4392,7 +4617,7 @@
     "id": "Q30000205",
     "name": "Ulrika Heindorff",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": null,
     "social": {
       "x": {
         "handle": "UlrikaHeindorff",
@@ -4406,7 +4631,7 @@
     "id": "Q29040655",
     "name": "Ulrika Liljeberg",
     "party": "Centerpartiet",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "ulrikaliljeberg",
@@ -4420,9 +4645,12 @@
     "id": "Q4990375",
     "name": "Ulrika Westerlund",
     "party": "Miljöpartiet",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "UlrikaW",
+        "last_post": "2025-10-13T11:52:02+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4453,9 +4681,12 @@
     "id": "Q114031232",
     "name": "Victoria Tiblom",
     "party": "Sverigedemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "VTiblom",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4464,11 +4695,11 @@
     "id": "Q60732958",
     "name": "Viktor Wärnick",
     "party": "Moderaterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "viktorwarnick",
-        "last_post": "2026-01-19T11:21:38+00:00"
+        "last_post": "2026-01-19T11:39:52+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -4478,7 +4709,7 @@
     "id": "Q70906950",
     "name": "Yasmine Eriksson",
     "party": "Sverigedemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "yasmineeriksson",
@@ -4492,9 +4723,12 @@
     "id": "Q115170015",
     "name": "Yusuf Aydin",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Y_Aydin82",
+        "last_post": "2026-01-29T20:53:32+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -4503,7 +4737,7 @@
     "id": "Q9393603",
     "name": "Åsa Eriksson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "asainorberg",
@@ -4517,11 +4751,11 @@
     "id": "Q60823082",
     "name": "Åsa Karlsson",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "kimasa62",
-        "last_post": "2023-06-29T06:09:30+00:00"
+        "last_post": "2023-05-26T04:14:17+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -4531,11 +4765,11 @@
     "id": "Q269859",
     "name": "Åsa Westlund",
     "party": "Socialdemokraterna",
-    "last_check": "2026-01-29T18:12:03.780545+00:00",
+    "last_check": "2026-01-30T04:16:59.661822+00:00",
     "social": {
       "x": {
         "handle": "AsaWestlund",
-        "last_post": "2026-01-29T14:41:29+00:00"
+        "last_post": "2026-01-29T20:27:35+00:00"
       },
       "bluesky": {
         "handle": "asawestlund.bsky.social",
