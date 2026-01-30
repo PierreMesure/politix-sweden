@@ -6,7 +6,7 @@ export const STATS_URL = process.env.NODE_ENV === 'development'
   ? "/stats.json"
   : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/stats.json";
 
-export const FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000;
+export const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 
 export const PARTY_LOGOS: Record<string, string> = {
   "Centerpartiet": "/party_logos/c.png",
@@ -20,10 +20,10 @@ export const PARTY_LOGOS: Record<string, string> = {
 };
 
 export function isActive(lastPost: string | null) {
-  if (!lastPost || lastPost === 'closed') return false;
+  if (!lastPost || lastPost === 'closed' || lastPost === 'protected') return false;
   const date = new Date(lastPost);
   const now = new Date();
-  return (now.getTime() - date.getTime()) < FOUR_WEEKS_MS;
+  return (now.getTime() - date.getTime()) < NINETY_DAYS_MS;
 }
 
 export function getMastodonUrl(handle: string) {

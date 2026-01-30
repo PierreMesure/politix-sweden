@@ -34,7 +34,7 @@
     "never": "Aldrig",
     "closed": "Stängt konto",
     "protected": "Skyddat konto",
-    "active": "Aktiv nyligen",
+    "active": "Aktiv senaste 90 dagar",
     "inactive": "Inaktiv"
   }
 }

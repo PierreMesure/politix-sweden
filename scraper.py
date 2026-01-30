@@ -226,15 +226,15 @@ def calculate_stats(politicians):
             "mastodon": empty_stats()
         }
 
-        FOUR_WEEKS_MS = 4 * 7 * 24 * 60 * 60 * 1000
+        NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000
         now = datetime.now(timezone.utc)
 
         def is_active(last_post_iso):
-            if not last_post_iso or last_post_iso == "closed":
+            if not last_post_iso or last_post_iso == "closed" or last_post_iso == "protected":
                 return False
             try:
                 dt = datetime.fromisoformat(last_post_iso.replace('Z', '+00:00'))
-                return (now - dt).total_seconds() * 1000 < FOUR_WEEKS_MS
+                return (now - dt).total_seconds() * 1000 < NINETY_DAYS_MS
             except Exception:
                 return False
 
