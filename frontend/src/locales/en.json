@@ -10,7 +10,9 @@
     "mastodon": "Mastodon",
     "noAccounts": "No accounts",
     "clearParty": "Clear Party Filter",
-    "clearAll": "Clear all filters"
+    "clearAll": "Clear all filters",
+    "tido": "Tidö Coalition",
+    "opposition": "Opposition"
   },
   "stats": {
     "members": "members",

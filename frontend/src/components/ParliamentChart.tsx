@@ -40,33 +40,42 @@ function renderToReact(tagName: string, props: Record<string, any>, ...children:
 export default function ParliamentChart({ stats, platform }: ParliamentChartProps) {
 
   const chart = useMemo(() => {
-    if (stats.total === 0) return null;
+    if (!stats || stats.total <= 1) return null;
 
-    // Create the grouping object. Keys become CSS classes.
-    const parties = {
-      "active": {
-        seats: stats.active,
-        colour: STATUS_COLORS.active
-      },
-      "inactive": {
-        seats: stats.inactive,
-        colour: STATUS_COLORS.inactive
-      },
-      "closed": {
-        seats: stats.closed,
-        colour: STATUS_COLORS.closed
-      },
-      "none": {
-        seats: stats.none,
-        colour: STATUS_COLORS.none
-      },
+    // Helper to ensure we have a valid integer >= 0
+    const sanitize = (val: any) => {
+      const n = Math.floor(Number(val));
+      return isNaN(n) ? 0 : Math.max(0, n);
     };
 
-    // Generate the React tree directly using hFunction
-    return parliamentSvg(parties, {
-      seatCount: false,
-      hFunction: renderToReact
-    });
+    const active = sanitize(stats.active);
+    const inactive = sanitize(stats.inactive);
+    const closed = sanitize(stats.closed);
+    const none = sanitize(stats.none);
+
+    if (active + inactive + closed + none === 0) return null;
+
+    // Create the grouping object.
+    // Some libraries fail if given 0 seats for a category, so we filter them out.
+    const parties: Record<string, { seats: number; colour: string }> = {};
+    
+    if (active > 0) parties.active = { seats: active, colour: STATUS_COLORS.active };
+    if (inactive > 0) parties.inactive = { seats: inactive, colour: STATUS_COLORS.inactive };
+    if (closed > 0) parties.closed = { seats: closed, colour: STATUS_COLORS.closed };
+    if (none > 0) parties.none = { seats: none, colour: STATUS_COLORS.none };
+
+    // Final check to ensure we have at least one party with seats
+    if (Object.keys(parties).length === 0) return null;
+
+    try {
+      return parliamentSvg(parties, {
+        seatCount: false,
+        hFunction: renderToReact
+      });
+    } catch (err) {
+      console.error("parliament-svg error:", err, parties);
+      return null;
+    }
   }, [stats]);
 
   if (!chart) return null;

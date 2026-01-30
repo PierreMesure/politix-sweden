@@ -191,23 +191,64 @@ export default function DashboardStats({
             <div key={i} className="w-24 h-10 bg-gray-200 dark:bg-zinc-800 rounded-full animate-pulse"></div>
           ))
         ) : (
-          parties.map(party => (
-            <button
-              key={party}
-              onClick={() => setSelectedParty(selectedParty === party ? null : party)}
-              className={`flex items-center gap-2 px-3 py-2 rounded-full border transition-all ${
-                selectedParty === party 
-                  ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-500 text-blue-700 dark:text-blue-300' 
-                  : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 text-gray-700 dark:text-gray-300'
-              }`}
-            >
-              {PARTY_LOGOS[party] && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={PARTY_LOGOS[party]} alt={party} className="w-6 h-6 object-contain" />
-              )}
-              <span className="text-sm font-medium">{party}</span>
-            </button>
-          ))
+          <>
+            {/* Individual Parties */}
+            {parties.flatMap(party => {
+              const isUnknown = party === t('table.unknownParty');
+              
+              const elements = [];
+              
+              // If we are about to render the 'Unknown' party, insert coalitions first
+              if (isUnknown) {
+                elements.push(
+                  <button
+                    key="tido"
+                    onClick={() => setSelectedParty(selectedParty === 'tido' ? null : 'tido')}
+                    className={`px-4 py-2 rounded-full border transition-all text-sm font-medium ${
+                      selectedParty === 'tido'
+                        ? 'bg-blue-600 border-blue-600 text-white'
+                        : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 text-gray-700 dark:text-gray-300'
+                    }`}
+                  >
+                    {t('filters.tido')}
+                  </button>
+                );
+                elements.push(
+                  <button
+                    key="opposition"
+                    onClick={() => setSelectedParty(selectedParty === 'opposition' ? null : 'opposition')}
+                    className={`px-4 py-2 rounded-full border transition-all text-sm font-medium ${
+                      selectedParty === 'opposition'
+                        ? 'bg-red-600 border-red-600 text-white'
+                        : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 text-gray-700 dark:text-gray-300'
+                    }`}
+                  >
+                    {t('filters.opposition')}
+                  </button>
+                );
+              }
+
+              elements.push(
+                <button
+                  key={party}
+                  onClick={() => setSelectedParty(selectedParty === party ? null : party)}
+                  className={`flex items-center gap-2 px-3 py-2 rounded-full border transition-all ${
+                    selectedParty === party 
+                      ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-500 text-blue-700 dark:text-blue-300' 
+                      : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 text-gray-700 dark:text-gray-300'
+                  }`}
+                >
+                  {PARTY_LOGOS[party] && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={PARTY_LOGOS[party]} alt={party} className="w-6 h-6 object-contain" />
+                  )}
+                  <span className="text-sm font-medium">{party}</span>
+                </button>
+              );
+              
+              return elements;
+            })}
+          </>
         )}
       </div>
     </section>

@@ -14,7 +14,9 @@
     "mastodon": "Mastodon",
     "noAccounts": "Inga konton",
     "clearParty": "Rensa partifilter",
-    "clearAll": "Rensa alla filter"
+    "clearAll": "Rensa alla filter",
+    "tido": "Tidöpartierna",
+    "opposition": "Oppositionen"
   },
   "stats": {
     "members": "ledamöter",
@@ -29,7 +31,7 @@
     "total": "Översikt",
     "edit": "Redigera",
     "editOnWikidata": "Redigera på Wikidata",
-    "unknownParty": "Okänt",
+    "unknownParty": "Inget",
     "noResults": "Inga politiker hittades som matchar dina kriterier.",
     "never": "Aldrig",
     "closed": "Stängt konto",

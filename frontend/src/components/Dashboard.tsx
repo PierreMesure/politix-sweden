@@ -8,6 +8,9 @@ import DashboardStats from './DashboardStats';
 import DashboardFilters from './DashboardFilters';
 import PoliticianTable from './PoliticianTable';
 
+const TIDO_PARTIES = ["Moderaterna", "Sverigedemokraterna", "Kristdemokraterna", "Liberalerna"];
+const OPPOSITION_PARTIES = ["Socialdemokraterna", "Vänsterpartiet", "Miljöpartiet", "Centerpartiet"];
+
 export default function Dashboard() {
   const { t } = useTranslation();
   const [data, setData] = useState<Politician[]>([]);
@@ -78,6 +81,8 @@ export default function Dashboard() {
   const filteredByParty = useMemo(() => {
     return data.filter(p => {
       const normalizedParty = p.party || t('table.unknownParty');
+      if (selectedParty === 'tido') return TIDO_PARTIES.includes(normalizedParty);
+      if (selectedParty === 'opposition') return OPPOSITION_PARTIES.includes(normalizedParty);
       return selectedParty ? normalizedParty === selectedParty : true;
     });
   }, [data, selectedParty, t]);
