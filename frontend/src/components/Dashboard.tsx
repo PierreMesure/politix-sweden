@@ -172,39 +172,94 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-8">
-      <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{t('title')}</h1>
-        <p className="text-gray-500 dark:text-gray-400">
-          {t('description')}
-        </p>
-      </header>
+    <div className="flex flex-col min-h-screen">
+      <div className="p-6 max-w-7xl mx-auto space-y-8 flex-grow w-full">
+        <header className="space-y-4">
+          <div className="flex items-center gap-3">
+            <div className="bg-blue-600 text-white p-2 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
+            </div>
+            <h1 className="text-4xl font-black tracking-tighter text-gray-900 dark:text-white">
+              politix
+            </h1>
+          </div>
+          <div className="space-y-1">
+            <h2 className="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100">{t('title')}</h2>
+            <p className="text-gray-500 dark:text-gray-400">
+              {t('description').split('{carl}').map((part, i, arr) => (
+                <span key={i}>
+                  {part}
+                  {i < arr.length - 1 && (
+                    <a 
+                      href="https://carlheath.se/tag/social-media/" 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                    >
+                      Carl Heath
+                    </a>
+                  )}
+                </span>
+              ))}
+            </p>
+          </div>
+        </header>
 
-      <DashboardStats
-        loading={statsLoading}
-        currentStats={currentStats}
-        activePlatform={activePlatform}
-        setActivePlatform={setActivePlatform}
-        stats={stats}
-        parties={parties}
-        selectedParty={selectedParty}
-        setSelectedParty={setSelectedParty}
-      />
+        <DashboardStats
+          loading={statsLoading}
+          currentStats={currentStats}
+          activePlatform={activePlatform}
+          setActivePlatform={setActivePlatform}
+          stats={stats}
+          parties={parties}
+          selectedParty={selectedParty}
+          setSelectedParty={setSelectedParty}
+        />
 
-      <DashboardFilters
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        selectedParty={selectedParty}
-        setSelectedParty={setSelectedParty}
-        activePlatform={activePlatform}
-        setActivePlatform={setActivePlatform}
-      />
+        <div className="space-y-4">
+          <DashboardFilters
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            selectedParty={selectedParty}
+            setSelectedParty={setSelectedParty}
+            activePlatform={activePlatform}
+            setActivePlatform={setActivePlatform}
+          />
+          <p className="text-xs text-center text-gray-400 dark:text-gray-500 px-4">
+            {t('wikidataNote')}
+          </p>
+        </div>
 
-      <PoliticianTable
-        politicians={filteredPoliticians}
-        loading={dataLoading}
-        activePlatform={activePlatform}
-      />
+        <PoliticianTable
+          politicians={filteredPoliticians}
+          loading={dataLoading}
+          activePlatform={activePlatform}
+        />
+      </div>
+
+      <footer className="mt-12 py-8 border-t border-gray-200 dark:border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            {t('footer').split(/({pierre}|{github})/).map((part, i) => {
+              if (part === '{pierre}') {
+                return (
+                  <a key={i} href="https://pierre.mesu.re" target="_blank" rel="noreferrer" className="font-medium text-blue-600 dark:text-blue-400 hover:underline">
+                    Pierre Mesure
+                  </a>
+                );
+              }
+              if (part === '{github}') {
+                return (
+                  <a key={i} href="https://github.com/PierreMesure/politix-sweden" target="_blank" rel="noreferrer" className="font-medium text-blue-600 dark:text-blue-400 hover:underline">
+                    {t('githubLinkText')}
+                  </a>
+                );
+              }
+              return part;
+            })}
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
