@@ -3,8 +3,7 @@
   "description": "Researcher and democracy expert {carl} has repeatedly pointed to the vulnerability of hosting our public conversation on ground we do not own, where algorithms designed for profit and polarization set the rules for democracy. This dashboard monitors our elected officials' presence on X, Bluesky, and Mastodon to concretely show how many remain on Elon Musk's platform and how many have found new channels.",
   "wikidataNote": "Data is sourced from Wikidata (Wikipedia's database). If you find an error or a missing account, please click \"Edit on Wikidata\" in the table to fix it.",
   "footer": "This website was developed by {pierre} and is published as {github} ❤️ (AGPLv3).",
-  "githubLinkText": "open source"
-}
+  "githubLinkText": "open source",
   "loading": "Loading data...",
   "error": "Failed to load data.",
   "searchPlaceholder": "Search politician...",

@@ -3,8 +3,7 @@
   "description": "Forskaren och demokratiexperten {carl} har upprepade gånger pekat på sårbarheten i att förlägga det offentliga samtalet på mark vi inte äger, där algoritmer designade för vinst och polarisering sätter ramarna för demokratin. Denna översikt listar våra folkvaldas närvaro på X, Bluesky och Mastodon för att visa konkret hur många som är kvar på Elon Musks plattform och hur många som har hittat nya kanaler.",
   "wikidataNote": "Uppgifterna hämtas från Wikidata (Wikipedias databas). Om du hittar ett fel eller ett saknat konto, klicka på \"Redigera på Wikidata\" i tabellen för att åtgärda det.",
   "footer": "Denna webbsida togs fram av {pierre} och publiceras som {github} ❤️ (AGPLv3).",
-  "githubLinkText": "öppen källkod"
-}
+  "githubLinkText": "öppen källkod",
   "loading": "Laddar data...",
   "error": "Kunde inte ladda data.",
   "searchPlaceholder": "Sök politiker...",
@@ -33,7 +32,7 @@
     "mastodon": "Mastodon",
     "x": "X (Twitter)",
     "total": "Översikt",
-    "edit": "Redigera",
+    "edit": "Ändra",
     "editOnWikidata": "Redigera på Wikidata",
     "unknownParty": "Inget",
     "noResults": "Inga politiker hittades som matchar dina kriterier.",

@@ -173,8 +173,8 @@ export default function Dashboard() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="p-6 max-w-7xl mx-auto space-y-8 flex-grow w-full">
-        <header className="space-y-4">
+      <div className="p-3 md:p-6 max-w-7xl mx-auto space-y-8 flex-grow w-full">
+        <header className="space-y-4 px-1 md:px-0">
           <div className="flex items-center gap-3">
             <div className="bg-blue-600 text-white p-2 rounded-lg">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
