@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     title: "politiX",
     description: "Finns din riksdagsledamot på X?",
   },
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
