@@ -9,14 +9,14 @@ export const STATS_URL = process.env.NODE_ENV === 'development'
 export const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 
 export const PARTY_LOGOS: Record<string, string> = {
-  "Centerpartiet": "/party_logos/c.png",
-  "Kristdemokraterna": "/party_logos/kd.png",
-  "Liberalerna": "/party_logos/l.png",
-  "Moderaterna": "/party_logos/m.png",
-  "Miljöpartiet": "/party_logos/mp.png",
-  "Socialdemokraterna": "/party_logos/s.png",
-  "Sverigedemokraterna": "/party_logos/sd.png",
-  "Vänsterpartiet": "/party_logos/v.png",
+  "Centerpartiet": "/party_logos/c.webp",
+  "Kristdemokraterna": "/party_logos/kd.webp",
+  "Liberalerna": "/party_logos/l.webp",
+  "Moderaterna": "/party_logos/m.webp",
+  "Miljöpartiet": "/party_logos/mp.webp",
+  "Socialdemokraterna": "/party_logos/s.webp",
+  "Sverigedemokraterna": "/party_logos/sd.webp",
+  "Vänsterpartiet": "/party_logos/v.webp",
 };
 
 export function isActive(lastPost: string | null) {
