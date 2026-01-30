@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useTranslation } from '../hooks/useTranslation';
 import ParliamentChart from './ParliamentChart';
 import { PARTY_LOGOS } from '../utils';
@@ -61,10 +62,11 @@ export default function DashboardStats({
               }`}
             >
               {p !== 'all' && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img 
+                <Image
                   src={`/service_logos/${p}.svg`} 
                   alt={p} 
+                  width={16}
+                  height={16}
                   className="w-4 h-4 dark:invert opacity-80" 
                 />
               )}
@@ -239,8 +241,13 @@ export default function DashboardStats({
                   }`}
                 >
                   {PARTY_LOGOS[party] && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={PARTY_LOGOS[party]} alt={party} className="w-6 h-6 object-contain" />
+                    <Image
+                      src={PARTY_LOGOS[party]} 
+                      alt={party} 
+                      width={24}
+                      height={24}
+                      className="w-6 h-6 object-contain" 
+                    />
                   )}
                   <span className="text-sm font-medium">{party}</span>
                 </button>

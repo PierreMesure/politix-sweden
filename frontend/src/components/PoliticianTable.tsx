@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useTranslation } from '../hooks/useTranslation';
 import { Politician, Platform } from '../types';
 import { PARTY_LOGOS, isActive, getMastodonUrl } from '../utils';
@@ -43,8 +44,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.bluesky')}</span>
                   <div className="lg:hidden flex justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/service_logos/bluesky.svg" alt="Bluesky" className="w-5 h-5 opacity-70 dark:invert" />
+                    <Image src="/service_logos/bluesky.svg" alt="Bluesky" width={20} height={20} className="w-5 h-5 opacity-70 dark:invert" />
                   </div>
                 </th>
               )}
@@ -53,8 +53,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.mastodon')}</span>
                   <div className="lg:hidden flex justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/service_logos/mastodon.svg" alt="Mastodon" className="w-5 h-5 opacity-70 dark:invert" />
+                    <Image src="/service_logos/mastodon.svg" alt="Mastodon" width={20} height={20} className="w-5 h-5 opacity-70 dark:invert" />
                   </div>
                 </th>
               )}
@@ -63,8 +62,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                 <th className="px-1 py-3 text-center lg:text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   <span className="hidden lg:inline">{t('table.x')}</span>
                   <div className="lg:hidden flex justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/service_logos/x.svg" alt="X" className="w-5 h-5 opacity-70 dark:invert" />
+                    <Image src="/service_logos/x.svg" alt="X" width={20} height={20} className="w-5 h-5 opacity-70 dark:invert" />
                   </div>
                 </th>
               )}
@@ -72,8 +70,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
               <th className="pl-1 pr-3 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                 <span className="hidden lg:inline">{t('table.edit')}</span>
                 <div className="lg:hidden flex justify-end">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/edit.svg" alt="Edit" className="w-4 h-4 opacity-50 dark:invert" />
+                  <Image src="/edit.svg" alt="Edit" width={16} height={16} className="w-4 h-4 opacity-50 dark:invert" />
                 </div>
               </th>
             </tr>
@@ -268,8 +265,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                       title={t('table.editOnWikidata')}
                     >
                       <span className="hidden lg:inline">{t('table.editOnWikidata')}</span>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/edit.svg" alt="" className="w-4 h-4 lg:hidden dark:invert opacity-70" />
+                      <Image src="/edit.svg" alt="" width={16} height={16} className="w-4 h-4 lg:hidden dark:invert opacity-70" />
                     </a>
                   </td>
                 </tr>

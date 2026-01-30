@@ -41,6 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://raw.githubusercontent.com" />
+        <link rel="preconnect" href="https://gc.zgo.at" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
