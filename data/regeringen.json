@@ -1,0 +1,270 @@
+[
+  {
+    "id": "Q5602835",
+    "name": "Andreas Carlson",
+    "party": "Kristdemokraterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "andreas_carlson",
+        "last_post": "2026-01-19T16:26:46+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4767537",
+    "name": "Anna Tenje",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "AnnaTenje",
+        "last_post": "2019-05-15T10:47:09+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5624180",
+    "name": "Benjamin Dousa",
+    "party": "Moderaterna",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4990177",
+    "name": "Camilla Waltersson Grönvall",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "CamillaWalterss",
+        "last_post": "2025-10-07T07:55:38+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5580727",
+    "name": "Carl-Oskar Bohlin",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "CarlOskar",
+        "last_post": "2026-01-30T17:03:30+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4941329",
+    "name": "Ebba Busch",
+    "party": "Kristdemokraterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "buschebba",
+        "last_post": "2026-01-30T14:59:15+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4981393",
+    "name": "Elisabeth Svantesson",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "ElisabethSvan",
+        "last_post": "2026-01-28T15:56:03+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6181121",
+    "name": "Erik Slottner",
+    "party": "Kristdemokraterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "ErikSlottner",
+        "last_post": "2026-01-30T10:48:08+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6193547",
+    "name": "Gunnar Strömmer",
+    "party": "Moderaterna",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5737841",
+    "name": "Jakob Forssmed",
+    "party": "Kristdemokraterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "jakobforssmed",
+        "last_post": "2026-01-30T15:37:25+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5737622",
+    "name": "Johan Forssell",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "JohanForssell",
+        "last_post": "2026-01-30T12:07:38+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6039678",
+    "name": "Johan Pehrson",
+    "party": "Liberalerna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "JohanPehrson",
+        "last_post": "2025-10-15T08:35:05+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4945706",
+    "name": "Lotta Edholm",
+    "party": "Liberalerna",
+    "last_check": null,
+    "social": {
+      "x": {
+        "handle": "lottaedholm",
+        "last_post": "closed"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6043377",
+    "name": "Mats Persson",
+    "party": "Liberalerna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "matsperspektiv",
+        "last_post": "2026-01-13T07:59:07+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q6247957",
+    "name": "Niklas Wykman",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "NiklasWykman",
+        "last_post": "2026-01-28T15:16:05+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q40321803",
+    "name": "Parisa Liljestrand",
+    "party": "Moderaterna",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5925995",
+    "name": "Peter Kullgren",
+    "party": "Kristdemokraterna",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q27299991",
+    "name": "Pål Jonson",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "PlJonson",
+        "last_post": "2026-01-29T08:00:41+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q66493422",
+    "name": "Romina Pourmokhtari",
+    "party": "Liberalerna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "RPourmokhtari",
+        "last_post": "2025-11-24T12:58:09+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1780398",
+    "name": "Ulf Kristersson",
+    "party": "Moderaterna",
+    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "social": {
+      "x": {
+        "handle": "UlfKristersson",
+        "last_post": null
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  }
+]

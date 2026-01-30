@@ -1,0 +1,124 @@
+{
+  "global": {
+    "all": {
+      "active": 11,
+      "inactive": 4,
+      "closed": 1,
+      "none": 4,
+      "total": 20
+    },
+    "x": {
+      "active": 11,
+      "inactive": 4,
+      "closed": 1,
+      "none": 4,
+      "total": 20
+    },
+    "bluesky": {
+      "active": 0,
+      "inactive": 0,
+      "closed": 0,
+      "none": 20,
+      "total": 20
+    },
+    "mastodon": {
+      "active": 0,
+      "inactive": 0,
+      "closed": 0,
+      "none": 20,
+      "total": 20
+    }
+  },
+  "parties": {
+    "Liberalerna": {
+      "all": {
+        "active": 2,
+        "inactive": 1,
+        "closed": 1,
+        "none": 0,
+        "total": 4
+      },
+      "x": {
+        "active": 2,
+        "inactive": 1,
+        "closed": 1,
+        "none": 0,
+        "total": 4
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 4,
+        "total": 4
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 4,
+        "total": 4
+      }
+    },
+    "Moderaterna": {
+      "all": {
+        "active": 5,
+        "inactive": 3,
+        "closed": 0,
+        "none": 3,
+        "total": 11
+      },
+      "x": {
+        "active": 5,
+        "inactive": 3,
+        "closed": 0,
+        "none": 3,
+        "total": 11
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 11,
+        "total": 11
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 11,
+        "total": 11
+      }
+    },
+    "Kristdemokraterna": {
+      "all": {
+        "active": 4,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 5
+      },
+      "x": {
+        "active": 4,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 5
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 5,
+        "total": 5
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 5,
+        "total": 5
+      }
+    }
+  }
+}

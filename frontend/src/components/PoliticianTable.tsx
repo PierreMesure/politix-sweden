@@ -140,9 +140,9 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                                           </div>
                                         ) : (
                                           OSINT ? (
-                                            <a 
-                                              href={getOsintLink('Bluesky', p.name, p.party)} 
-                                              target="_blank" 
+                                            <a
+                                              href={getOsintLink('Bluesky', p.name, p.party)}
+                                              target="_blank"
                                               rel="noreferrer"
                                               className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
                                             >
@@ -154,7 +154,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                                         )}
                                       </td>
                                     )}
-                  
+
                                     {showMastodon && (
                                       <td className="px-1 py-4 whitespace-nowrap text-sm">
                                         {p.social.mastodon ? (
@@ -194,9 +194,9 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                                           </div>
                                         ) : (
                                           OSINT ? (
-                                            <a 
-                                              href={getOsintLink('Mastodon', p.name, p.party)} 
-                                              target="_blank" 
+                                            <a
+                                              href={getOsintLink('Mastodon', p.name, p.party)}
+                                              target="_blank"
                                               rel="noreferrer"
                                               className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
                                             >
@@ -208,7 +208,7 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                                         )}
                                       </td>
                                     )}
-                  
+
                                     {showX && (
                                       <td className="px-1 py-4 whitespace-nowrap text-sm">
                                         {p.social.x ? (
@@ -242,9 +242,9 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                                           </div>
                                         ) : (
                                           OSINT ? (
-                                            <a 
-                                              href={getOsintLink('X Twitter', p.name, p.party)} 
-                                              target="_blank" 
+                                            <a
+                                              href={getOsintLink('X Twitter', p.name, p.party)}
+                                              target="_blank"
                                               rel="noreferrer"
                                               className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
                                             >

@@ -164,12 +164,12 @@ def get_mastodon_last_post(handle):
         print(f"Error fetching Mastodon for {handle}: {e}")
     return None
 
-def get_politicians():
+def get_politicians(query_file="query.sparql"):
     sparql = SPARQLWrapper(
         "https://query.wikidata.org/sparql",
         agent="Politix/0.1 (https://github.com/PierreMesure/politix-new)",
     )
-    with open("query.sparql", "r") as f:
+    with open(query_file, "r") as f:
         query = f.read()
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -293,7 +293,7 @@ def load_existing_data(file_path):
             print(f"Could not load {file_path}: {e}")
     return {}
 
-def save_data(politicians, stats, data_file="data.json", stats_file="stats.json"):
+def save_data(politicians, stats, data_file, stats_file):
     with open(data_file, "w") as f:
         json.dump(politicians, f, indent=2, ensure_ascii=False)
     with open(stats_file, "w") as f:
@@ -361,12 +361,12 @@ async def update_politician_social(p, i, total, x_clients, x_client_index):
 
     return updated
 
-async def main():
-    print("Fetching politicians from Wikidata...")
-    politicians = get_politicians()
+async def run_scraper(query_file, data_file, stats_file):
+    print(f"Fetching politicians using {query_file}...")
+    politicians = get_politicians(query_file)
     print(f"Found {len(politicians)} politicians.")
 
-    old_data = load_existing_data("data.json")
+    old_data = load_existing_data(data_file)
 
     for p in politicians:
         if p["id"] in old_data:
@@ -393,15 +393,22 @@ async def main():
         
         if await update_politician_social(p, i, len(politicians), x_clients, x_client_index):
             p["last_check"] = now.isoformat()
-            save_data(politicians, calculate_stats(politicians))
+            save_data(politicians, calculate_stats(politicians), data_file, stats_file)
             
             if was_x_updated:
                 x_client_index += 1
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])
-    save_data(politicians, calculate_stats(politicians))
-    print("Done!")
+    save_data(politicians, calculate_stats(politicians), data_file, stats_file)
+    print(f"Done processing {data_file}!")
+
+async def main():
+    # Run for Riksdagen
+    await run_scraper("queries/riksdagen.sparql", "data/riksdagen.json", "data/riksdagen_stats.json")
+    
+    # Run for Regeringen
+    await run_scraper("queries/regeringen.sparql", "data/regeringen.json", "data/regeringen_stats.json")
 
 if __name__ == "__main__":
     asyncio.run(main())

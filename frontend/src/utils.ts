@@ -1,10 +1,10 @@
 export const DATA_URL = process.env.NODE_ENV === 'development' 
-  ? "/data.json"
-  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data.json";
+  ? "/data/riksdagen.json"
+  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data/riksdagen.json";
 
 export const STATS_URL = process.env.NODE_ENV === 'development'
-  ? "/stats.json"
-  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/stats.json";
+  ? "/data/riksdagen_stats.json"
+  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data/riksdagen_stats.json";
 
 export const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 

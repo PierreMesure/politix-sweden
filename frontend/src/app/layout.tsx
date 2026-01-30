@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 const description = sv.description.replace('{carl}', 'Carl Heath');
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://politix.mesu.re"),
   title: "politiX",
   description: description,
   openGraph: {
