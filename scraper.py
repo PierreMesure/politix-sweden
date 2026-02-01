@@ -317,11 +317,50 @@ def load_existing_data(file_path):
     return {}
 
 
+import csv
+
+def save_to_csv(politicians, csv_file):
+    with open(csv_file, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(
+            [
+                "id",
+                "name",
+                "party",
+                "last_check",
+                "x_handle",
+                "x_last_post",
+                "bluesky_handle",
+                "bluesky_last_post",
+                "mastodon_handle",
+                "mastodon_last_post",
+            ]
+        )
+        for p in politicians:
+            row = [
+                p["id"],
+                p["name"],
+                p["party"],
+                p["last_check"],
+            ]
+            for platform in ["x", "bluesky", "mastodon"]:
+                social = p["social"].get(platform)
+                if social:
+                    row.extend([social.get("handle"), social.get("last_post")])
+                else:
+                    row.extend([None, None])
+            writer.writerow(row)
+
+
 def save_data(politicians, stats, data_file, stats_file):
     with open(data_file, "w") as f:
         json.dump(politicians, f, indent=2, ensure_ascii=False)
     with open(stats_file, "w") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
+    
+    # Save CSV
+    csv_file = os.path.splitext(data_file)[0] + ".csv"
+    save_to_csv(politicians, csv_file)
 
 
 def should_skip(p, now):
@@ -396,7 +435,11 @@ async def update_politician_social(p, i, total, x_clients, x_client_index):
     return updated
 
 
-async def run_scraper(query_file, data_file, stats_file):
+async def run_scraper(name):
+    query_file = f"queries/{name}.sparql"
+    data_file = f"data/{name}.json"
+    stats_file = f"data/{name}_stats.json"
+
     print(f"Fetching politicians using {query_file}...")
     politicians = get_politicians(query_file)
     print(f"Found {len(politicians)} politicians.")
@@ -447,23 +490,13 @@ async def run_scraper(query_file, data_file, stats_file):
 
 async def main():
     # Run for Riksdagen
-    await run_scraper(
-        "queries/riksdagen.sparql", "data/riksdagen.json", "data/riksdagen_stats.json"
-    )
+    await run_scraper("riksdagen")
 
     # Run for Regeringen
-    await run_scraper(
-        "queries/regeringen.sparql",
-        "data/regeringen.json",
-        "data/regeringen_stats.json",
-    )
+    await run_scraper("regeringen")
 
     # Run for Departement
-    await run_scraper(
-        "queries/departement.sparql",
-        "data/departement.json",
-        "data/departement_stats.json",
-    )
+    await run_scraper("departement")
 
 
 if __name__ == "__main__":
