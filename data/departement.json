@@ -1,0 +1,139 @@
+[
+  {
+    "id": "Q1780908",
+    "name": "Arbetsmarknadsdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "arbetsmarkdep",
+        "last_post": "2026-01-15T11:58:52+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1774229",
+    "name": "Finansdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "FinansdepSv",
+        "last_post": "2026-01-27T13:35:33+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q2982160",
+    "name": "Försvarsdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "ForsvarsdepSv",
+        "last_post": "2026-01-15T16:45:23+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q60970996",
+    "name": "Infrastrukturdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "infradep",
+        "last_post": "protected"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q2612011",
+    "name": "Justitiedepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "Justitiedep",
+        "last_post": "2026-01-30T14:51:59+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q116035262",
+    "name": "Klimat- och näringslivsdepartementet",
+    "party": null,
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q2611987",
+    "name": "Socialdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "socialdep",
+        "last_post": "2025-12-10T15:32:11+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4294535",
+    "name": "Utbildningsdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "Utbdep",
+        "last_post": "2025-06-30T14:15:11+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q776570",
+    "name": "Utrikesdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "SweMFA",
+        "last_post": "2026-01-30T08:42:52+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q2611994",
+    "name": "kulturdepartementet",
+    "party": null,
+    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "social": {
+      "x": {
+        "handle": "KulturdepSv",
+        "last_post": "2025-11-06T15:54:47+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  }
+]

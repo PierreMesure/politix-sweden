@@ -1,0 +1,33 @@
+{
+  "global": {
+    "all": {
+      "active": 7,
+      "inactive": 2,
+      "closed": 0,
+      "none": 1,
+      "total": 10
+    },
+    "x": {
+      "active": 7,
+      "inactive": 2,
+      "closed": 0,
+      "none": 1,
+      "total": 10
+    },
+    "bluesky": {
+      "active": 0,
+      "inactive": 0,
+      "closed": 0,
+      "none": 10,
+      "total": 10
+    },
+    "mastodon": {
+      "active": 0,
+      "inactive": 0,
+      "closed": 0,
+      "none": 10,
+      "total": 10
+    }
+  },
+  "parties": {}
+}
