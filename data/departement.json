@@ -3,7 +3,7 @@
     "id": "Q1780908",
     "name": "Arbetsmarknadsdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "arbetsmarkdep",
@@ -17,7 +17,7 @@
     "id": "Q1774229",
     "name": "Finansdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "FinansdepSv",
@@ -31,7 +31,7 @@
     "id": "Q2982160",
     "name": "Försvarsdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "ForsvarsdepSv",
@@ -45,7 +45,7 @@
     "id": "Q60970996",
     "name": "Infrastrukturdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "infradep",
@@ -59,7 +59,7 @@
     "id": "Q2612011",
     "name": "Justitiedepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "Justitiedep",
@@ -84,7 +84,7 @@
     "id": "Q2611987",
     "name": "Socialdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "socialdep",
@@ -98,7 +98,7 @@
     "id": "Q4294535",
     "name": "Utbildningsdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "Utbdep",
@@ -112,11 +112,11 @@
     "id": "Q776570",
     "name": "Utrikesdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "SweMFA",
-        "last_post": "2026-01-30T08:42:52+00:00"
+        "last_post": "2026-02-01T10:44:55+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -126,7 +126,7 @@
     "id": "Q2611994",
     "name": "kulturdepartementet",
     "party": null,
-    "last_check": "2026-01-30T19:46:55.067640+00:00",
+    "last_check": "2026-02-01T16:50:43.430267+00:00",
     "social": {
       "x": {
         "handle": "KulturdepSv",

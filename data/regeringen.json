@@ -3,11 +3,11 @@
     "id": "Q5602835",
     "name": "Andreas Carlson",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "andreas_carlson",
-        "last_post": "2026-01-19T16:26:46+00:00"
+        "last_post": "2026-02-01T14:40:13+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -31,9 +31,12 @@
     "id": "Q5624180",
     "name": "Benjamin Dousa",
     "party": "Moderaterna",
-    "last_check": null,
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "benjamindousa",
+        "last_post": "2026-01-30T08:32:40+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -42,7 +45,7 @@
     "id": "Q4990177",
     "name": "Camilla Waltersson Grönvall",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "CamillaWalterss",
@@ -56,7 +59,7 @@
     "id": "Q5580727",
     "name": "Carl-Oskar Bohlin",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "CarlOskar",
@@ -70,7 +73,7 @@
     "id": "Q4941329",
     "name": "Ebba Busch",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "buschebba",
@@ -84,7 +87,7 @@
     "id": "Q4981393",
     "name": "Elisabeth Svantesson",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "ElisabethSvan",
@@ -98,11 +101,11 @@
     "id": "Q6181121",
     "name": "Erik Slottner",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "ErikSlottner",
-        "last_post": "2026-01-30T10:48:08+00:00"
+        "last_post": "2026-02-01T14:55:00+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -123,11 +126,11 @@
     "id": "Q5737841",
     "name": "Jakob Forssmed",
     "party": "Kristdemokraterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "jakobforssmed",
-        "last_post": "2026-01-30T15:37:25+00:00"
+        "last_post": "2026-02-01T09:29:43+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -137,11 +140,11 @@
     "id": "Q5737622",
     "name": "Johan Forssell",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "JohanForssell",
-        "last_post": "2026-01-30T12:07:38+00:00"
+        "last_post": "2026-02-01T09:28:11+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -151,7 +154,7 @@
     "id": "Q6039678",
     "name": "Johan Pehrson",
     "party": "Liberalerna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "JohanPehrson",
@@ -179,7 +182,7 @@
     "id": "Q6043377",
     "name": "Mats Persson",
     "party": "Liberalerna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "matsperspektiv",
@@ -193,11 +196,11 @@
     "id": "Q6247957",
     "name": "Niklas Wykman",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "NiklasWykman",
-        "last_post": "2026-01-28T15:16:05+00:00"
+        "last_post": "2026-01-31T10:49:29+00:00"
       },
       "bluesky": null,
       "mastodon": null
@@ -218,9 +221,12 @@
     "id": "Q5925995",
     "name": "Peter Kullgren",
     "party": "Kristdemokraterna",
-    "last_check": null,
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
-      "x": null,
+      "x": {
+        "handle": "peterkullgren",
+        "last_post": "2026-02-01T09:03:44+00:00"
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -229,7 +235,7 @@
     "id": "Q27299991",
     "name": "Pål Jonson",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "PlJonson",
@@ -243,7 +249,7 @@
     "id": "Q66493422",
     "name": "Romina Pourmokhtari",
     "party": "Liberalerna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "RPourmokhtari",
@@ -257,7 +263,7 @@
     "id": "Q1780398",
     "name": "Ulf Kristersson",
     "party": "Moderaterna",
-    "last_check": "2026-01-30T18:34:26.146447+00:00",
+    "last_check": "2026-02-01T16:50:06.746167+00:00",
     "social": {
       "x": {
         "handle": "UlfKristersson",
