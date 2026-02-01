@@ -2,6 +2,10 @@ export const DATA_URL = process.env.NODE_ENV === 'development'
   ? "/data/riksdagen.json"
   : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data/riksdagen.json";
 
+export const CSV_URL = process.env.NODE_ENV === 'development'
+  ? "/data/riksdagen.csv"
+  : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data/riksdagen.csv";
+
 export const STATS_URL = process.env.NODE_ENV === 'development'
   ? "/data/riksdagen_stats.json"
   : "https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/data/riksdagen_stats.json";

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Platform } from '../types';
+import { DATA_URL, CSV_URL } from '../utils';
 
 interface DashboardFiltersProps {
   searchTerm: string;
@@ -20,12 +21,30 @@ export default function DashboardFilters({
   setActivePlatform,
 }: DashboardFiltersProps) {
   const { t } = useTranslation();
+  const [showDownload, setShowDownload] = useState(false);
+  const downloadRef = useRef<HTMLDivElement>(null);
 
-  const hasFilters = selectedParty !== null || searchTerm !== "" || activePlatform !== 'all';
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (downloadRef.current && !downloadRef.current.contains(event.target as Node)) {
+        setShowDownload(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const getPartyLabel = (party: string) => {
+    if (party === 'tido') return t('filters.tido');
+    if (party === 'opposition') return t('filters.opposition');
+    return party;
+  };
+
+  const hasFilters = searchTerm !== '' || selectedParty !== null || activePlatform !== 'all';
 
   const clearAll = () => {
+    setSearchTerm('');
     setSelectedParty(null);
-    setSearchTerm("");
     setActivePlatform('all');
   };
 
@@ -46,17 +65,53 @@ export default function DashboardFilters({
         />
       </div>
 
-      {hasFilters && (
-        <button
-          onClick={clearAll}
-          className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 decoration-2 whitespace-nowrap"
-        >
-          {selectedParty && !searchTerm && activePlatform === 'all'
-            ? `${t('filters.clearParty')} (${selectedParty})`
-            : t('filters.clearAll')
-          }
-        </button>
-      )}
+      <div className="flex items-center gap-4 shrink-0 self-end md:self-auto">
+        {hasFilters && (
+          <button
+            onClick={clearAll}
+            className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 decoration-2 whitespace-nowrap"
+          >
+            {selectedParty && !searchTerm && activePlatform === 'all'
+              ? `${t('filters.clearParty')} (${getPartyLabel(selectedParty)})`
+              : t('filters.clearAll')
+            }
+          </button>
+        )}
+
+        <div className="relative" ref={downloadRef}>
+          <button
+            onClick={() => setShowDownload(!showDownload)}
+            className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700 rounded-md transition-colors"
+            title={t('filters.download')}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span className="hidden sm:inline">{t('filters.download')}</span>
+          </button>
+
+          {showDownload && (
+            <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-zinc-900 rounded-md shadow-lg border border-gray-200 dark:border-zinc-700 z-10 overflow-hidden">
+              <a
+                href={DATA_URL}
+                download
+                className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
+              >
+                JSON
+              </a>
+              <a
+                href={CSV_URL}
+                download
+                className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
+              >
+                CSV
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
