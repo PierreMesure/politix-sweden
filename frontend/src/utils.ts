@@ -1,7 +1,7 @@
 export const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 
-export const COUNTRY = process.env.NEXT_PUBLIC_COUNTRY || 'denmark';
-export const CATEGORY = process.env.NEXT_PUBLIC_CATEGORY || 'folketinget';
+export const COUNTRY = process.env.NEXT_PUBLIC_COUNTRY || 'sweden';
+export const CATEGORY = process.env.NEXT_PUBLIC_CATEGORY || 'riksdagen';
 
 export const LOCALE = COUNTRY === 'denmark' ? 'da' : (COUNTRY === 'sweden' ? 'sv' : 'en');
 export const DATE_LOCALE = COUNTRY === 'sweden' ? 'sv-SE' : 'da-DK';
