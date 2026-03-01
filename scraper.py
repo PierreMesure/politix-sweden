@@ -188,7 +188,7 @@ def get_mastodon_last_post(handle):
 def get_politicians(query_file="query.sparql"):
     sparql = SPARQLWrapper(
         "https://query.wikidata.org/sparql",
-        agent="Politix/0.1 (https://github.com/PierreMesure/politix-new)",
+        agent="Politix/0.1 (https://github.com/PierreMesure/politix-sweden)",
     )
     with open(query_file, "r") as f:
         query = f.read()

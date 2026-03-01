@@ -34,7 +34,7 @@ export function getDataUrl() {
   if (process.env.NODE_ENV === 'development') {
     return path;
   }
-  return `https://raw.githubusercontent.com/PierreMesure/politix-new/refs/heads/master/frontend/public${path}`;
+  return `https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/frontend/public${path}`;
 }
 
 export function getCsvUrl() {
@@ -42,7 +42,7 @@ export function getCsvUrl() {
   if (process.env.NODE_ENV === 'development') {
     return path;
   }
-  return `https://raw.githubusercontent.com/PierreMesure/politix-new/refs/heads/master/frontend/public${path}`;
+  return `https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/frontend/public${path}`;
 }
 
 export function getStatsUrl() {
@@ -50,7 +50,7 @@ export function getStatsUrl() {
   if (process.env.NODE_ENV === 'development') {
     return path;
   }
-  return `https://raw.githubusercontent.com/PierreMesure/politix-new/refs/heads/master/frontend/public${path}`;
+  return `https://raw.githubusercontent.com/PierreMesure/politix-sweden/refs/heads/master/frontend/public${path}`;
 }
 
 export const PARTY_LOGOS: Record<string, Record<string, string>> = {
