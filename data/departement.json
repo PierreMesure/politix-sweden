@@ -75,7 +75,10 @@
     "party": null,
     "last_check": null,
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KlimatNaringdep",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -112,13 +115,16 @@
     "id": "Q776570",
     "name": "Utrikesdepartementet",
     "party": null,
-    "last_check": "2026-02-01T16:50:43.430267+00:00",
+    "last_check": "2026-03-01T03:36:55.049073+00:00",
     "social": {
       "x": {
         "handle": "SweMFA",
         "last_post": "2026-02-01T10:44:55+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "utrikesdep.bsky.social",
+        "last_post": "2026-02-18T08:38:23.852Z"
+      },
       "mastodon": null
     }
   },

@@ -1,15 +1,15 @@
 {
   "global": {
     "all": {
-      "active": 13,
-      "inactive": 4,
+      "active": 12,
+      "inactive": 5,
       "closed": 1,
       "none": 2,
       "total": 20
     },
     "x": {
-      "active": 13,
-      "inactive": 4,
+      "active": 12,
+      "inactive": 5,
       "closed": 1,
       "none": 2,
       "total": 20
@@ -30,6 +30,36 @@
     }
   },
   "parties": {
+    "Liberalerna": {
+      "all": {
+        "active": 1,
+        "inactive": 2,
+        "closed": 1,
+        "none": 0,
+        "total": 4
+      },
+      "x": {
+        "active": 1,
+        "inactive": 2,
+        "closed": 1,
+        "none": 0,
+        "total": 4
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 4,
+        "total": 4
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 4,
+        "total": 4
+      }
+    },
     "Moderaterna": {
       "all": {
         "active": 6,
@@ -88,36 +118,6 @@
         "closed": 0,
         "none": 5,
         "total": 5
-      }
-    },
-    "Liberalerna": {
-      "all": {
-        "active": 2,
-        "inactive": 1,
-        "closed": 1,
-        "none": 0,
-        "total": 4
-      },
-      "x": {
-        "active": 2,
-        "inactive": 1,
-        "closed": 1,
-        "none": 0,
-        "total": 4
-      },
-      "bluesky": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 4,
-        "total": 4
-      },
-      "mastodon": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 4,
-        "total": 4
       }
     }
   }
