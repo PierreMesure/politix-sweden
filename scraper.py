@@ -1,4 +1,5 @@
 import json
+import csv
 import requests
 import time
 import asyncio
@@ -317,8 +318,6 @@ def load_existing_data(file_path):
     return {}
 
 
-import csv
-
 def save_to_csv(politicians, csv_file):
     with open(csv_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -357,7 +356,7 @@ def save_data(politicians, stats, data_file, stats_file):
         json.dump(politicians, f, indent=2, ensure_ascii=False)
     with open(stats_file, "w") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
-    
+
     # Save CSV
     csv_file = os.path.splitext(data_file)[0] + ".csv"
     save_to_csv(politicians, csv_file)
@@ -435,10 +434,15 @@ async def update_politician_social(p, i, total, x_clients, x_client_index):
     return updated
 
 
-async def run_scraper(name):
-    query_file = f"queries/{name}.sparql"
-    data_file = f"data/{name}.json"
-    stats_file = f"data/{name}_stats.json"
+async def run_scraper(country, name):
+    query_file = f"queries/{country}/{name}.sparql"
+    data_file = f"data/{country}/{name}.json"
+    stats_file = f"data/{country}/{name}_stats.json"
+
+    frontend_data_dir = f"frontend/public/data/{country}"
+    os.makedirs(frontend_data_dir, exist_ok=True)
+    frontend_data_file = f"{frontend_data_dir}/{name}.json"
+    frontend_stats_file = f"{frontend_data_dir}/{name}_stats.json"
 
     print(f"Fetching politicians using {query_file}...")
     politicians = get_politicians(query_file)
@@ -477,26 +481,33 @@ async def run_scraper(name):
             p, i, len(politicians), x_clients, x_client_index
         ):
             p["last_check"] = now.isoformat()
-            save_data(politicians, calculate_stats(politicians), data_file, stats_file)
+            stats = calculate_stats(politicians)
+            save_data(politicians, stats, data_file, stats_file)
+            save_data(politicians, stats, frontend_data_file, frontend_stats_file)
 
             if was_x_updated:
                 x_client_index += 1
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])
-    save_data(politicians, calculate_stats(politicians), data_file, stats_file)
+    stats = calculate_stats(politicians)
+    save_data(politicians, stats, data_file, stats_file)
+    save_data(politicians, stats, frontend_data_file, frontend_stats_file)
     print(f"Done processing {data_file}!")
 
 
 async def main():
-    # Run for Riksdagen
-    await run_scraper("riksdagen")
+    # Run for Sweden
+    country = "sweden"
+    for name in ["riksdagen", "regeringen", "departement", "myndigheter"]:
+        if os.path.exists(f"queries/{country}/{name}.sparql"):
+            await run_scraper(country, name)
 
-    # Run for Regeringen
-    await run_scraper("regeringen")
-
-    # Run for Departement
-    await run_scraper("departement")
+    # Run for Denmark
+    country = "denmark"
+    for name in ["folketinget"]:
+        if os.path.exists(f"queries/{country}/{name}.sparql"):
+            await run_scraper(country, name)
 
 
 if __name__ == "__main__":

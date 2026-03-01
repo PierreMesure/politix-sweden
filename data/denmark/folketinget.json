@@ -1,0 +1,2760 @@
+[
+  {
+    "id": "Q20199803",
+    "name": "Aaja Chemnitz Driefer",
+    "party": "Inuit Ataqatigiit",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "aajacl",
+        "last_post": "2025-04-04T11:52:09+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64415132",
+    "name": "Aki-Matilda Høegh-Dam",
+    "party": "Naleraq",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AkiMati_Siumut",
+        "last_post": "2020-02-01T18:41:47+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12300936",
+    "name": "Alex Ahrendtsen",
+    "party": "Dansk Folkeparti",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q21208022",
+    "name": "Alex Vanopslagh",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AlexVanopslagh",
+        "last_post": "2026-03-01T13:01:10+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020080",
+    "name": "Alexander Ryle",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "alexanderryle",
+        "last_post": "2026-02-28T15:10:06+00:00"
+      },
+      "bluesky": {
+        "handle": "alexanderryle.bsky.social",
+        "last_post": "2025-06-11T13:21:42.150Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439937",
+    "name": "Anders Kronborg",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AndersKronborg",
+        "last_post": "2026-02-05T22:11:49+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12301637",
+    "name": "Ane Halsboe-Jørgensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AneHalsboe",
+        "last_post": "2025-10-26T23:45:43+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q114967087",
+    "name": "Anna Falkenberg",
+    "party": "Sambandsflokkurin",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "annafalkenberg",
+        "last_post": "2026-01-14T11:31:03+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q23894956",
+    "name": "Anne Paulin",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "paulin_anne",
+        "last_post": "2025-03-20T10:59:39+00:00"
+      },
+      "bluesky": {
+        "handle": "annepaulin.bsky.social",
+        "last_post": "2025-01-12T18:19:29.955Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64441438",
+    "name": "Anne Valentina Berthelsen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AnneValentina",
+        "last_post": null
+      },
+      "bluesky": {
+        "handle": "annevalentina.bsky.social",
+        "last_post": "2025-03-26T16:03:13.004Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12301898",
+    "name": "Anni Matthiesen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AnniMatthiesen",
+        "last_post": "2026-02-26T19:46:54+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64441411",
+    "name": "Astrid Carøe",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "AstridCaroee",
+        "last_post": "2024-05-03T06:57:27+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q463680",
+    "name": "Astrid Krag",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Astridkrag",
+        "last_post": "2025-02-19T13:19:44+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12303134",
+    "name": "Benny Engelbrecht",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "BennyEngelbrech",
+        "last_post": "2026-02-24T17:46:13+00:00"
+      },
+      "bluesky": {
+        "handle": "bennyengelbrecht.bsky.social",
+        "last_post": "2025-06-30T12:11:34.139Z"
+      },
+      "mastodon": {
+        "handle": "BennyEngelbrecht@mastodon.nu",
+        "last_post": "2023-05-01T15:07:25.255Z"
+      }
+    }
+  },
+  {
+    "id": "Q115018739",
+    "name": "Betina Kastbjerg",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "BetinaKastbjerg",
+        "last_post": "2025-12-28T08:00:00+00:00"
+      },
+      "bluesky": {
+        "handle": "betinakastbjerg.bsky.social",
+        "last_post": "2025-03-25T08:49:16.591Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64440032",
+    "name": "Birgitte Vind",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "birgitte_vind",
+        "last_post": "2025-10-07T11:30:02+00:00"
+      },
+      "bluesky": {
+        "handle": "vindivejle.bsky.social",
+        "last_post": "2025-04-28T13:56:36.083Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12303652",
+    "name": "Bjarne Laustsen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Bjarne_Laustsen",
+        "last_post": null
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64417294",
+    "name": "Bjørn Brandenborg",
+    "party": "Socialdemokratiet",
+    "last_check": null,
+    "social": {
+      "x": {
+        "handle": "BjBrandenborg",
+        "last_post": "closed"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29227656",
+    "name": "Brigitte Klintskov Jerkel",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JerkelK",
+        "last_post": "2026-02-03T19:53:27+00:00"
+      },
+      "bluesky": {
+        "handle": "brigittejerkel.konservative.dk",
+        "last_post": "2025-05-19T14:33:55.652Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439019",
+    "name": "Camilla Fabricius",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "CamFabricius",
+        "last_post": "2025-04-29T06:01:08+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57408637",
+    "name": "Carl Andersen",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "carlandersenla",
+        "last_post": "2026-03-01T14:56:55+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q47500034",
+    "name": "Carl Valentin",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Carl__Valentin",
+        "last_post": "2025-10-17T15:01:00+00:00"
+      },
+      "bluesky": {
+        "handle": "carl-valentin.bsky.social",
+        "last_post": "2025-06-25T07:55:44.438Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20179692",
+    "name": "Carsten Bach",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "carstenbachft",
+        "last_post": "2026-02-25T13:06:40+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115013918",
+    "name": "Charlotte Bagge Hansen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "charlotte_bagge",
+        "last_post": "2026-02-15T10:48:25+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439137",
+    "name": "Charlotte Broman Mølbæk",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "charlottebroman",
+        "last_post": "2025-12-11T09:59:42+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115015687",
+    "name": "Charlotte Munch",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MunchCharlotte",
+        "last_post": "2026-02-06T13:16:26+00:00"
+      },
+      "bluesky": {
+        "handle": "charlottemunch.bsky.social",
+        "last_post": "2024-12-08T10:22:06.455Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1079744",
+    "name": "Christian Friis Bach",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "christianfbach",
+        "last_post": "2024-11-05T06:04:59+00:00"
+      },
+      "bluesky": {
+        "handle": "cfbach.venstre.dk",
+        "last_post": "2026-02-26T09:53:22.856Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q17580253",
+    "name": "Christian Rabjerg Madsen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "RabjergMadsen",
+        "last_post": "2026-02-26T12:08:53+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020069",
+    "name": "Christina Olumeko",
+    "party": "Alternativet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "OlumekoC",
+        "last_post": "2026-02-27T04:53:33+00:00"
+      },
+      "bluesky": {
+        "handle": "christinaolumeko.bsky.social",
+        "last_post": "2026-02-24T07:30:19.955Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439851",
+    "name": "Christoffer Aagaard Melson",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "christoffermels",
+        "last_post": "2025-10-31T19:51:57+00:00"
+      },
+      "bluesky": {
+        "handle": "christoffermelson.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12308261",
+    "name": "Dennis Flydtkjær",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "flydtkjaer",
+        "last_post": "2026-02-22T15:50:33+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q124721072",
+    "name": "Dina Andersen-Raabjerg",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "DinaRaabjerg",
+        "last_post": "2026-02-18T06:46:21+00:00"
+      },
+      "bluesky": {
+        "handle": "dinaraabjerg.bsky.social",
+        "last_post": "2025-09-21T12:21:23.901Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q4993962",
+    "name": "Erik Veje Rasmussen",
+    "party": "Venstre",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12310469",
+    "name": "Erling Bonnesen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "ErlingBonnesen",
+        "last_post": "2023-11-27T12:40:45+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115014515",
+    "name": "Fie Hækkerup",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "FieHaekkerup",
+        "last_post": "2024-02-22T13:23:28+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12311591",
+    "name": "Flemming Møller Mortensen",
+    "party": "Socialdemokratiet",
+    "last_check": null,
+    "social": {
+      "x": {
+        "handle": "flemmingmm",
+        "last_post": "closed"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q61059727",
+    "name": "Franciska Rosenkilde",
+    "party": "Alternativet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "FranciskaRosenk",
+        "last_post": "2026-03-01T08:47:25+00:00"
+      },
+      "bluesky": {
+        "handle": "franciskarosenk.bsky.social",
+        "last_post": "2025-09-30T07:55:19.952Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q126485599",
+    "name": "Frederik Bloch Münster",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "frederikmnster",
+        "last_post": "2026-03-01T13:52:25+00:00"
+      },
+      "bluesky": {
+        "handle": "fredemunster.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q47500025",
+    "name": "Frederik Vad",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "frede_vad",
+        "last_post": "2026-03-01T14:15:59+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q123456265",
+    "name": "Gunvor Wibroe",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "GunvorWibroe",
+        "last_post": "2025-02-28T21:09:14+00:00"
+      },
+      "bluesky": {
+        "handle": "gunvorwibroe.bsky.social",
+        "last_post": "2025-11-19T11:13:30.959Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12315227",
+    "name": "Hans Andersen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "HansAndersenV",
+        "last_post": "2026-02-27T05:20:25+00:00"
+      },
+      "bluesky": {
+        "handle": "hansandersenv.bsky.social",
+        "last_post": "2025-05-20T06:02:14.151Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1579014",
+    "name": "Hans Christian Schmidt",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "HaChrSchmidt",
+        "last_post": "2019-03-01T13:08:43+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12315455",
+    "name": "Hans Kristian Skibby",
+    "party": "Danmarksdemokraterne",
+    "last_check": null,
+    "social": {
+      "x": {
+        "handle": "BundgaardSkibby",
+        "last_post": "closed"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439073",
+    "name": "Heidi Bank",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "bankHeidi",
+        "last_post": "2023-05-03T16:17:37+00:00"
+      },
+      "bluesky": {
+        "handle": "heidibank.bsky.social",
+        "last_post": "2024-12-12T18:34:09.349Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115011763",
+    "name": "Helena Artmann Andresen",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Helena_Artmann",
+        "last_post": "2026-02-11T11:40:12+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115014561",
+    "name": "Helene Liliendahl Brydensholt",
+    "party": "Alternativet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "HLiliendahl",
+        "last_post": "2024-11-14T21:30:51+00:00"
+      },
+      "bluesky": {
+        "handle": "helenebrydensholt.bsky.social",
+        "last_post": "2025-08-04T14:07:52.603Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q112627089",
+    "name": "Helle Bonnesen",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Helle_Bonnesen",
+        "last_post": "2026-02-14T08:51:59+00:00"
+      },
+      "bluesky": {
+        "handle": "bonnesen.bsky.social",
+        "last_post": "2025-03-13T19:16:15.349Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q30091555",
+    "name": "Henrik Frandsen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "HenrikFrandsen5",
+        "last_post": "2026-01-21T09:02:35+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64441610",
+    "name": "Henrik Møller",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Henrikm86712011",
+        "last_post": "2022-12-05T14:15:51+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q441594",
+    "name": "Ida Auken",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "IdaAuken",
+        "last_post": "2026-02-16T06:34:24+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3121413",
+    "name": "Inger Støjberg",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "stojberg",
+        "last_post": "2026-03-01T07:02:33+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12318858",
+    "name": "Jacob Jensen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "jacobjensenMF",
+        "last_post": "2024-12-15T08:16:25+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q11977892",
+    "name": "Jakob Engel-Schmidt",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "engelschmidt",
+        "last_post": "2026-02-21T21:22:50+00:00"
+      },
+      "bluesky": {
+        "handle": "engelschmidt.bsky.social",
+        "last_post": "2025-07-13T10:36:12.642Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319014",
+    "name": "Jan E. Jørgensen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JanEJoergensen",
+        "last_post": "2026-03-01T10:01:14+00:00"
+      },
+      "bluesky": {
+        "handle": "janejnar.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319302",
+    "name": "Jens Henrik Thulesen Dahl",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JThulesen",
+        "last_post": "2023-04-18T17:40:47+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319328",
+    "name": "Jens Joel",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Jens_Joel",
+        "last_post": "2026-02-28T09:51:35+00:00"
+      },
+      "bluesky": {
+        "handle": "jensjoel.bsky.social",
+        "last_post": "2025-06-03T10:51:10.048Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020560",
+    "name": "Jens Meilvang",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JmMeilvang",
+        "last_post": "2026-02-24T13:53:46+00:00"
+      },
+      "bluesky": {
+        "handle": "jmmeilvang.bsky.social",
+        "last_post": "2024-11-23T11:15:47.177Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319515",
+    "name": "Jeppe Bruus Christensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JeppeBruus",
+        "last_post": "2026-02-26T20:12:20+00:00"
+      },
+      "bluesky": {
+        "handle": "jeppebruus.bsky.social",
+        "last_post": "2025-02-12T12:05:48.747Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319533",
+    "name": "Jeppe Søe",
+    "party": null,
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "jeppesoee",
+        "last_post": "2026-03-01T12:37:47+00:00"
+      },
+      "bluesky": {
+        "handle": "jeppesoe.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12319657",
+    "name": "Jesper Petersen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Jesper_Pet",
+        "last_post": "2026-02-26T21:38:11+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12320275",
+    "name": "Jon Stephensen",
+    "party": null,
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20175887",
+    "name": "Kaare Dybvad Bek",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KaareDybvad",
+        "last_post": "2026-03-01T13:52:25+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12321346",
+    "name": "Karin Gaardsted",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KarinGaardsted",
+        "last_post": "2016-07-07T14:29:29+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020598",
+    "name": "Karin Liltorp",
+    "party": "Moderaterne",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12321352",
+    "name": "Karina Adsbøl",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Karinameldgaard",
+        "last_post": "2013-02-10T19:30:00+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12321354",
+    "name": "Karina Lorentzen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MF_K_Lorentzen",
+        "last_post": "2026-03-01T12:42:56+00:00"
+      },
+      "bluesky": {
+        "handle": "karinalorentzen.bsky.social",
+        "last_post": "2026-03-01T12:38:26.556Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12321445",
+    "name": "Karsten Hønge",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "khoenge",
+        "last_post": "2025-02-04T11:07:43+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q22956366",
+    "name": "Kasper Roug",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KasperRoug",
+        "last_post": "2026-01-12T21:34:33+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115012411",
+    "name": "Katrine Daugaard",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KatrineDaugaard",
+        "last_post": "2026-03-01T11:33:42+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439092",
+    "name": "Katrine Robsøe",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KatrineRobsoe",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "katrinerobsoe.bsky.social",
+        "last_post": "2025-10-24T07:34:07.559Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115011642",
+    "name": "Kenneth Fredslund Petersen",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KennethFredslu1",
+        "last_post": "2022-12-15T09:26:16+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115012200",
+    "name": "Kim Aas",
+    "party": "Socialdemokratiet",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115019363",
+    "name": "Kim Edberg Andersen",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "kedbergandersen",
+        "last_post": "2025-11-26T10:11:02+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q17130794",
+    "name": "Kim Valentin",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "kimvalentinDK",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "kimvalentin.bsky.social",
+        "last_post": "2025-07-27T09:42:25.707Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12321969",
+    "name": "Kirsten Normann Andersen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "KirstenNormann",
+        "last_post": "2026-02-27T06:11:25+00:00"
+      },
+      "bluesky": {
+        "handle": "kirstennormann.bsky.social",
+        "last_post": "2026-02-18T06:46:53.051Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115011510",
+    "name": "Kris Jensen Skriver",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "skriver_kris",
+        "last_post": "2024-07-21T09:27:10+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115019333",
+    "name": "Kristian Bøgsted",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Kboegsted",
+        "last_post": "2023-02-01T16:44:15+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64438308",
+    "name": "Lars Boje Mathiesen",
+    "party": "Borgernes Parti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LBMathiesen",
+        "last_post": "2026-03-01T13:29:57+00:00"
+      },
+      "bluesky": {
+        "handle": "larsbojemathiesen.bsky.social",
+        "last_post": "2024-12-13T13:13:43.156Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q182397",
+    "name": "Lars Løkke Rasmussen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "larsloekke",
+        "last_post": "2026-02-14T10:49:55+00:00"
+      },
+      "bluesky": {
+        "handle": "lars-loekke.bsky.social",
+        "last_post": "2025-12-30T18:12:24.429Z"
+      },
+      "mastodon": {
+        "handle": "LarsLoekke@mastodon.social",
+        "last_post": "2022-11-17T16:24:09.095Z"
+      }
+    }
+  },
+  {
+    "id": "Q110502287",
+    "name": "Lars-Christian Brask",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LarsChristianB5",
+        "last_post": "2026-02-28T07:16:24+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132711097",
+    "name": "Lasse Haugaard Pedersen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "lassehaugaard1",
+        "last_post": "2025-11-18T10:55:28+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20174096",
+    "name": "Lea Wermelin",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "leawermelin",
+        "last_post": "2025-10-10T14:28:57+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12324169",
+    "name": "Leif Lahn Jensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LahnLeif",
+        "last_post": "2017-09-16T11:51:26+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q130596645",
+    "name": "Leila Stockmarr",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LeilaStockmarr",
+        "last_post": "2026-01-01T17:35:16+00:00"
+      },
+      "bluesky": {
+        "handle": "leilastockmarr.bsky.social",
+        "last_post": "2024-12-13T10:00:11.053Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64076366",
+    "name": "Linea Søgaard-Lidell",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "linealidell",
+        "last_post": "2025-11-05T05:58:19+00:00"
+      },
+      "bluesky": {
+        "handle": "linealidell.bsky.social",
+        "last_post": "2025-10-04T06:49:16.158Z"
+      },
+      "mastodon": {
+        "handle": "linealidell@respublicae.eu",
+        "last_post": "2024-02-07T18:00:12.581Z"
+      }
+    }
+  },
+  {
+    "id": "Q12324617",
+    "name": "Lisbeth Bech-Nielsen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LisbethBNielsen",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "lisbethbnielsen.bsky.social",
+        "last_post": "2026-02-03T21:38:13.358Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20186502",
+    "name": "Lise Bech",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LiseBech",
+        "last_post": "2026-02-22T16:06:54+00:00"
+      },
+      "bluesky": {
+        "handle": "lisebechdk.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115018753",
+    "name": "Lise Bertelsen",
+    "party": "Det Konservative Folkeparti",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12324922",
+    "name": "Lotte Rod",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LotteRod",
+        "last_post": "2025-02-04T13:31:23+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020546",
+    "name": "Louise Brown",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Louisebrowndk",
+        "last_post": "2026-01-15T15:16:26+00:00"
+      },
+      "bluesky": {
+        "handle": "louisebrowndk.bsky.social",
+        "last_post": "2024-12-11T16:18:59.750Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12324973",
+    "name": "Louise Schack Elholm",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "LouiseElholm",
+        "last_post": "2026-02-26T20:40:13+00:00"
+      },
+      "bluesky": {
+        "handle": "louiseelholm.bsky.social",
+        "last_post": "2026-02-14T21:00:28.652Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12325612",
+    "name": "Mads Fuglede",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "madsfuglede",
+        "last_post": "2026-02-07T14:48:15+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132710570",
+    "name": "Mads Olsen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MadsOlsenSF",
+        "last_post": "2026-02-24T14:43:50+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12325727",
+    "name": "Magnus Heunicke",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Heunicke",
+        "last_post": "2026-02-27T11:41:00+00:00"
+      },
+      "bluesky": {
+        "handle": "heunicke.bsky.social",
+        "last_post": "2026-01-17T12:55:22.630Z"
+      },
+      "mastodon": {
+        "handle": "Heunicke@mastodon.world",
+        "last_post": "2023-12-27T20:09:41.402Z"
+      }
+    }
+  },
+  {
+    "id": "Q12325752",
+    "name": "Mai Mercado",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "_MaiMercado",
+        "last_post": "2026-03-01T06:48:54+00:00"
+      },
+      "bluesky": {
+        "handle": "maimercado.bsky.social",
+        "last_post": "2024-11-23T14:53:56.766Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64441614",
+    "name": "Mai Villadsen",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "maivilladsen",
+        "last_post": "2026-02-04T09:05:45+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29227882",
+    "name": "Malte Larsen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "maltelarsen",
+        "last_post": "2025-11-16T06:36:40+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115015934",
+    "name": "Maria Durhuus",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "durhuusmaria",
+        "last_post": "2026-01-25T17:37:57+00:00"
+      },
+      "bluesky": {
+        "handle": "mdurhuus.bsky.social",
+        "last_post": "2025-02-28T14:51:33.058Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115014546",
+    "name": "Marianne Bigum",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "bigummarianne",
+        "last_post": "2024-11-16T07:34:47+00:00"
+      },
+      "bluesky": {
+        "handle": "mariannebigum.bsky.social",
+        "last_post": "2026-01-07T10:10:24.030Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q62056697",
+    "name": "Marie Bjerre",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "marie_bjerre",
+        "last_post": "2026-02-15T18:02:30+00:00"
+      },
+      "bluesky": {
+        "handle": "mariebjerre.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64417364",
+    "name": "Marlene Ambo-Rasmussen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MarleneAmbo",
+        "last_post": "2026-02-15T19:34:58+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12326188",
+    "name": "Marlene Harpsøe",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mharpsoe",
+        "last_post": "2025-03-26T12:39:55+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1272556",
+    "name": "Martin Lidegaard",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "martinlidegaard",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "martinlidegaard.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115014527",
+    "name": "Matilde Powers",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "power_matilde",
+        "last_post": "2025-06-29T14:32:41+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12326451",
+    "name": "Mattias Tesfaye",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mattiastesfaye",
+        "last_post": "2020-12-31T21:17:36+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q18171967",
+    "name": "Mette Abildgaard",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "metteabildgaard",
+        "last_post": "2026-02-26T22:32:27+00:00"
+      },
+      "bluesky": {
+        "handle": "metteabildgaard.bsky.social",
+        "last_post": "2025-05-06T12:25:43.886Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q5015",
+    "name": "Mette Frederiksen",
+    "party": "Socialdemokratiet",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115011721",
+    "name": "Mette Kierkgaard",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Mettekierkgaard",
+        "last_post": "2016-02-10T03:09:46+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12326843",
+    "name": "Mette Reissmann",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mettereissmann",
+        "last_post": "2024-11-16T11:47:50+00:00"
+      },
+      "bluesky": {
+        "handle": "mettereissmann.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q48922678",
+    "name": "Mette Thiesen",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "ThiesenMette",
+        "last_post": "2025-11-11T13:30:01+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115013935",
+    "name": "Mike Villa Fonseca",
+    "party": null,
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "villafonseca",
+        "last_post": "2026-02-20T09:19:37+00:00"
+      },
+      "bluesky": {
+        "handle": "mikevilllafonseca.bsky.social",
+        "last_post": "2025-06-18T15:45:45.752Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q111699048",
+    "name": "Mikkel Bjørn",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mikkel_bjorn",
+        "last_post": "2026-03-01T10:42:42+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12327462",
+    "name": "Mogens Jensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MogensJensenS",
+        "last_post": "2026-02-23T05:11:30+00:00"
+      },
+      "bluesky": {
+        "handle": "mogensjensens.bsky.social",
+        "last_post": "2025-02-28T14:46:06.105Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115398680",
+    "name": "Mohammad Rona",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mohammad_rona",
+        "last_post": "2026-02-27T13:01:11+00:00"
+      },
+      "bluesky": {
+        "handle": "morona1.bsky.social",
+        "last_post": "2026-01-20T21:34:23.337Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64439195",
+    "name": "Mona Juul",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "JuulMona",
+        "last_post": "2026-03-01T11:02:33+00:00"
+      },
+      "bluesky": {
+        "handle": "juulmona.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q104139464",
+    "name": "Monika Rubin",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MonikaaRubin",
+        "last_post": "2026-03-01T09:55:27+00:00"
+      },
+      "bluesky": {
+        "handle": "monikarubin.bsky.social",
+        "last_post": "2026-02-18T12:32:20.952Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q375980",
+    "name": "Morten Bødskov",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mfMorten",
+        "last_post": "2026-02-11T17:02:45+00:00"
+      },
+      "bluesky": {
+        "handle": "mortenboedskov.bsky.social",
+        "last_post": "2025-04-07T14:34:58.507Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12327663",
+    "name": "Morten Dahlin",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MortenDahlin",
+        "last_post": "2026-03-01T12:56:01+00:00"
+      },
+      "bluesky": {
+        "handle": "mortendahlin.bsky.social",
+        "last_post": "2025-03-13T19:43:57.353Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q132732432",
+    "name": "Morten Klessen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "mortenklessen",
+        "last_post": "2009-05-06T08:39:46+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1338185",
+    "name": "Morten Messerschmidt",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MrMesserschmidt",
+        "last_post": "2026-03-01T06:59:00+00:00"
+      },
+      "bluesky": null,
+      "mastodon": {
+        "handle": "MrMesserschmidt@respublicae.eu",
+        "last_post": "2024-02-14T20:05:54.220Z"
+      }
+    }
+  },
+  {
+    "id": "Q58455083",
+    "name": "Nanna W. Gotfredsen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "NannaWG",
+        "last_post": "2025-05-16T05:39:42+00:00"
+      },
+      "bluesky": {
+        "handle": "nannawgotfredsen.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020628",
+    "name": "Nick Zimmermann",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "nick_zimmermann",
+        "last_post": "2026-03-01T07:00:39+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q575363",
+    "name": "Nicolai Wammen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "nwammen",
+        "last_post": "2025-11-13T14:58:26+00:00"
+      },
+      "bluesky": {
+        "handle": "nicolaiwammen.bsky.social",
+        "last_post": "2025-01-21T09:24:37.152Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12330024",
+    "name": "Ole Birk Olesen",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "olebirkolesen",
+        "last_post": "2026-03-01T05:30:44+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29228030",
+    "name": "Peder Hvelplund",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "pederhvelplund",
+        "last_post": "2026-03-01T14:11:51+00:00"
+      },
+      "bluesky": {
+        "handle": "pederhvelplund.bsky.social",
+        "last_post": "2025-12-09T21:56:24.134Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20188899",
+    "name": "Pelle Dragsted",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "pelledragsted",
+        "last_post": "2026-03-01T14:31:58+00:00"
+      },
+      "bluesky": {
+        "handle": "pelledragsted.bsky.social",
+        "last_post": "2026-02-18T17:14:37.455Z"
+      },
+      "mastodon": {
+        "handle": "pelle@ohai.social",
+        "last_post": "2023-12-22T11:01:30.866Z"
+      }
+    }
+  },
+  {
+    "id": "Q12331318",
+    "name": "Per Husted",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Perhusted",
+        "last_post": null
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12331328",
+    "name": "Per Larsen",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PerLarsenC",
+        "last_post": "2025-11-19T10:33:44+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q24293722",
+    "name": "Pernille Vermund",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PernilleVermund",
+        "last_post": "2026-03-01T07:15:49+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020616",
+    "name": "Peter Have",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PeterHave862546",
+        "last_post": "2025-10-20T21:55:59+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12331581",
+    "name": "Peter Hummelgaard",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PHummelgaard",
+        "last_post": "2026-02-27T13:18:24+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12331601",
+    "name": "Peter Juel-Jensen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PeterJuelJensen",
+        "last_post": "2026-02-26T19:54:23+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20186168",
+    "name": "Peter Kofod Hristov",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "kofodpeter",
+        "last_post": "2026-02-28T15:52:18+00:00"
+      },
+      "bluesky": null,
+      "mastodon": {
+        "handle": "kofodpeter@respublicae.eu",
+        "last_post": "2024-02-13T17:56:26.193Z"
+      }
+    }
+  },
+  {
+    "id": "Q28759772",
+    "name": "Peter Seier Christensen",
+    "party": null,
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "peter_seier",
+        "last_post": "2023-02-04T06:57:34+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12331726",
+    "name": "Peter Skaarup",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "skaarup_peter",
+        "last_post": "2026-03-01T15:02:39+00:00"
+      },
+      "bluesky": {
+        "handle": "peterskaarup.bsky.social",
+        "last_post": "2026-02-28T17:10:00.556Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q272924",
+    "name": "Pia Kjærsgaard",
+    "party": "Dansk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "pia_kjaersgaard",
+        "last_post": "2026-03-01T07:00:19+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q531614",
+    "name": "Pia Olsen Dyhr",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "PiaOlsen",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "piaolsendyhr.bsky.social",
+        "last_post": "2026-02-14T19:09:44.750Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12332288",
+    "name": "Preben Bang Henriksen",
+    "party": "Venstre",
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12332910",
+    "name": "Rasmus Horn Langhoff",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "rasmushorn",
+        "last_post": "2025-11-29T15:48:42+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q10967294",
+    "name": "Rasmus Jarlov",
+    "party": "Det Konservative Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "RasmusJarlov",
+        "last_post": "2026-02-28T20:09:42+00:00"
+      },
+      "bluesky": {
+        "handle": "jarlov.bsky.social",
+        "last_post": "2026-02-26T09:11:13.659Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115015717",
+    "name": "Rasmus Lund-Nielsen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "rlundnielsen",
+        "last_post": "2026-02-10T17:58:26+00:00"
+      },
+      "bluesky": {
+        "handle": "rasmuslundnielsen.bsky.social",
+        "last_post": "2024-12-22T20:03:30.958Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64441603",
+    "name": "Rasmus Stoklund",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "RStoklund",
+        "last_post": "2026-01-23T14:41:32+00:00"
+      },
+      "bluesky": {
+        "handle": "rasmusstoklund.bsky.social",
+        "last_post": "2025-02-07T14:17:27.552Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115012248",
+    "name": "Rosa Eriksen",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "RosaEriksen9",
+        "last_post": "2026-02-20T08:53:43+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12333741",
+    "name": "Rosa Lund",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "RosaLundEl",
+        "last_post": "2026-01-01T17:34:52+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64442134",
+    "name": "Samira Nawa",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SamiraNawa",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "samiranawa.radikale.dk",
+        "last_post": "2026-02-28T06:29:15.059Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115013955",
+    "name": "Sandra Elisabeth Skalvig",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "xSkalvig",
+        "last_post": "closed"
+      },
+      "bluesky": {
+        "handle": "sandraskalvig.bsky.social",
+        "last_post": "2024-12-13T10:15:14.650Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115012140",
+    "name": "Sara Emil Baaring",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "BaaringEmil",
+        "last_post": "2025-09-18T08:50:51+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115013979",
+    "name": "Sascha Faxe",
+    "party": "Alternativet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "saschafaxe",
+        "last_post": "2026-02-25T22:06:32+00:00"
+      },
+      "bluesky": {
+        "handle": "saschafaxe.bsky.social",
+        "last_post": "2026-03-01T02:35:16.363Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q57409691",
+    "name": "Signe Munk",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "signe_munk",
+        "last_post": "2026-02-28T07:43:38+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q112960298",
+    "name": "Sigurd Agersnap",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SigurdAgersnap",
+        "last_post": "2026-02-28T08:19:14+00:00"
+      },
+      "bluesky": {
+        "handle": "sigurdagersnap.bsky.social",
+        "last_post": "2026-02-28T21:45:04.350Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12335355",
+    "name": "Simon Kollerup",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "simonkollerup",
+        "last_post": "2024-11-16T12:23:29+00:00"
+      },
+      "bluesky": {
+        "handle": "simonkollerup.bsky.social",
+        "last_post": "2025-08-29T10:27:34.503Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q845278",
+    "name": "Sjúrður Skaale",
+    "party": "Javnaðarflokkurin",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SjurSkaale",
+        "last_post": "2025-12-18T17:32:53+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q102044122",
+    "name": "Sofie Lippert Troelsen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "sofielippert",
+        "last_post": "2025-11-05T18:28:27+00:00"
+      },
+      "bluesky": {
+        "handle": "sofielippert.bsky.social",
+        "last_post": "2026-01-08T13:20:05.233Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12336452",
+    "name": "Sophie Løhde",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "sophieloehde",
+        "last_post": "2026-02-28T07:11:19+00:00"
+      },
+      "bluesky": {
+        "handle": "sophieloehde.bsky.social",
+        "last_post": null
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q29526362",
+    "name": "Steffen Larsen",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "S_B_Larsen",
+        "last_post": "2026-03-01T09:08:06+00:00"
+      },
+      "bluesky": {
+        "handle": "steffenlarsen.bsky.social",
+        "last_post": "2025-09-11T09:07:43.407Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115014541",
+    "name": "Steffen W. Frølund",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SteffenFrolund",
+        "last_post": "2026-03-01T14:56:55+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q56480652",
+    "name": "Stinus Lindgreen",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "stinuslindgreen",
+        "last_post": "2026-03-01T13:51:20+00:00"
+      },
+      "bluesky": {
+        "handle": "stinuslindgreen.bsky.social",
+        "last_post": "2026-02-28T21:56:59.258Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115013941",
+    "name": "Susie Jessen",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SusieJessen",
+        "last_post": "2026-02-28T16:46:47+00:00"
+      },
+      "bluesky": {
+        "handle": "susiejessen.bsky.social",
+        "last_post": "2025-01-06T07:38:04.147Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115018501",
+    "name": "Sólbjørg Jakobsen",
+    "party": "Liberal Alliance",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "solbjorgLA",
+        "last_post": "2026-02-26T14:50:35+00:00"
+      },
+      "bluesky": {
+        "handle": "solbjorgla.bsky.social",
+        "last_post": "2024-11-26T11:15:00.948Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20179766",
+    "name": "Søren Egge Rasmussen",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "soreneggerasmus",
+        "last_post": "2025-09-05T14:35:11+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12338511",
+    "name": "Søren Espersen",
+    "party": "Danmarksdemokraterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "EspersenSoren",
+        "last_post": "2026-02-25T15:06:11+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q1476255",
+    "name": "Søren Gade",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SoerenGade",
+        "last_post": "2023-10-23T08:19:23+00:00"
+      },
+      "bluesky": null,
+      "mastodon": {
+        "handle": "SoerenGade@respublicae.eu",
+        "last_post": "2022-04-07T09:41:36.865Z"
+      }
+    }
+  },
+  {
+    "id": "Q747728",
+    "name": "Søren Søndergaard",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "SrenSndergaard3",
+        "last_post": "2026-02-28T21:57:36+00:00"
+      },
+      "bluesky": null,
+      "mastodon": {
+        "handle": "SrenSndergaard3@respublicae.eu",
+        "last_post": "2024-02-03T18:26:10.146Z"
+      }
+    }
+  },
+  {
+    "id": "Q67954104",
+    "name": "Tanja Larsson",
+    "party": "Socialdemokratiet",
+    "last_check": null,
+    "social": {
+      "x": {
+        "handle": "LarssonTanja",
+        "last_post": "closed"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q106009197",
+    "name": "Theresa Berg Andersen",
+    "party": "Socialistisk Folkeparti",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "BergBergtheresa",
+        "last_post": "2025-09-30T06:51:42+00:00"
+      },
+      "bluesky": {
+        "handle": "theresaberg.bsky.social",
+        "last_post": "2026-01-08T09:15:11.235Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q55334143",
+    "name": "Theresa Scavenius",
+    "party": null,
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "TScavenius",
+        "last_post": "2025-06-26T14:08:10+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12343109",
+    "name": "Thomas Danielsen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "ThDanielsen",
+        "last_post": "2023-12-04T21:59:40+00:00"
+      },
+      "bluesky": {
+        "handle": "thomasdanielsen.bsky.social",
+        "last_post": "2025-10-04T08:36:35.556Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12339222",
+    "name": "Thomas Jensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MFThomasJensen",
+        "last_post": "2024-10-01T12:25:09+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020554",
+    "name": "Thomas Monberg",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "MonbergThomas",
+        "last_post": "2025-03-27T17:57:40+00:00"
+      },
+      "bluesky": {
+        "handle": "thomasmonberg.bsky.social",
+        "last_post": "2025-03-27T18:48:58.430Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115012177",
+    "name": "Thomas Skriver Jensen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "T_SkriverJensen",
+        "last_post": "2026-01-27T10:42:33+00:00"
+      },
+      "bluesky": {
+        "handle": "thomasskriver.bsky.social",
+        "last_post": "2025-06-11T18:34:01.254Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q115020590",
+    "name": "Tobias Grotkjær Elmstrøm",
+    "party": "Moderaterne",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "TobiasGrotkjaer",
+        "last_post": "2024-09-27T10:52:30+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q20197707",
+    "name": "Torsten Gejl",
+    "party": "Alternativet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "TorstenGejl",
+        "last_post": "2026-02-28T20:25:47+00:00"
+      },
+      "bluesky": {
+        "handle": "torstengejl.bsky.social",
+        "last_post": "2026-02-28T20:27:27.353Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q7827256",
+    "name": "Torsten Schack Pedersen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Torstenschack",
+        "last_post": "2026-02-25T09:25:25+00:00"
+      },
+      "bluesky": {
+        "handle": "torstenschack.bsky.social",
+        "last_post": "2026-02-25T09:26:13.155Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12339763",
+    "name": "Trine Bramsen",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "Trinebramsen",
+        "last_post": "2025-10-05T17:27:05+00:00"
+      },
+      "bluesky": {
+        "handle": "trinebramsen.bsky.social",
+        "last_post": "2025-09-24T07:23:04.305Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12339772",
+    "name": "Trine Pertou Mach",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "trinemach",
+        "last_post": "2026-02-28T14:58:13+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q3080572",
+    "name": "Troels Lund Poulsen",
+    "party": "Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "troelslundp",
+        "last_post": "2026-03-01T07:53:58+00:00"
+      },
+      "bluesky": {
+        "handle": "troelslundp.venstre.dk",
+        "last_post": "2025-10-07T07:57:36.360Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q64417468",
+    "name": "Victoria Velásquez",
+    "party": "Enhedslisten",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "VictoriaV_EL",
+        "last_post": "2026-02-24T09:22:56+00:00"
+      },
+      "bluesky": {
+        "handle": "victoriavel.bsky.social",
+        "last_post": "2025-03-08T17:48:05.055Z"
+      },
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q264785",
+    "name": "Yildiz Akdogan",
+    "party": "Socialdemokratiet",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "YildizAkdogan",
+        "last_post": "2026-02-26T09:59:52+00:00"
+      },
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q12341748",
+    "name": "Zenia Stampe",
+    "party": "Radikale Venstre",
+    "last_check": "2026-03-01T15:24:22.405996+00:00",
+    "social": {
+      "x": {
+        "handle": "zeniastampe",
+        "last_post": "2024-12-11T15:20:38+00:00"
+      },
+      "bluesky": {
+        "handle": "zeniastampe.bsky.social",
+        "last_post": "2025-05-07T11:03:41.244Z"
+      },
+      "mastodon": null
+    }
+  }
+]

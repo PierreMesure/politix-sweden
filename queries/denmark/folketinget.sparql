@@ -1,15 +1,15 @@
-SELECT ?mp ?mpLabel ?partyLabel ?x ?xEnd ?ig ?igEnd ?bluesky ?bskyEnd ?mastodon ?mastEnd ?truth ?truthEnd WHERE {
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "sv,en". }
+SELECT ?mp ?mpLabel ?partyLabel ?partyLogo ?x ?xEnd ?ig ?igEnd ?bluesky ?bskyEnd ?mastodon ?mastEnd ?truth ?truthEnd WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "da,en". }
 
     ?mp wdt:P31 wd:Q5;
         p:P39 ?statement.
-    ?statement ps:P39 wd:Q10655178.
+    ?statement ps:P39 wd:Q12311817;
+               pq:P2937 wd:Q114902058. # Folketing 2022–
     FILTER NOT EXISTS { ?statement pq:P582 ?endTime. }
 
     OPTIONAL {
-        ?mp p:P102 ?partyStatement.
-        ?partyStatement ps:P102 ?party.
-        FILTER(NOT EXISTS { ?partyStatement pq:P582 ?partyEndDate. })
+        ?statement pq:P4100 ?party.
+        OPTIONAL { ?party wdt:P154 ?partyLogo. }
     }
 
     OPTIONAL {

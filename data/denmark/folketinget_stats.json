@@ -1,0 +1,514 @@
+{
+  "global": {
+    "all": {
+      "active": 104,
+      "inactive": 63,
+      "closed": 4,
+      "none": 8,
+      "total": 179
+    },
+    "x": {
+      "active": 97,
+      "inactive": 63,
+      "closed": 11,
+      "none": 8,
+      "total": 179
+    },
+    "bluesky": {
+      "active": 24,
+      "inactive": 59,
+      "closed": 0,
+      "none": 96,
+      "total": 179
+    },
+    "mastodon": {
+      "active": 0,
+      "inactive": 9,
+      "closed": 0,
+      "none": 170,
+      "total": 179
+    }
+  },
+  "parties": {
+    "Sambandsflokkurin": {
+      "all": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "x": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      }
+    },
+    "Det Konservative Folkeparti": {
+      "all": {
+        "active": 8,
+        "inactive": 1,
+        "closed": 0,
+        "none": 1,
+        "total": 10
+      },
+      "x": {
+        "active": 8,
+        "inactive": 1,
+        "closed": 0,
+        "none": 1,
+        "total": 10
+      },
+      "bluesky": {
+        "active": 1,
+        "inactive": 7,
+        "closed": 0,
+        "none": 2,
+        "total": 10
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 10,
+        "total": 10
+      }
+    },
+    "Naleraq": {
+      "all": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "x": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      }
+    },
+    "Javnaðarflokkurin": {
+      "all": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "x": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      }
+    },
+    "Inuit Ataqatigiit": {
+      "all": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "x": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      }
+    },
+    "Dansk Folkeparti": {
+      "all": {
+        "active": 5,
+        "inactive": 1,
+        "closed": 0,
+        "none": 1,
+        "total": 7
+      },
+      "x": {
+        "active": 5,
+        "inactive": 1,
+        "closed": 0,
+        "none": 1,
+        "total": 7
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 7,
+        "total": 7
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 2,
+        "closed": 0,
+        "none": 5,
+        "total": 7
+      }
+    },
+    "Liberal Alliance": {
+      "all": {
+        "active": 14,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 15
+      },
+      "x": {
+        "active": 14,
+        "inactive": 0,
+        "closed": 1,
+        "none": 0,
+        "total": 15
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 6,
+        "closed": 0,
+        "none": 9,
+        "total": 15
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 15,
+        "total": 15
+      }
+    },
+    "Radikale Venstre": {
+      "all": {
+        "active": 2,
+        "inactive": 4,
+        "closed": 0,
+        "none": 0,
+        "total": 6
+      },
+      "x": {
+        "active": 1,
+        "inactive": 2,
+        "closed": 3,
+        "none": 0,
+        "total": 6
+      },
+      "bluesky": {
+        "active": 2,
+        "inactive": 3,
+        "closed": 0,
+        "none": 1,
+        "total": 6
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 6,
+        "total": 6
+      }
+    },
+    "Venstre": {
+      "all": {
+        "active": 13,
+        "inactive": 9,
+        "closed": 0,
+        "none": 2,
+        "total": 24
+      },
+      "x": {
+        "active": 12,
+        "inactive": 9,
+        "closed": 1,
+        "none": 2,
+        "total": 24
+      },
+      "bluesky": {
+        "active": 3,
+        "inactive": 11,
+        "closed": 0,
+        "none": 10,
+        "total": 24
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 2,
+        "closed": 0,
+        "none": 22,
+        "total": 24
+      }
+    },
+    "Socialdemokratiet": {
+      "all": {
+        "active": 18,
+        "inactive": 27,
+        "closed": 3,
+        "none": 2,
+        "total": 50
+      },
+      "x": {
+        "active": 18,
+        "inactive": 27,
+        "closed": 3,
+        "none": 2,
+        "total": 50
+      },
+      "bluesky": {
+        "active": 1,
+        "inactive": 16,
+        "closed": 0,
+        "none": 33,
+        "total": 50
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 2,
+        "closed": 0,
+        "none": 48,
+        "total": 50
+      }
+    },
+    "Moderaterne": {
+      "all": {
+        "active": 8,
+        "inactive": 4,
+        "closed": 0,
+        "none": 1,
+        "total": 13
+      },
+      "x": {
+        "active": 8,
+        "inactive": 4,
+        "closed": 0,
+        "none": 1,
+        "total": 13
+      },
+      "bluesky": {
+        "active": 3,
+        "inactive": 3,
+        "closed": 0,
+        "none": 7,
+        "total": 13
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 12,
+        "total": 13
+      }
+    },
+    "Alternativet": {
+      "all": {
+        "active": 4,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 5
+      },
+      "x": {
+        "active": 4,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 5
+      },
+      "bluesky": {
+        "active": 3,
+        "inactive": 2,
+        "closed": 0,
+        "none": 0,
+        "total": 5
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 5,
+        "total": 5
+      }
+    },
+    "Socialistisk Folkeparti": {
+      "all": {
+        "active": 11,
+        "inactive": 4,
+        "closed": 0,
+        "none": 0,
+        "total": 15
+      },
+      "x": {
+        "active": 6,
+        "inactive": 7,
+        "closed": 2,
+        "none": 0,
+        "total": 15
+      },
+      "bluesky": {
+        "active": 8,
+        "inactive": 2,
+        "closed": 0,
+        "none": 5,
+        "total": 15
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 15,
+        "total": 15
+      }
+    },
+    "Borgernes Parti": {
+      "all": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "x": {
+        "active": 1,
+        "inactive": 0,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 1
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 1,
+        "total": 1
+      }
+    },
+    "Enhedslisten": {
+      "all": {
+        "active": 8,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 9
+      },
+      "x": {
+        "active": 8,
+        "inactive": 1,
+        "closed": 0,
+        "none": 0,
+        "total": 9
+      },
+      "bluesky": {
+        "active": 2,
+        "inactive": 2,
+        "closed": 0,
+        "none": 5,
+        "total": 9
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 2,
+        "closed": 0,
+        "none": 7,
+        "total": 9
+      }
+    },
+    "Danmarksdemokraterne": {
+      "all": {
+        "active": 8,
+        "inactive": 6,
+        "closed": 1,
+        "none": 0,
+        "total": 15
+      },
+      "x": {
+        "active": 8,
+        "inactive": 6,
+        "closed": 1,
+        "none": 0,
+        "total": 15
+      },
+      "bluesky": {
+        "active": 1,
+        "inactive": 4,
+        "closed": 0,
+        "none": 10,
+        "total": 15
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 15,
+        "total": 15
+      }
+    }
+  }
+}

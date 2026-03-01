@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Platform } from '../types';
-import { DATA_URL, CSV_URL } from '../utils';
+import { getDataUrl, getCsvUrl, COALITIONS, COUNTRY } from '../utils';
 
 interface DashboardFiltersProps {
   searchTerm: string;
@@ -35,8 +35,11 @@ export default function DashboardFilters({
   }, []);
 
   const getPartyLabel = (party: string) => {
-    if (party === 'tido') return t('filters.tido');
-    if (party === 'opposition') return t('filters.opposition');
+    const activeCoalitionConfig = COALITIONS[COUNTRY];
+    if (activeCoalitionConfig) {
+      if (party === activeCoalitionConfig.group1.id) return t(`filters.${activeCoalitionConfig.group1.id}`);
+      if (party === activeCoalitionConfig.group2.id) return t(`filters.${activeCoalitionConfig.group2.id}`);
+    }
     return party;
   };
 
@@ -95,14 +98,14 @@ export default function DashboardFilters({
           {showDownload && (
             <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-zinc-900 rounded-md shadow-lg border border-gray-200 dark:border-zinc-700 z-10 overflow-hidden">
               <a
-                href={DATA_URL}
+                href={getDataUrl()}
                 download
                 className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
               >
                 JSON
               </a>
               <a
-                href={CSV_URL}
+                href={getCsvUrl()}
                 download
                 className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
               >

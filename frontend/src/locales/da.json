@@ -1,0 +1,43 @@
+{
+  "title": "Er dit folketingsmedlem på X (og Bluesky, Mastodon...)?",
+  "description": "Forsker og demokratiekspert {carl} har gentagne gange påpeget sårbarheden ved at flytte den offentlige samtale til jord, vi ikke selv ejer, hvor algoritmer designet til profit og polarisering sætter rammerne for demokratiet. Denne oversigt overvåger vores folkevalgtes tilstedeværelse på X, Bluesky og Mastodon for konkret at vise, hvor mange der bliver på Elon Musks platform, og hvor mange der har fundet nye kanaler.",
+  "wikidataNote": "Data hentes fra Wikidata (Wikipedias database). Hvis du finder en fejl eller en manglende konto, bedes du klikke på \"Rediger på Wikidata\" i tabellen for at rette det.",
+  "footer": "Denne hjemmeside er udviklet af {pierre} og er udgivet som {github} ❤️ (AGPLv3).",
+  "githubLinkText": "open source",
+  "loading": "Indlæser data...",
+  "error": "Kunne ikke indlæse data.",
+  "searchPlaceholder": "Søg efter politiker...",
+  "filters": {
+    "x": "X",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "noAccounts": "Ingen konti",
+    "clearParty": "Ryd partifilter",
+    "clearAll": "Ryd alle filtre",
+    "tido": "Tidö-koalitionen",
+    "majority": "Flertal",
+    "opposition": "Oppositionen",
+    "download": "Download data"
+  },
+  "stats": {
+    "members": "medlemmer",
+    "activeMembers": "Medlemmer med sociale medier"
+  },
+  "table": {
+    "name": "Navn",
+    "party": "Parti",
+    "bluesky": "Bluesky",
+    "mastodon": "Mastodon",
+    "x": "X (Twitter)",
+    "total": "Oversigt",
+    "edit": "Rediger",
+    "editOnWikidata": "Rediger på Wikidata",
+    "unknownParty": "UPF",
+    "noResults": "Ingen politikere fundet, der matcher dine kriterier.",
+    "active": "Aktiv (sidste 90 dage)",
+    "inactive": "Inaktiv",
+    "closed": "Konto lukket",
+    "protected": "Beskyttet konto",
+    "never": "Aldrig"
+  }
+}

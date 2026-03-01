@@ -3,16 +3,14 @@
 import { useState, useMemo, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Politician, Platform, DashboardStatsData, StatusStats, StatsData } from '../types';
-import { DATA_URL, STATS_URL, isActive } from '../utils';
+import { getStatsUrl, getDataUrl, isActive, LOCALE, COALITIONS, COUNTRY } from '../utils';
 import DashboardStats from './DashboardStats';
 import DashboardFilters from './DashboardFilters';
 import PoliticianTable from './PoliticianTable';
 
-const TIDO_PARTIES = ["Moderaterna", "Sverigedemokraterna", "Kristdemokraterna", "Liberalerna"];
-const OPPOSITION_PARTIES = ["Socialdemokraterna", "Vänsterpartiet", "Miljöpartiet", "Centerpartiet"];
-
 export default function Dashboard() {
   const { t } = useTranslation();
+
   const [data, setData] = useState<Politician[]>([]);
   const [precomputedStats, setPrecomputedStats] = useState<StatsData | null>(null);
   const [dataLoading, setDataLoading] = useState(true);
@@ -29,8 +27,15 @@ export default function Dashboard() {
   const deferredActivePlatform = useDeferredValue(activePlatform);
 
   useEffect(() => {
+    setDataLoading(true);
+    setStatsLoading(true);
+    setError(null);
+
+    const statsUrl = getStatsUrl();
+    const dataUrl = getDataUrl();
+
     // Fetch Stats
-    fetch(STATS_URL)
+    fetch(statsUrl)
       .then(res => res.ok ? res.json() : null)
       .then(stats => {
         if (stats) setPrecomputedStats(stats);
@@ -42,12 +47,12 @@ export default function Dashboard() {
       });
 
     // Fetch Data
-    fetch(DATA_URL)
+    fetch(dataUrl)
       .then(async res => {
         if (!res.ok) throw new Error("Failed to fetch data");
         const jsonData = await res.json();
         // Pre-sort by name once to avoid sorting in every memo
-        jsonData.sort((a: Politician, b: Politician) => a.name.localeCompare(b.name, 'sv'));
+        jsonData.sort((a: Politician, b: Politician) => a.name.localeCompare(b.name, LOCALE));
         setData(jsonData);
         setDataLoading(false);
       })
@@ -73,16 +78,22 @@ export default function Dashboard() {
     return Array.from(s).sort((a, b) => {
       if (a === unknownLabel) return 1;
       if (b === unknownLabel) return -1;
-      return a.localeCompare(b, 'sv');
+      return a.localeCompare(b, LOCALE);
     });
   }, [data, precomputedStats, t]);
 
   // 1. Filter by Party (Base for Stats & Chart)
   const filteredByParty = useMemo(() => {
+    const activeCoalitionConfig = COALITIONS[COUNTRY];
+    
     return data.filter(p => {
       const normalizedParty = p.party || t('table.unknownParty');
-      if (selectedParty === 'tido') return TIDO_PARTIES.includes(normalizedParty);
-      if (selectedParty === 'opposition') return OPPOSITION_PARTIES.includes(normalizedParty);
+      
+      if (activeCoalitionConfig) {
+        if (selectedParty === activeCoalitionConfig.group1.id) return activeCoalitionConfig.group1.parties.includes(normalizedParty);
+        if (selectedParty === activeCoalitionConfig.group2.id) return activeCoalitionConfig.group2.parties.includes(normalizedParty);
+      }
+      
       return selectedParty ? normalizedParty === selectedParty : true;
     });
   }, [data, selectedParty, t]);
@@ -217,15 +228,14 @@ export default function Dashboard() {
         />
 
         <div className="space-y-4">
-          <DashboardFilters
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            selectedParty={selectedParty}
-            setSelectedParty={setSelectedParty}
-            activePlatform={activePlatform}
-            setActivePlatform={setActivePlatform}
-          />
-          <p className="text-xs text-center text-gray-400 dark:text-gray-500 px-4">
+                  <DashboardFilters
+                    searchTerm={searchTerm}
+                    setSearchTerm={setSearchTerm}
+                    selectedParty={selectedParty}
+                    setSelectedParty={setSelectedParty}
+                    activePlatform={activePlatform}
+                    setActivePlatform={setActivePlatform}
+                  />          <p className="text-xs text-center text-gray-400 dark:text-gray-500 px-4">
             {t('wikidataNote')}
           </p>
         </div>

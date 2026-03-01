@@ -2,21 +2,24 @@
 
 import en from '../locales/en.json';
 import sv from '../locales/sv.json';
+import da from '../locales/da.json';
+import { LOCALE } from '../utils';
 
 // Simple translation hook. 
 // In a real app, you might use 'next-intl' or 'react-i18next' and handle locale switching context.
 const translations = {
   en,
   sv,
+  da,
 };
 
 type Locale = keyof typeof translations;
 type TranslationKey = keyof typeof en;
 
-export function useTranslation(locale: Locale = 'sv') {
+export function useTranslation() {
   const t = (key: string) => {
     const keys = key.split('.');
-    let value: any = translations[locale];
+    let value: any = translations[LOCALE as Locale] || translations.en;
     
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useTranslation } from '../hooks/useTranslation';
 import ParliamentChart from './ParliamentChart';
-import { PARTY_LOGOS } from '../utils';
+import { PARTY_LOGOS, COALITIONS, COUNTRY } from '../utils';
 import { Platform, StatusStats, DashboardStatsData } from '../types';
 
 interface DashboardStatsProps {
@@ -14,7 +14,6 @@ interface DashboardStatsProps {
   parties: string[];
   selectedParty: string | null;
   setSelectedParty: (party: string | null) => void;
-  country: string;
 }
 
 const STATUS_COLORS = {
@@ -33,7 +32,6 @@ export default function DashboardStats({
   parties,
   selectedParty,
   setSelectedParty,
-  country,
 }: DashboardStatsProps) {
   const { t } = useTranslation();
 
@@ -47,6 +45,8 @@ export default function DashboardStats({
   const visibleProgressBars = activePlatform === 'all' 
     ? ['all'] as const 
     : [activePlatform] as const;
+
+  const activeCoalitionConfig = COALITIONS[COUNTRY];
 
   return (
     <section className="space-y-8">
@@ -203,31 +203,31 @@ export default function DashboardStats({
               const elements = [];
               
               // If we are about to render the 'Unknown' party, insert coalitions first
-              if (isUnknown) {
+              if (isUnknown && activeCoalitionConfig) {
                 elements.push(
                   <button
-                    key="tido"
-                    onClick={() => setSelectedParty(selectedParty === 'tido' ? null : 'tido')}
+                    key={activeCoalitionConfig.group1.id}
+                    onClick={() => setSelectedParty(selectedParty === activeCoalitionConfig.group1.id ? null : activeCoalitionConfig.group1.id)}
                     className={`px-4 py-2 rounded-full border transition-all text-sm font-medium ${
-                      selectedParty === 'tido'
+                      selectedParty === activeCoalitionConfig.group1.id
                         ? 'bg-blue-600 border-blue-600 text-white'
                         : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 text-gray-700 dark:text-gray-300'
                     }`}
                   >
-                    {t('filters.tido')}
+                    {t(`filters.${activeCoalitionConfig.group1.id}`)}
                   </button>
                 );
                 elements.push(
                   <button
-                    key="opposition"
-                    onClick={() => setSelectedParty(selectedParty === 'opposition' ? null : 'opposition')}
+                    key={activeCoalitionConfig.group2.id}
+                    onClick={() => setSelectedParty(selectedParty === activeCoalitionConfig.group2.id ? null : activeCoalitionConfig.group2.id)}
                     className={`px-4 py-2 rounded-full border transition-all text-sm font-medium ${
-                      selectedParty === 'opposition'
+                      selectedParty === activeCoalitionConfig.group2.id
                         ? 'bg-red-600 border-red-600 text-white'
                         : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 text-gray-700 dark:text-gray-300'
                     }`}
                   >
-                    {t('filters.opposition')}
+                    {t(`filters.${activeCoalitionConfig.group2.id}`)}
                   </button>
                 );
               }
@@ -242,9 +242,9 @@ export default function DashboardStats({
                       : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 text-gray-700 dark:text-gray-300'
                   }`}
                 >
-                  {PARTY_LOGOS[country]?.[party] && (
+                  {PARTY_LOGOS[COUNTRY]?.[party] && (
                     <Image
-                      src={PARTY_LOGOS[country][party]} 
+                      src={PARTY_LOGOS[COUNTRY][party]} 
                       alt={party} 
                       width={24}
                       height={24}
