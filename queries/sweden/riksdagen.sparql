@@ -1,0 +1,44 @@
+SELECT ?mp ?mpLabel ?partyLabel ?x ?xEnd ?ig ?igEnd ?bluesky ?bskyEnd ?mastodon ?mastEnd ?truth ?truthEnd WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "sv,en". }
+
+    ?mp wdt:P31 wd:Q5;
+        p:P39 ?statement.
+    ?statement ps:P39 wd:Q10655178.
+    FILTER NOT EXISTS { ?statement pq:P582 ?endTime. }
+
+    OPTIONAL {
+        ?mp p:P102 ?partyStatement.
+        ?partyStatement ps:P102 ?party.
+        FILTER(NOT EXISTS { ?partyStatement pq:P582 ?partyEndDate. })
+    }
+
+    OPTIONAL {
+        ?mp p:P2002 ?xStmt.
+        ?xStmt ps:P2002 ?x.
+        OPTIONAL { ?xStmt pq:P582 ?xEnd. }
+    }
+
+    OPTIONAL {
+        ?mp p:P12361 ?bskyStmt.
+        ?bskyStmt ps:P12361 ?bluesky.
+        OPTIONAL { ?bskyStmt pq:P582 ?bskyEnd. }
+    }
+
+    OPTIONAL {
+        ?mp p:P2003 ?igStmt.
+        ?igStmt ps:P2003 ?ig.
+        OPTIONAL { ?igStmt pq:P582 ?igEnd. }
+    }
+
+    OPTIONAL {
+        ?mp p:P4033 ?mastStmt.
+        ?mastStmt ps:P4033 ?mastodon.
+        OPTIONAL { ?mastStmt pq:P582 ?mastEnd. }
+    }
+
+    OPTIONAL {
+        ?mp p:P10858 ?truthStmt.
+        ?truthStmt ps:P10858 ?truth.
+        OPTIONAL { ?truthStmt pq:P582 ?truthEnd. }
+    }
+}

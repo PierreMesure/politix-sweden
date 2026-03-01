@@ -14,6 +14,7 @@ interface DashboardStatsProps {
   parties: string[];
   selectedParty: string | null;
   setSelectedParty: (party: string | null) => void;
+  country: string;
 }
 
 const STATUS_COLORS = {
@@ -32,6 +33,7 @@ export default function DashboardStats({
   parties,
   selectedParty,
   setSelectedParty,
+  country,
 }: DashboardStatsProps) {
   const { t } = useTranslation();
 
@@ -240,9 +242,9 @@ export default function DashboardStats({
                       : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 text-gray-700 dark:text-gray-300'
                   }`}
                 >
-                  {PARTY_LOGOS[party] && (
+                  {PARTY_LOGOS[country]?.[party] && (
                     <Image
-                      src={PARTY_LOGOS[party]} 
+                      src={PARTY_LOGOS[country][party]} 
                       alt={party} 
                       width={24}
                       height={24}

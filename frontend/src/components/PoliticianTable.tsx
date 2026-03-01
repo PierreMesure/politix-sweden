@@ -8,11 +8,12 @@ interface PoliticianTableProps {
   politicians: Politician[];
   loading: boolean;
   activePlatform: Platform;
+  country: string;
 }
 
-const OSINT = false;
+const OSINT = true;
 
-export default function PoliticianTable({ politicians, loading, activePlatform }: PoliticianTableProps) {
+export default function PoliticianTable({ politicians, loading, activePlatform, country }: PoliticianTableProps) {
   const { t } = useTranslation();
 
   function getOsintLink(platform: string, name: string, party: string | null) {
@@ -94,10 +95,10 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                     {p.name}
                   </td>
                   <td className="px-1 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                    {p.party && PARTY_LOGOS[p.party] ? (
+                    {p.party && PARTY_LOGOS[country]?.[p.party] ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={PARTY_LOGOS[p.party]}
+                        src={PARTY_LOGOS[country][p.party]}
                         alt={p.party}
                         title={p.party}
                         className="w-6 h-6 object-contain"
@@ -107,156 +108,147 @@ export default function PoliticianTable({ politicians, loading, activePlatform }
                     )}
                   </td>
 
-                                    {showBluesky && (
-                                      <td className="px-1 py-4 whitespace-nowrap text-sm">
-                                        {p.social.bluesky ? (
-                                          <div className="flex flex-col items-center lg:items-start">
-                                            {/* Mobile: Icon (only shown if viewing 'all') */}
-                                            {activePlatform === 'all' && (
-                                              <a
-                                                href={`https://bsky.app/profile/${p.social.bluesky.handle}`}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="lg:hidden hover:opacity-80 transition-opacity"
-                                                title={`@${p.social.bluesky.handle}`}
-                                              >
-                                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                <img src="/service_logos/bluesky.svg" alt="Bluesky" className="w-6 h-6 dark:invert" />
-                                              </a>
-                                            )}
-                                            {/* Handle: Shown on desktop OR on mobile if platform is active */}
-                                            <a
-                                              href={`https://bsky.app/profile/${p.social.bluesky.handle}`}
-                                              target="_blank"
-                                              rel="noreferrer"
-                                              className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-blue-600 dark:text-blue-400 hover:underline`}
-                                            >
-                                              @{p.social.bluesky.handle}
-                                            </a>
-                                            <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
-                                              <span className={`w-2 h-2 rounded-full ${isActive(p.social.bluesky.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.bluesky.last_post) ? t('table.active') : t('table.inactive')}></span>
-                                              <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.bluesky.last_post)}</span>
-                                            </div>
-                                          </div>
-                                        ) : (
-                                          OSINT ? (
-                                            <a
-                                              href={getOsintLink('Bluesky', p.name, p.party)}
-                                              target="_blank"
-                                              rel="noreferrer"
-                                              className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
-                                            >
-                                              OSINT
-                                            </a>
-                                          ) : (
-                                            <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
-                                          )
-                                        )}
-                                      </td>
-                                    )}
+                  {showBluesky && (
+                    <td className="px-1 py-4 whitespace-nowrap text-sm">
+                      {p.social.bluesky ? (
+                        <div className="flex flex-col items-center lg:items-start">
+                          {activePlatform === 'all' && (
+                            <a
+                              href={`https://bsky.app/profile/${p.social.bluesky.handle}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="lg:hidden hover:opacity-80 transition-opacity"
+                              title={`@${p.social.bluesky.handle}`}
+                            >
+                              <img src="/service_logos/bluesky.svg" alt="Bluesky" className="w-6 h-6 dark:invert" />
+                            </a>
+                          )}
+                          <a
+                            href={`https://bsky.app/profile/${p.social.bluesky.handle}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-blue-600 dark:text-blue-400 hover:underline`}
+                          >
+                            @{p.social.bluesky.handle}
+                          </a>
+                          <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
+                            <span className={`w-2 h-2 rounded-full ${isActive(p.social.bluesky.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.bluesky.last_post) ? t('table.active') : t('table.inactive')}></span>
+                            <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.bluesky.last_post)}</span>
+                          </div>
+                        </div>
+                      ) : (
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('Bluesky', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
+                      )}
+                    </td>
+                  )}
 
-                                    {showMastodon && (
-                                      <td className="px-1 py-4 whitespace-nowrap text-sm">
-                                        {p.social.mastodon ? (
-                                          <div className="flex flex-col items-center lg:items-start">
-                                            {getMastodonUrl(p.social.mastodon.handle) ? (
-                                              <>
-                                                {/* Mobile: Icon (only shown if viewing 'all') */}
-                                                {activePlatform === 'all' && (
-                                                  <a
-                                                    href={getMastodonUrl(p.social.mastodon.handle)!}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    className="lg:hidden hover:opacity-80 transition-opacity"
-                                                    title={p.social.mastodon.handle}
-                                                  >
-                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                    <img src="/service_logos/mastodon.svg" alt="Mastodon" className="w-6 h-6 dark:invert" />
-                                                  </a>
-                                                )}
-                                                {/* Handle: Shown on desktop OR on mobile if platform is active */}
-                                                <a
-                                                  href={getMastodonUrl(p.social.mastodon.handle)!}
-                                                  target="_blank"
-                                                  rel="noreferrer"
-                                                  className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-purple-600 dark:text-purple-400 hover:underline`}
-                                                >
-                                                  {p.social.mastodon.handle}
-                                                </a>
-                                              </>
-                                            ) : (
-                                              <span className="text-gray-900 dark:text-gray-300" title={p.social.mastodon.handle}>?</span>
-                                            )}
-                                            <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
-                                              <span className={`w-2 h-2 rounded-full ${isActive(p.social.mastodon.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.mastodon.last_post) ? t('table.active') : t('table.inactive')}></span>
-                                              <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.mastodon.last_post)}</span>
-                                            </div>
-                                          </div>
-                                        ) : (
-                                          OSINT ? (
-                                            <a
-                                              href={getOsintLink('Mastodon', p.name, p.party)}
-                                              target="_blank"
-                                              rel="noreferrer"
-                                              className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
-                                            >
-                                              OSINT
-                                            </a>
-                                          ) : (
-                                            <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
-                                          )
-                                        )}
-                                      </td>
-                                    )}
+                  {showMastodon && (
+                    <td className="px-1 py-4 whitespace-nowrap text-sm">
+                      {p.social.mastodon ? (
+                        <div className="flex flex-col items-center lg:items-start">
+                          {getMastodonUrl(p.social.mastodon.handle) ? (
+                            <>
+                              {activePlatform === 'all' && (
+                                <a
+                                  href={getMastodonUrl(p.social.mastodon.handle)!}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="lg:hidden hover:opacity-80 transition-opacity"
+                                  title={p.social.mastodon.handle}
+                                >
+                                  <img src="/service_logos/mastodon.svg" alt="Mastodon" className="w-6 h-6 dark:invert" />
+                                </a>
+                              )}
+                              <a
+                                href={getMastodonUrl(p.social.mastodon.handle)!}
+                                target="_blank"
+                                rel="noreferrer"
+                                className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-purple-600 dark:text-purple-400 hover:underline`}
+                              >
+                                {p.social.mastodon.handle}
+                              </a>
+                            </>
+                          ) : (
+                            <span className="text-gray-900 dark:text-gray-300" title={p.social.mastodon.handle}>?</span>
+                          )}
+                          <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
+                            <span className={`w-2 h-2 rounded-full ${isActive(p.social.mastodon.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.mastodon.last_post) ? t('table.active') : t('table.inactive')}></span>
+                            <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.mastodon.last_post)}</span>
+                          </div>
+                        </div>
+                      ) : (
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('Mastodon', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
+                      )}
+                    </td>
+                  )}
 
-                                    {showX && (
-                                      <td className="px-1 py-4 whitespace-nowrap text-sm">
-                                        {p.social.x ? (
-                                          <div className="flex flex-col items-center lg:items-start">
-                                            {/* Mobile: Icon (only shown if viewing 'all') */}
-                                            {activePlatform === 'all' && (
-                                              <a
-                                                href={`https://x.com/${p.social.x.handle}`}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="lg:hidden hover:opacity-80 transition-opacity"
-                                                title={`@${p.social.x.handle}`}
-                                              >
-                                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                <img src="/service_logos/x.svg" alt="X (Twitter)" className="w-6 h-6 dark:invert" />
-                                              </a>
-                                            )}
-                                            {/* Handle: Shown on desktop OR on mobile if platform is active */}
-                                            <a
-                                              href={`https://x.com/${p.social.x.handle}`}
-                                              target="_blank"
-                                              rel="noreferrer"
-                                              className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-blue-600 dark:text-blue-400 hover:underline`}
-                                            >
-                                              @{p.social.x.handle}
-                                            </a>
-                                            <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
-                                              <span className={`w-2 h-2 rounded-full ${isActive(p.social.x.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.x.last_post) ? t('table.active') : t('table.inactive')}></span>
-                                              <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.x.last_post)}</span>
-                                            </div>
-                                          </div>
-                                        ) : (
-                                          OSINT ? (
-                                            <a
-                                              href={getOsintLink('X Twitter', p.name, p.party)}
-                                              target="_blank"
-                                              rel="noreferrer"
-                                              className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
-                                            >
-                                              OSINT
-                                            </a>
-                                          ) : (
-                                            <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
-                                          )
-                                        )}
-                                      </td>
-                                    )}
-                                    <td className="pl-1 pr-3 py-4 whitespace-nowrap text-sm text-right">
+                  {showX && (
+                    <td className="px-1 py-4 whitespace-nowrap text-sm">
+                      {p.social.x ? (
+                        <div className="flex flex-col items-center lg:items-start">
+                          {activePlatform === 'all' && (
+                            <a
+                              href={`https://x.com/${p.social.x.handle}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="lg:hidden hover:opacity-80 transition-opacity"
+                              title={`@${p.social.x.handle}`}
+                            >
+                              <img src="/service_logos/x.svg" alt="X (Twitter)" className="w-6 h-6 dark:invert" />
+                            </a>
+                          )}
+                          <a
+                            href={`https://x.com/${p.social.x.handle}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`${activePlatform === 'all' ? 'hidden lg:block' : 'block'} text-blue-600 dark:text-blue-400 hover:underline`}
+                          >
+                            @{p.social.x.handle}
+                          </a>
+                          <div className={`flex items-center gap-1.5 mt-1 ${activePlatform === 'all' ? 'justify-center lg:justify-start' : 'justify-start'}`}>
+                            <span className={`w-2 h-2 rounded-full ${isActive(p.social.x.last_post) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'}`} title={isActive(p.social.x.last_post) ? t('table.active') : t('table.inactive')}></span>
+                            <span className={`${activePlatform === 'all' ? 'hidden lg:inline' : 'inline'} text-xs text-gray-500 dark:text-gray-500`}>{formatDate(p.social.x.last_post)}</span>
+                          </div>
+                        </div>
+                      ) : (
+                        OSINT ? (
+                          <a
+                            href={getOsintLink('X Twitter', p.name, p.party)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-blue-500/50 hover:text-blue-500 hover:underline"
+                          >
+                            OSINT
+                          </a>
+                        ) : (
+                          <span className="text-gray-300 dark:text-zinc-700 flex justify-center lg:justify-start">-</span>
+                        )
+                      )}
+                    </td>
+                  )}
+                  <td className="pl-1 pr-3 py-4 whitespace-nowrap text-sm text-right">
                     <a
                       href={`https://www.wikidata.org/wiki/${p.id}#P2002`}
                       target="_blank"
