@@ -1,15 +1,15 @@
 {
   "global": {
     "all": {
-      "active": 6,
-      "inactive": 4,
+      "active": 1,
+      "inactive": 9,
       "closed": 0,
       "none": 0,
       "total": 10
     },
     "x": {
-      "active": 6,
-      "inactive": 4,
+      "active": 1,
+      "inactive": 9,
       "closed": 0,
       "none": 0,
       "total": 10

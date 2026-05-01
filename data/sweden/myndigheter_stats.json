@@ -1,32 +1,32 @@
 {
   "global": {
     "all": {
-      "active": 59,
-      "inactive": 274,
-      "closed": 70,
-      "none": 365,
-      "total": 768
+      "active": 49,
+      "inactive": 292,
+      "closed": 66,
+      "none": 359,
+      "total": 766
     },
     "x": {
-      "active": 58,
-      "inactive": 275,
-      "closed": 70,
-      "none": 365,
-      "total": 768
+      "active": 44,
+      "inactive": 296,
+      "closed": 66,
+      "none": 360,
+      "total": 766
     },
     "bluesky": {
-      "active": 1,
-      "inactive": 1,
+      "active": 6,
+      "inactive": 10,
       "closed": 0,
-      "none": 766,
-      "total": 768
+      "none": 750,
+      "total": 766
     },
     "mastodon": {
       "active": 0,
       "inactive": 0,
       "closed": 0,
-      "none": 768,
-      "total": 768
+      "none": 766,
+      "total": 766
     }
   },
   "parties": {}

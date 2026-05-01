@@ -917,13 +917,16 @@
     "id": "Q6972528",
     "name": "Exportkreditnämnden",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "eknexport",
         "last_post": "2024-05-31T09:20:31+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "eknexport.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -1073,8 +1076,8 @@
     "last_check": "2026-02-07T04:32:45.986604+00:00",
     "social": {
       "x": {
-        "handle": "FinspangSe",
-        "last_post": "closed"
+        "handle": "finspangskommun",
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -1231,17 +1234,6 @@
     }
   },
   {
-    "id": "Q33075406",
-    "name": "Första AP-fonden",
-    "party": null,
-    "last_check": null,
-    "social": {
-      "x": null,
-      "bluesky": null,
-      "mastodon": null
-    }
-  },
-  {
     "id": "Q5251219",
     "name": "Försvarets materielverk",
     "party": null,
@@ -1301,7 +1293,7 @@
     "id": "Q783911",
     "name": "Försvarsmakten",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "Forsvarsmakten",
@@ -1562,13 +1554,16 @@
     "id": "Q511281",
     "name": "Götene kommun",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "gotenekommun",
         "last_post": "2024-12-06T14:45:43+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "gotenekommun.bsky.social",
+        "last_post": "2026-04-30T14:24:35.368Z"
+      },
       "mastodon": null
     }
   },
@@ -2533,7 +2528,10 @@
     "party": null,
     "last_check": null,
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Kalmarkommun",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2555,7 +2553,10 @@
     "party": null,
     "last_check": null,
     "social": {
-      "x": null,
+      "x": {
+        "handle": "Kammarkollegiet",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -2763,7 +2764,10 @@
     "party": null,
     "last_check": null,
     "social": {
-      "x": null,
+      "x": {
+        "handle": "KlimatNaringdep",
+        "last_post": null
+      },
       "bluesky": null,
       "mastodon": null
     }
@@ -3570,13 +3574,16 @@
     "id": "Q218506",
     "name": "Lunds universitet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "lundsuni",
         "last_post": "2024-08-20T14:49:58+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "lundsuniversitet.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -3944,13 +3951,16 @@
     "id": "Q977781",
     "name": "Malmö universitet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "malmouni",
         "last_post": "2024-09-27T07:13:36+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "mau.se",
+        "last_post": "2026-04-28T08:34:21.846Z"
+      },
       "mastodon": null
     }
   },
@@ -4218,13 +4228,16 @@
     "id": "Q3430725",
     "name": "Myndigheten för civilt försvar",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "MSBse",
         "last_post": null
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "mcfsverige.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -4281,6 +4294,17 @@
   {
     "id": "Q106052713",
     "name": "Myndigheten för psykologiskt försvar",
+    "party": null,
+    "last_check": null,
+    "social": {
+      "x": null,
+      "bluesky": null,
+      "mastodon": null
+    }
+  },
+  {
+    "id": "Q10687953",
+    "name": "Myndigheten för säkerhet och integritetsskydd",
     "party": null,
     "last_check": null,
     "social": {
@@ -4634,13 +4658,16 @@
     "id": "Q500267",
     "name": "Nyköpings kommun",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "nykopingskommun",
         "last_post": null
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "nykoping.se",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -5446,13 +5473,16 @@
     "id": "Q515373",
     "name": "Ronneby kommun",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "ronnebykommun",
         "last_post": "2018-03-13T15:12:40+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "ronnebykommun.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -5652,17 +5682,6 @@
         "handle": "ap7se",
         "last_post": "2024-02-27T14:47:03+00:00"
       },
-      "bluesky": null,
-      "mastodon": null
-    }
-  },
-  {
-    "id": "Q33075659",
-    "name": "Sjätte AP-fonden",
-    "party": null,
-    "last_check": null,
-    "social": {
-      "x": null,
       "bluesky": null,
       "mastodon": null
     }
@@ -6038,10 +6057,13 @@
     "id": "Q10677666",
     "name": "Statens beredning för medicinsk och social utvärdering",
     "party": null,
-    "last_check": null,
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": null,
-      "bluesky": null,
+      "bluesky": {
+        "handle": "sbusverige.bsky.social",
+        "last_post": "2024-02-02T16:20:30.607Z"
+      },
       "mastodon": null
     }
   },
@@ -6257,8 +6279,8 @@
     "last_check": "2026-02-07T04:32:45.986604+00:00",
     "social": {
       "x": {
-        "handle": "SVAexpertmyndig",
-        "last_post": "closed"
+        "handle": "SVA_vetmed",
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -6268,13 +6290,16 @@
     "id": "Q3563936",
     "name": "Statens väg- och transportforskningsinstitut",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "vtisweden",
         "last_post": "2025-01-17T12:04:07+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "vtisweden.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -6368,13 +6393,16 @@
     "id": "Q221645",
     "name": "Stockholms universitet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "stockholms_univ",
         "last_post": "2025-02-06T06:03:38+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "stockholm-uni.bsky.social",
+        "last_post": "2026-04-30T08:47:17.662Z"
+      },
       "mastodon": null
     }
   },
@@ -7715,8 +7743,8 @@
     "last_check": "2026-02-07T04:32:45.986604+00:00",
     "social": {
       "x": {
-        "handle": "SwedeninSG",
-        "last_post": "closed"
+        "handle": "SweAmbSG",
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -7951,8 +7979,8 @@
     "last_check": "2026-02-07T04:32:45.986604+00:00",
     "social": {
       "x": {
-        "handle": "swedenistanbul",
-        "last_post": "closed"
+        "handle": "CGSweIST",
+        "last_post": null
       },
       "bluesky": null,
       "mastodon": null
@@ -8040,13 +8068,16 @@
     "id": "Q564652",
     "name": "Sveriges riksbank",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "riksbanken",
         "last_post": "2025-08-12T12:14:08+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "riksbank.se",
+        "last_post": "2026-02-17T13:07:21.153Z"
+      },
       "mastodon": null
     }
   },
@@ -8099,17 +8130,6 @@
         "handle": "Safflekommun",
         "last_post": "2019-04-27T12:31:25+00:00"
       },
-      "bluesky": null,
-      "mastodon": null
-    }
-  },
-  {
-    "id": "Q10687953",
-    "name": "Säkerhets- och integritetsskyddsnämnden",
-    "party": null,
-    "last_check": null,
-    "social": {
-      "x": null,
       "bluesky": null,
       "mastodon": null
     }
@@ -8635,7 +8655,7 @@
     "id": "Q1144565",
     "name": "Umeå universitet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "umeauniversitet",
@@ -8643,7 +8663,7 @@
       },
       "bluesky": {
         "handle": "umeauniversitet.bsky.social",
-        "last_post": "2026-01-12T12:46:04.833Z"
+        "last_post": "2026-03-31T12:58:50.658Z"
       },
       "mastodon": null
     }
@@ -8744,13 +8764,16 @@
     "id": "Q185246",
     "name": "Uppsala universitet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "uppsalauni",
         "last_post": "2024-10-22T14:33:24+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "uu.se",
+        "last_post": null
+      },
       "mastodon": null
     }
   },
@@ -8797,13 +8820,16 @@
     "id": "Q776570",
     "name": "Utrikesdepartementet",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "SweMFA",
         "last_post": "2026-02-06T09:00:33+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "swedishmfa.bsky.social",
+        "last_post": "2026-04-04T08:00:23.654Z"
+      },
       "mastodon": null
     }
   },
@@ -9198,13 +9224,16 @@
     "id": "Q500217",
     "name": "Växjö kommun",
     "party": null,
-    "last_check": "2026-02-07T04:32:45.986604+00:00",
+    "last_check": "2026-05-01T04:43:30.351578+00:00",
     "social": {
       "x": {
         "handle": "vaxjokommun",
         "last_post": "2019-07-26T06:59:07+00:00"
       },
-      "bluesky": null,
+      "bluesky": {
+        "handle": "vaxjokommun.bsky.social",
+        "last_post": null
+      },
       "mastodon": null
     }
   },

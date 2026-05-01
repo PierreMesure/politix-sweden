@@ -115,7 +115,7 @@
     "id": "Q776570",
     "name": "Utrikesdepartementet",
     "party": null,
-    "last_check": "2026-03-01T03:36:55.049073+00:00",
+    "last_check": "2026-05-01T04:43:29.099177+00:00",
     "social": {
       "x": {
         "handle": "SweMFA",
@@ -123,7 +123,7 @@
       },
       "bluesky": {
         "handle": "utrikesdep.bsky.social",
-        "last_post": "2026-02-18T08:38:23.852Z"
+        "last_post": "2026-04-04T08:00:23.150Z"
       },
       "mastodon": null
     }

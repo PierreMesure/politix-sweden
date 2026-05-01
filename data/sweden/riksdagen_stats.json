@@ -1,22 +1,22 @@
 {
   "global": {
     "all": {
-      "active": 128,
-      "inactive": 117,
+      "active": 57,
+      "inactive": 188,
       "closed": 20,
       "none": 86,
       "total": 351
     },
     "x": {
-      "active": 127,
-      "inactive": 108,
+      "active": 49,
+      "inactive": 186,
       "closed": 27,
       "none": 89,
       "total": 351
     },
     "bluesky": {
-      "active": 8,
-      "inactive": 28,
+      "active": 10,
+      "inactive": 26,
       "closed": 0,
       "none": 315,
       "total": 351
@@ -30,17 +30,137 @@
     }
   },
   "parties": {
+    "Moderaterna": {
+      "all": {
+        "active": 10,
+        "inactive": 41,
+        "closed": 6,
+        "none": 11,
+        "total": 68
+      },
+      "x": {
+        "active": 9,
+        "inactive": 41,
+        "closed": 6,
+        "none": 12,
+        "total": 68
+      },
+      "bluesky": {
+        "active": 1,
+        "inactive": 2,
+        "closed": 0,
+        "none": 65,
+        "total": 68
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 68,
+        "total": 68
+      }
+    },
+    "Sverigedemokraterna": {
+      "all": {
+        "active": 14,
+        "inactive": 34,
+        "closed": 1,
+        "none": 21,
+        "total": 70
+      },
+      "x": {
+        "active": 14,
+        "inactive": 34,
+        "closed": 1,
+        "none": 21,
+        "total": 70
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 70,
+        "total": 70
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 70,
+        "total": 70
+      }
+    },
+    "Miljöpartiet": {
+      "all": {
+        "active": 2,
+        "inactive": 12,
+        "closed": 0,
+        "none": 4,
+        "total": 18
+      },
+      "x": {
+        "active": 0,
+        "inactive": 13,
+        "closed": 1,
+        "none": 4,
+        "total": 18
+      },
+      "bluesky": {
+        "active": 2,
+        "inactive": 4,
+        "closed": 0,
+        "none": 12,
+        "total": 18
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 2,
+        "closed": 0,
+        "none": 16,
+        "total": 18
+      }
+    },
+    "Centerpartiet": {
+      "all": {
+        "active": 1,
+        "inactive": 17,
+        "closed": 1,
+        "none": 7,
+        "total": 26
+      },
+      "x": {
+        "active": 1,
+        "inactive": 17,
+        "closed": 1,
+        "none": 7,
+        "total": 26
+      },
+      "bluesky": {
+        "active": 0,
+        "inactive": 1,
+        "closed": 0,
+        "none": 25,
+        "total": 26
+      },
+      "mastodon": {
+        "active": 0,
+        "inactive": 0,
+        "closed": 0,
+        "none": 26,
+        "total": 26
+      }
+    },
     "Vänsterpartiet": {
       "all": {
-        "active": 7,
-        "inactive": 9,
+        "active": 5,
+        "inactive": 11,
         "closed": 2,
         "none": 4,
         "total": 22
       },
       "x": {
-        "active": 7,
-        "inactive": 8,
+        "active": 2,
+        "inactive": 13,
         "closed": 3,
         "none": 4,
         "total": 22
@@ -60,77 +180,17 @@
         "total": 22
       }
     },
-    "Moderaterna": {
-      "all": {
-        "active": 22,
-        "inactive": 29,
-        "closed": 6,
-        "none": 11,
-        "total": 68
-      },
-      "x": {
-        "active": 22,
-        "inactive": 28,
-        "closed": 6,
-        "none": 12,
-        "total": 68
-      },
-      "bluesky": {
-        "active": 0,
-        "inactive": 3,
-        "closed": 0,
-        "none": 65,
-        "total": 68
-      },
-      "mastodon": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 68,
-        "total": 68
-      }
-    },
-    "Sverigedemokraterna": {
-      "all": {
-        "active": 27,
-        "inactive": 22,
-        "closed": 1,
-        "none": 21,
-        "total": 71
-      },
-      "x": {
-        "active": 27,
-        "inactive": 22,
-        "closed": 1,
-        "none": 21,
-        "total": 71
-      },
-      "bluesky": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 71,
-        "total": 71
-      },
-      "mastodon": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 71,
-        "total": 71
-      }
-    },
     "Kristdemokraterna": {
       "all": {
-        "active": 12,
-        "inactive": 4,
+        "active": 6,
+        "inactive": 10,
         "closed": 1,
         "none": 3,
         "total": 20
       },
       "x": {
-        "active": 12,
-        "inactive": 4,
+        "active": 6,
+        "inactive": 10,
         "closed": 1,
         "none": 3,
         "total": 20
@@ -148,19 +208,49 @@
         "closed": 0,
         "none": 20,
         "total": 20
+      }
+    },
+    "Socialdemokraterna": {
+      "all": {
+        "active": 18,
+        "inactive": 48,
+        "closed": 8,
+        "none": 32,
+        "total": 106
+      },
+      "x": {
+        "active": 16,
+        "inactive": 46,
+        "closed": 10,
+        "none": 34,
+        "total": 106
+      },
+      "bluesky": {
+        "active": 3,
+        "inactive": 12,
+        "closed": 0,
+        "none": 91,
+        "total": 106
+      },
+      "mastodon": {
+        "active": 1,
+        "inactive": 3,
+        "closed": 0,
+        "none": 102,
+        "total": 106
       }
     },
     "Liberalerna": {
       "all": {
-        "active": 6,
-        "inactive": 6,
+        "active": 1,
+        "inactive": 11,
         "closed": 1,
         "none": 3,
         "total": 16
       },
       "x": {
-        "active": 6,
-        "inactive": 5,
+        "active": 1,
+        "inactive": 10,
         "closed": 2,
         "none": 3,
         "total": 16
@@ -178,96 +268,6 @@
         "closed": 0,
         "none": 16,
         "total": 16
-      }
-    },
-    "Miljöpartiet": {
-      "all": {
-        "active": 6,
-        "inactive": 8,
-        "closed": 0,
-        "none": 4,
-        "total": 18
-      },
-      "x": {
-        "active": 6,
-        "inactive": 7,
-        "closed": 1,
-        "none": 4,
-        "total": 18
-      },
-      "bluesky": {
-        "active": 2,
-        "inactive": 4,
-        "closed": 0,
-        "none": 12,
-        "total": 18
-      },
-      "mastodon": {
-        "active": 0,
-        "inactive": 2,
-        "closed": 0,
-        "none": 16,
-        "total": 18
-      }
-    },
-    "Socialdemokraterna": {
-      "all": {
-        "active": 40,
-        "inactive": 26,
-        "closed": 8,
-        "none": 32,
-        "total": 106
-      },
-      "x": {
-        "active": 39,
-        "inactive": 23,
-        "closed": 10,
-        "none": 34,
-        "total": 106
-      },
-      "bluesky": {
-        "active": 2,
-        "inactive": 13,
-        "closed": 0,
-        "none": 91,
-        "total": 106
-      },
-      "mastodon": {
-        "active": 1,
-        "inactive": 3,
-        "closed": 0,
-        "none": 102,
-        "total": 106
-      }
-    },
-    "Centerpartiet": {
-      "all": {
-        "active": 7,
-        "inactive": 11,
-        "closed": 1,
-        "none": 7,
-        "total": 26
-      },
-      "x": {
-        "active": 7,
-        "inactive": 11,
-        "closed": 1,
-        "none": 7,
-        "total": 26
-      },
-      "bluesky": {
-        "active": 0,
-        "inactive": 1,
-        "closed": 0,
-        "none": 25,
-        "total": 26
-      },
-      "mastodon": {
-        "active": 0,
-        "inactive": 0,
-        "closed": 0,
-        "none": 26,
-        "total": 26
       }
     }
   }
