@@ -1,5 +1,5 @@
 import asyncio
-from scraper import get_x_clients, get_x_last_post
+from scraper import get_x_client, get_x_last_post
 
 
 async def test_handles():
@@ -11,21 +11,19 @@ async def test_handles():
         "kasirga_kadir",
     ]
 
-    print("Initializing X clients...")
-    clients = await get_x_clients()
+    print("Initializing X account pool...")
+    client = await get_x_client()
 
-    if not clients:
-        print("Error: No X clients available. Check your .env file.")
+    if not client:
+        print("Error: No active X accounts. Run: uv run twscrape add_cookie ACCOUNT")
         return
 
-    print(f"Found {len(clients)} accounts.")
     print(f"Testing {len(handles)} handles...\n")
 
-    for i, handle in enumerate(handles):
-        client_idx = i % len(clients)
-        print(f"Fetching last post for @{handle} using account {client_idx + 1}...")
+    for handle in handles:
+        print(f"Fetching last post for @{handle}...")
         try:
-            last_post = await get_x_last_post(clients[client_idx], handle)
+            last_post = await get_x_last_post(client, handle)
             print(f"  -> Result: {last_post}")
         except Exception as e:
             print(f"  -> Failed: {e}")

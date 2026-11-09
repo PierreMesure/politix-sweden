@@ -5,8 +5,11 @@ description = "A small dashboard to see which Swedish politicians are on X, Blue
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "python-dotenv>=1.2.4",
     "requests>=2.34.2",
     "sparqlwrapper>=2.0.0",
-    "twikit>=2.3.3",
+    "twscrape>=0.21.0",
 ]
+
+[tool.uv]
+# 0.21.0 contains the X compatibility fixes needed by the scraper.
+exclude-newer-package = { twscrape = false }

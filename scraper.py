@@ -5,138 +5,38 @@ import time
 import asyncio
 import os
 from datetime import datetime, timezone
-from dotenv import load_dotenv
-from twikit import Client
+from twscrape import API, gather
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-load_dotenv()
 
-
-def get_x_credentials():
-    accounts = []
-    i = 1
-    while True:
-        user = os.getenv(f"X{i}_USERNAME")
-        if not user:
-            break
-        accounts.append(
-            {
-                "username": user,
-                "email": os.getenv(f"X{i}_EMAIL"),
-                "password": os.getenv(f"X{i}_PASSWORD"),
-            }
-        )
-        i += 1
-    return accounts
-
-
-async def get_x_clients():
+async def get_x_client():
     if os.getenv("GITHUB_ACTIONS") == "true":
         print("Running in GitHub Actions, skipping X client initialization.")
-        return []
+        return None
 
-    credentials = get_x_credentials()
-    if not credentials:
-        print("No X credentials found in .env (expected X1_USERNAME, X2_USERNAME...)")
-        return []
-
-    clients = []
-    for idx, acc in enumerate(credentials):
-        username = acc["username"]
-        client = Client("en-US")
-        cookies_path = f"cookies_{username}.json"
-
-        # Compatibility: if old cookies.json exists and matches the first account, rename it
-        if (
-            idx == 0
-            and os.path.exists("cookies.json")
-            and not os.path.exists(cookies_path)
-        ):
-            os.rename("cookies.json", cookies_path)
-
-        try:
-            if os.path.exists(cookies_path):
-                with open(cookies_path, "r") as f:
-                    cookies = json.load(f)
-                # Handle old list format if necessary
-                if isinstance(cookies, list):
-                    cookies = {c["name"]: c["value"] for c in cookies}
-                    with open(cookies_path, "w") as f:
-                        json.dump(cookies, f)
-                client.load_cookies(cookies_path)
-                print(f"Loaded cookies for X account: {username}")
-            else:
-                print(f"Logging in to X account: {username}")
-                await client.login(
-                    auth_info_1=username,
-                    auth_info_2=acc["email"],
-                    password=acc["password"],
-                )
-                client.save_cookies(cookies_path)
-            clients.append(client)
-        except Exception as e:
-            print(f"Error authenticating with X account {username}: {e}")
-
-    return clients
+    client = API("accounts.db", raise_when_no_account=True, wait_timeout=30)
+    if not any(account["active"] for account in await client.pool.accounts_info()):
+        print("No active X accounts. Add cookies with: uv run twscrape add_cookie ACCOUNT")
+        return None
+    return client
 
 
 async def get_x_last_post(client, handle):
     if not client:
         return None
     try:
-        try:
-            user = await client.get_user_by_screen_name(handle)
-        except Exception as e:
-            err_msg = str(e).lower()
-            if (
-                "404" in err_msg
-                or "not found" in err_msg
-                or "does not exist" in err_msg
-            ):
-                return "closed"
-            raise e
-
+        user = await client.user_by_login(handle)
         if not user:
             return "closed"
 
         if getattr(user, "protected", False):
             return "protected"
 
-        # Get latest tweets and replies to find the absolute latest activity
-
-        tasks = [
-            client.get_user_tweets(user.id, "Tweets", count=5),
-            client.get_user_tweets(user.id, "Replies", count=5),
-        ]
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-
-        all_tweets = []
-        for res in results:
-            if res and not isinstance(res, Exception):
-                all_tweets.extend(list(res))
-
-        if all_tweets:
-
-            def parse_date(date_str):
-                try:
-                    return datetime.strptime(date_str, "%a %b %d %H:%M:%S %z %Y")
-                except Exception:
-                    return None
-
-            epoch_start = datetime(1970, 1, 1, tzinfo=timezone.utc)
-            all_tweets.sort(
-                key=lambda t: parse_date(t.created_at) or epoch_start, reverse=True
-            )
-
-            latest_tweet = all_tweets[0]
-            dt = parse_date(latest_tweet.created_at)
-            if dt:
-                return dt.isoformat()
-            return latest_tweet.created_at
+        tweets = await gather(client.user_tweets_and_replies(user.id, limit=5))
+        if tweets:
+            return max(tweet.date for tweet in tweets).isoformat()
     except Exception as e:
         print(f"Error fetching X for {handle}: {e}")
-        if "404" in str(e):
-            return "closed"
     return None
 
 
@@ -395,23 +295,21 @@ def should_skip(p, now):
     return False
 
 
-async def update_politician_social(p, i, total, x_clients, x_client_index):
+async def update_politician_social(p, i, total, x_client):
     name = p["name"]
     updated = False
 
     # X
-    if p["social"]["x"] and x_clients and p["social"]["x"]["last_post"] != "closed":
-        client = x_clients[x_client_index % len(x_clients)]
+    if p["social"]["x"] and x_client and p["social"]["x"]["last_post"] != "closed":
         handle = p["social"]["x"]["handle"]
         print(
-            f"[{i + 1}/{total}] Fetching X for {name} (@{handle}) using account {x_client_index % len(x_clients) + 1}..."
+            f"[{i + 1}/{total}] Fetching X for {name} (@{handle})..."
         )
-        last_post = await get_x_last_post(client, handle)
+        last_post = await get_x_last_post(x_client, handle)
         print(f"   -> X Result: {last_post}")
-        p["social"]["x"]["last_post"] = last_post
-        updated = True
-        # Increment index for the next call outside
-        await asyncio.sleep(1)
+        if last_post is not None:
+            p["social"]["x"]["last_post"] = last_post
+            updated = True
 
     # Bluesky
     if p["social"]["bluesky"] and p["social"]["bluesky"]["last_post"] != "closed":
@@ -434,7 +332,7 @@ async def update_politician_social(p, i, total, x_clients, x_client_index):
     return updated
 
 
-async def run_scraper(country, name):
+async def run_scraper(country, name, x_client):
     query_file = f"queries/{country}/{name}.sparql"
     data_file = f"data/{country}/{name}.json"
     stats_file = f"data/{country}/{name}_stats.json"
@@ -460,12 +358,7 @@ async def run_scraper(country, name):
                     if p["social"][platform]["handle"] == old_plat["handle"]:
                         p["social"][platform]["last_post"] = old_plat.get("last_post")
 
-    x_clients = await get_x_clients()
-    if not x_clients:
-        print("Warning: No X clients available. X data will not be updated.")
-
     now = datetime.now(timezone.utc)
-    x_client_index = 0
     for i, p in enumerate(politicians):
         if should_skip(p, now):
             print(
@@ -473,20 +366,11 @@ async def run_scraper(country, name):
             )
             continue
 
-        was_x_updated = (
-            p["social"]["x"] and x_clients and p["social"]["x"]["last_post"] != "closed"
-        )
-
-        if await update_politician_social(
-            p, i, len(politicians), x_clients, x_client_index
-        ):
+        if await update_politician_social(p, i, len(politicians), x_client):
             p["last_check"] = now.isoformat()
             stats = calculate_stats(politicians)
             save_data(politicians, stats, data_file, stats_file)
             save_data(politicians, stats, frontend_data_file, frontend_stats_file)
-
-            if was_x_updated:
-                x_client_index += 1
 
     print("Sorting politicians...")
     politicians.sort(key=lambda x: x["name"])
@@ -497,17 +381,21 @@ async def run_scraper(country, name):
 
 
 async def main():
+    x_client = await get_x_client()
+    if not x_client:
+        print("Warning: No X accounts available. X data will not be updated.")
+
     # Run for Sweden
     country = "sweden"
     for name in ["riksdagen", "regeringen", "departement", "myndigheter"]:
         if os.path.exists(f"queries/{country}/{name}.sparql"):
-            await run_scraper(country, name)
+            await run_scraper(country, name, x_client)
 
     # Run for Denmark
     country = "denmark"
     for name in ["folketinget"]:
         if os.path.exists(f"queries/{country}/{name}.sparql"):
-            await run_scraper(country, name)
+            await run_scraper(country, name, x_client)
 
 
 if __name__ == "__main__":

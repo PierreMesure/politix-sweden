@@ -1,3 +1,5 @@
 .venv/
 .env
+/cookies*.json
+/accounts.db*
 __pycache__/

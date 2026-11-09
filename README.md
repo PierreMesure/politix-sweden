@@ -41,18 +41,29 @@ The scraper manages its own virtual environment using `uv`.
    ```
 
 2. **Configuration:**
-   Create a `.env` file in the root with your X credentials (if you intend to scrape X activity):
+   To scrape X activity, add browser cookies to twscrape's local account pool:
 
-   ```env
-   X1_USERNAME=your_username
-   X1_EMAIL=your_email
-   X1_PASSWORD=your_password
+   ```bash
+   uv run twscrape add_cookie my_account
+   uv run twscrape accounts
    ```
+
+   Copy `auth_token` and `ct0` from Edge DevTools → Application → Cookies → `https://x.com`, and paste `auth_token=VALUE; ct0=VALUE` at the secure prompt. Repeat with a different account name to add more accounts. Refresh expired cookies by running `add_cookie` again with the same name.
+
+   Sessions are saved in the ignored `accounts.db` file. twscrape automatically switches between accounts when rate limits are reached. No passwords, email credentials, or IMAP access are needed. The scraper no longer reads the old `.env` X credentials or `cookies_*.json` files.
+
+   Without active accounts, X activity updates are skipped. X scraping remains disabled in GitHub Actions.
 
 3. **Run:**
 
    ```bash
    uv run scraper.py
+   ```
+
+   To check X access without updating the datasets:
+
+   ```bash
+   uv run test_scraper.py
    ```
 
 ### Frontend (Next.js)
